@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muzyka miasta - pozytywki w przestrzeni miejskiej – Budżet Obywatelski Łódź</title>
+  <meta name="description" content="W ramach działań na rzecz budowania lokalnej tożsamości kulturowej, edukacji przestrzennej i wzmacniania wizerunku Łodzi jako miasta kreatywnego, prop... Koszt: 14 300 zł. Kategoria: Kultura i dziedzictwo. Osiedle: .">
+  <meta name="keywords" content="budżet obywatelski łódź mapa, budżet obywatelski 2025 łódź, bo łódź 2026, mapa projektów łódź, lbo łódź mapa">
+  
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Muzyka miasta - pozytywki w przestrzeni miejskiej – Budżet Obywatelski Łódź">
+  <meta property="og:description" content="W ramach działań na rzecz budowania lokalnej tożsamości kulturowej, edukacji przestrzennej i wzmacniania wizerunku Łodzi jako miasta kreatywnego, prop... Koszt: 14 300 zł. Kategoria: Kultura i dziedzictwo. Osiedle: .">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Muzyka miasta - pozytywki w przestrzeni miejskiej – Budżet Obywatelski Łódź">
+  <meta name="twitter:description" content="W ramach działań na rzecz budowania lokalnej tożsamości kulturowej, edukacji przestrzennej i wzmacniania wizerunku Łodzi jako miasta kreatywnego, prop... Koszt: 14 300 zł. Kategoria: Kultura i dziedzictwo. Osiedle: .">
+  
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.webmanifest">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="/data/projekty.json" as="fetch" crossorigin="anonymous">
+  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  
+  <!-- Tailwind CSS (CDN for now - will be replaced with custom build) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FFFFFF',
+            secondary: '#FAFAFA', 
+            tertiary: '#F7F7F7',
+            hover: '#F2F2F2',
+            'text-primary': '#111111',
+            'text-secondary': '#333333',
+            'text-tertiary': '#6B6B6B',
+          },
+          aspectRatio: {
+            '16/9': '16 / 9',
+            'border-default': '#E6E6E6',
+            'border-hover': '#DADADA',
+            'border-active': '#CFCFCF'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  
+  <!-- Custom styles -->
+  <style>
+    body { font-family: Inter, system-ui, -apple-system, sans-serif; }
+    .shadow-custom { box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+    .shadow-custom-md { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .shadow-custom-lg { box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+    
+    /* Ensure map container has proper dimensions and interactions */
+    #map {
+      position: relative !important;
+      width: 100% !important;
+      height: 100% !important;
+      z-index: 1 !important;
+    }
+    
+    /* Leaflet map fixes for proper mouse interaction */
+    .leaflet-container {
+      cursor: grab;
+    }
+    
+    .leaflet-container:active {
+      cursor: grabbing;
+    }
+    
+    .leaflet-container a {
+      color: inherit;
+    }
+    
+    .leaflet-control-zoom {
+      z-index: 1000 !important;
+    }
+    
+    /* Fix for potential CSS conflicts */
+    .leaflet-container .leaflet-marker-pane img,
+    .leaflet-container .leaflet-zoom-animated {
+      pointer-events: auto;
+    }
+    
+    /* Tailwind CSS reset conflicts fix */
+    .leaflet-container * {
+      box-sizing: content-box;
+    }
+    
+    .leaflet-container .leaflet-control {
+      box-sizing: border-box;
+    }
+    
+    /* Ensure map interactions work properly */
+    .leaflet-container {
+      touch-action: pan-x pan-y;
+    }
+  </style>
+  
+  
+</head>
+<body class="">
+
+<!-- Header -->
+<header class="bg-primary border-b border-border-default">
+  <div class="container mx-auto px-4 py-4">
+    <div class="flex items-center space-x-4">
+      <a href="/lista.html" class="text-text-tertiary hover:text-text-secondary">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+      </a>
+      <div>
+        <h1 class="text-xl font-bold text-text-primary">Projekt L052</h1>
+        <p class="text-text-tertiary">Budżet Obywatelski Łódź 2025–2026</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Project Details -->
+<main class="container mx-auto px-4 py-8">
+  <article class="max-w-4xl mx-auto">
+    <!-- Project Header -->
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold text-text-primary mb-4">Muzyka miasta - pozytywki w przestrzeni miejskiej</h1>
+      
+      <div class="flex flex-wrap gap-4 mb-6">
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          Kultura i dziedzictwo
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          nieznany
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          
+        </div>
+      </div>
+      
+      <div class="text-2xl font-bold text-text-primary mb-4">
+        14 300 zł
+      </div>
+    </div>
+    
+    <!-- Street View Image -->
+    
+    <div class="mb-8">
+      <img 
+        src="/api/streetview?lat=51.7575441427&lng=19.4307320603&size=800x400&heading=0&pitch=0&fov=90"
+        alt="Zdjęcie miejsca (Street View) – Muzyka miasta - pozytywki w przestrzeni miejskiej"
+        class="w-full h-64 md:h-80 object-cover rounded-lg shadow-custom"
+        loading="lazy"
+        onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iI0Y3RjdGNyIvPjx0ZXh0IHg9IjQwMCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic3lzdGVtLXVpIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNkI2QjZCIj5CcmFrIHpkasSZY2lhPC90ZXh0Pjwvc3ZnPg=='"
+      >
+    </div>
+    
+    
+    <!-- Project Description -->
+    <div class="prose max-w-none mb-8">
+      <h2 class="text-xl font-semibold text-text-primary mb-4">Opis projektu</h2>
+      <p class="text-text-secondary leading-relaxed whitespace-pre-wrap">W ramach działań na rzecz budowania lokalnej tożsamości kulturowej, edukacji przestrzennej i wzmacniania wizerunku Łodzi jako miasta kreatywnego, proponujemy realizację projektu - umieszczenie pozytywek ręcznych w przestrzeni miasta. Zakłada on montaż ręcznych pozytywek muzycznych w kluczowych przestrzeniach miasta – punktach historycznych, symbolicznych i turystycznych – które będą przybliżać mieszkańcom i odwiedzającym muzykę związaną z Łodzią lub jej wizerunkiem. Każda pozytywka byłaby trwale zamontowana na latarni lub słupie w wybranym miejscu, wyposażona w mechanizm korbkowy umożliwiający odtworzenie fragmentu utworu przez przechodnia. Towarzyszyć jej będzie estetyczna tabliczka informacyjna, zawierająca: tytuł utworu i nazwisko wykonawcy lub kompozytora, krótką notkę wyjaśniającą związek utworu (lub jego twórcy) z Łodzią, informację edukacyjną o miejscu, przy którym się znajduje.
+
+Celem projektu jest zbudowanie dźwiękowej mapy miasta, w której muzyka – jako nośnik emocji, wspomnień i narracji – stanie się medium opowieści o Łodzi: jej historii, kulturze, przemianach i artystach.
+
+Projekt spełnia kilka kluczowych funkcji:
+Poprzez dźwiękowe zakotwiczenie utworów w przestrzeni publicznej, mieszkańcy mają szansę na nowo odkryć dziedzictwo miasta, utożsamić się z jego historią i poczuć dumę z unikalnej kultury Łodzi.
+Pozytywki stają się nośnikami wiedzy – uczą przez zmysły, aktywizując przechodniów do refleksji nad historią miejsca i biografiami twórców. Idealnie sprawdzają się jako element spacerów miejskich, wycieczek szkolnych czy gier terenowych.
+Projekt oferuje unikalne doświadczenie sensoryczne, przyciągające turystów szukających nieoczywistych form poznawania miasta.  Kreowanie emocjonalnych punktów orientacyjnych.
+Pozytywka działa jak dźwiękowy „pomnik” – krótki fragment muzyczny uruchamia wspomnienia, emocje, wyobraźnię. To subtelny, ale głęboko zapadający w pamięć sposób narracji przestrzeni.
+
+Planowane lokalizacje i repertuar:
+1. Przed Urzędem Miasta Łodzi
+Prząśniczka – Stanisław Moniuszko
+Tradycyjnie uznawana za nieoficjalny hymn Łodzi. Nawiązuje do przeszłości miasta jako centrum włókiennictwa.
+
+2. Przed dworcem Łódź Kaliska
+Theo, wir fahr’n nach Lodz – Vicky Leandros
+Schlager, który wypromował nazwę „Łódź” w Europie Zachodniej. Zabawny i nostalgiczny symbol podróży.
+
+3. Przed dworcem Łódź Fabryczna
+Łódzka – Artur Andrus
+Pełna ciepła i ironii piosenka o mieście paradoksów. Poetycki hołd dla jego osobowości i energii.
+
+4. Na terenie Księżego Młyna
+Deszczowa piosenka – COMA
+Rockowy utwór łódzkiego zespołu, melancholijny i głęboko osadzony w miejskim pejzażu emocjonalnym.
+
+5. Przed Manufakturą
+Ziemia obiecana – Wojciech Kilar
+Monumentalna kompozycja do filmu Andrzeja Wajdy. Symbol przemysłowej potęgi i dramatyzmu dziejów Łodzi.
+
+6. Przy pomniku Artura Rubinsteina
+Koncert fortepianowy e-moll, op. 11 – Fryderyk Chopin
+Utwór, z którym Artur Rubinstein – urodzony w Łodzi – był najsilniej utożsamiany na światowych scenach.
+
+Projekt „Pozytywka z Łodzi” to muzyczna rewitalizacja pamięci i przestrzeni. Łączy kulturę wysoką, popkulturę i folklor miejski, tworząc nową jakość miejskiego krajobrazu dźwiękowego. Jest cichy, dostępny, emocjonalny – i całkowicie łódzki. 
+Przykład pozytywki z miasta Lyon we Francji w załączniku nr 1.</p>
+    </div>
+    
+    <!-- Location Info -->
+    
+    
+    <!-- Actions -->
+    <div class="flex flex-wrap gap-4 mb-8">
+      <a 
+        href="/?id=L052" 
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Pokaż na mapie
+      </a>
+      
+      
+      <a 
+        href="https://www.google.com/maps?q=51.7575441427,19.4307320603" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Otwórz w Google Maps
+      </a>
+      
+      
+      
+      <a 
+        href="https://budzetobywatelski.uml.lodz.pl/szczegoly-projektu-2026-1401956735-1401961459-7ca94500bcd37fbe2b6769f065fa5184" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Zobacz na stronie urzędu
+      </a>
+      
+    </div>
+  </article>
+</main>
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Muzyka miasta - pozytywki w przestrzeni miejskiej",
+  "description": "W ramach działań na rzecz budowania lokalnej tożsamości kulturowej, edukacji przestrzennej i wzmacniania wizerunku Łodzi jako miasta kreatywnego, proponujemy realizację projektu - umieszczenie pozytyw",
+  "identifier": "L052",
+  "areaServed": {
+    "@type": "City",
+    "name": "Łódź",
+    "addressCountry": "PL"
+  },
+  "about": {
+    "@type": "GovernmentProject",
+    "name": "Budżet Obywatelski Łódź 2025-2026",
+    "description": "Projekty budżetu obywatelskiego miasta Łodzi na lata 2025-2026"
+  },
+  "category": "Kultura i dziedzictwo",
+  
+  "location": {
+    "@type": "Place",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.7575441427,
+      "longitude": 19.4307320603
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Łódź",
+      "addressCountry": "PL"
+    }
+  },
+  
+  "url": "https://budzetobywatelski.vercel.app/projekty/L052.html"
+}
+</script>
+
+</body>
+</html>

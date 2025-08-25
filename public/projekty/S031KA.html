@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wielkie Oko dla Przedszkola - czyli monitoring przed przedszkolami. Zobaczyć. Zareagować. Uchronić. Osiedle Katedralna. Kamery będą umiejscowione na terenie miejskim przed Przedszkolami Miejskimi 5, 13, 57, 71, 75, 99, 100, 207, 220. – Budżet Obywatelski Łódź</title>
+  <meta name="description" content="Celem projektu jest montaż kamer monitoringu miejskiego umożliwiających obserwację wejść do przedszkoli publicznych zlokalizowanych na osiedlu Katedra... Koszt: 63 000 zł. Kategoria: Infrastruktura komunalna i bezpieczeństwo. Osiedle: Katedralna.">
+  <meta name="keywords" content="budżet obywatelski łódź mapa, budżet obywatelski 2025 łódź, bo łódź 2026, mapa projektów łódź, lbo łódź mapa">
+  
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Wielkie Oko dla Przedszkola - czyli monitoring przed przedszkolami. Zobaczyć. Zareagować. Uchronić. Osiedle Katedralna. Kamery będą umiejscowione na terenie miejskim przed Przedszkolami Miejskimi 5, 13, 57, 71, 75, 99, 100, 207, 220. – Budżet Obywatelski Łódź">
+  <meta property="og:description" content="Celem projektu jest montaż kamer monitoringu miejskiego umożliwiających obserwację wejść do przedszkoli publicznych zlokalizowanych na osiedlu Katedra... Koszt: 63 000 zł. Kategoria: Infrastruktura komunalna i bezpieczeństwo. Osiedle: Katedralna.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Wielkie Oko dla Przedszkola - czyli monitoring przed przedszkolami. Zobaczyć. Zareagować. Uchronić. Osiedle Katedralna. Kamery będą umiejscowione na terenie miejskim przed Przedszkolami Miejskimi 5, 13, 57, 71, 75, 99, 100, 207, 220. – Budżet Obywatelski Łódź">
+  <meta name="twitter:description" content="Celem projektu jest montaż kamer monitoringu miejskiego umożliwiających obserwację wejść do przedszkoli publicznych zlokalizowanych na osiedlu Katedra... Koszt: 63 000 zł. Kategoria: Infrastruktura komunalna i bezpieczeństwo. Osiedle: Katedralna.">
+  
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.webmanifest">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="/data/projekty.json" as="fetch" crossorigin="anonymous">
+  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  
+  <!-- Tailwind CSS (CDN for now - will be replaced with custom build) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FFFFFF',
+            secondary: '#FAFAFA', 
+            tertiary: '#F7F7F7',
+            hover: '#F2F2F2',
+            'text-primary': '#111111',
+            'text-secondary': '#333333',
+            'text-tertiary': '#6B6B6B',
+          },
+          aspectRatio: {
+            '16/9': '16 / 9',
+            'border-default': '#E6E6E6',
+            'border-hover': '#DADADA',
+            'border-active': '#CFCFCF'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  
+  <!-- Custom styles -->
+  <style>
+    body { font-family: Inter, system-ui, -apple-system, sans-serif; }
+    .shadow-custom { box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+    .shadow-custom-md { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .shadow-custom-lg { box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+    
+    /* Ensure map container has proper dimensions and interactions */
+    #map {
+      position: relative !important;
+      width: 100% !important;
+      height: 100% !important;
+      z-index: 1 !important;
+    }
+    
+    /* Leaflet map fixes for proper mouse interaction */
+    .leaflet-container {
+      cursor: grab;
+    }
+    
+    .leaflet-container:active {
+      cursor: grabbing;
+    }
+    
+    .leaflet-container a {
+      color: inherit;
+    }
+    
+    .leaflet-control-zoom {
+      z-index: 1000 !important;
+    }
+    
+    /* Fix for potential CSS conflicts */
+    .leaflet-container .leaflet-marker-pane img,
+    .leaflet-container .leaflet-zoom-animated {
+      pointer-events: auto;
+    }
+    
+    /* Tailwind CSS reset conflicts fix */
+    .leaflet-container * {
+      box-sizing: content-box;
+    }
+    
+    .leaflet-container .leaflet-control {
+      box-sizing: border-box;
+    }
+    
+    /* Ensure map interactions work properly */
+    .leaflet-container {
+      touch-action: pan-x pan-y;
+    }
+  </style>
+  
+  
+</head>
+<body class="">
+
+<!-- Header -->
+<header class="bg-primary border-b border-border-default">
+  <div class="container mx-auto px-4 py-4">
+    <div class="flex items-center space-x-4">
+      <a href="/lista.html" class="text-text-tertiary hover:text-text-secondary">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+      </a>
+      <div>
+        <h1 class="text-xl font-bold text-text-primary">Projekt S031KA</h1>
+        <p class="text-text-tertiary">Budżet Obywatelski Łódź 2025–2026</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Project Details -->
+<main class="container mx-auto px-4 py-8">
+  <article class="max-w-4xl mx-auto">
+    <!-- Project Header -->
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold text-text-primary mb-4">Wielkie Oko dla Przedszkola - czyli monitoring przed przedszkolami. Zobaczyć. Zareagować. Uchronić. Osiedle Katedralna. Kamery będą umiejscowione na terenie miejskim przed Przedszkolami Miejskimi 5, 13, 57, 71, 75, 99, 100, 207, 220.</h1>
+      
+      <div class="flex flex-wrap gap-4 mb-6">
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          Infrastruktura komunalna i bezpieczeństwo
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          osiedlowe
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          Katedralna
+        </div>
+      </div>
+      
+      <div class="text-2xl font-bold text-text-primary mb-4">
+        63 000 zł
+      </div>
+    </div>
+    
+    <!-- Street View Image -->
+    
+    <div class="mb-8">
+      <img 
+        src="/api/streetview?lat=51.7718969331&lng=19.4558228163&size=800x400&heading=0&pitch=0&fov=90"
+        alt="Zdjęcie miejsca (Street View) – Wielkie Oko dla Przedszkola - czyli monitoring przed przedszkolami. Zobaczyć. Zareagować. Uchronić. Osiedle Katedralna. Kamery będą umiejscowione na terenie miejskim przed Przedszkolami Miejskimi 5, 13, 57, 71, 75, 99, 100, 207, 220."
+        class="w-full h-64 md:h-80 object-cover rounded-lg shadow-custom"
+        loading="lazy"
+        onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iI0Y3RjdGNyIvPjx0ZXh0IHg9IjQwMCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic3lzdGVtLXVpIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNkI2QjZCIj5CcmFrIHpkasSZY2lhPC90ZXh0Pjwvc3ZnPg=='"
+      >
+    </div>
+    
+    
+    <!-- Project Description -->
+    <div class="prose max-w-none mb-8">
+      <h2 class="text-xl font-semibold text-text-primary mb-4">Opis projektu</h2>
+      <p class="text-text-secondary leading-relaxed whitespace-pre-wrap">Celem projektu jest montaż kamer monitoringu miejskiego umożliwiających obserwację wejść do przedszkoli publicznych zlokalizowanych na osiedlu Katedralna w Łodzi. Kamery zostaną zainstalowane na terenie miejskim i wpięte w System Monitoringu Miejskiego (SMM). 
+Projekt ze względu na swoją złożoność, postanowiliśmy podzielić na etapy. 
+W tegorocznej edycji B.O. - w I Etapie - proponujemy umieszczenie kamer w okolicach przedszkoli:
+1.	Przedszkole nr. 13 ul. Włókiennicza 16 id działki 106105_9.0001.429 S1-429. 
+2.	Przedszkole nr. 57 ul. Narutowicza 30 id działki 106105_9.0001.521/1 S1-521/1.
+3.	Przedszkole nr. 71 ul. Rewolucji 1905r. 19 id działki 106105_9.0001.412/1 S1-412/1. 
+4.	Przedszkole nr. 100 ul. Piotrkowska 44 id działki 106105_9.0001.374/3 S1-374/3 
+W następnych Etapach - edycjach B.O. przyjdzie czas na instalację kamer w okolicach przedszkoli:
+1.	Przedszkole nr. 5 ul. Kościuszki 54 id działki 106105_9.0006.221/1 S6-221/1.
+2.	Przedszkole nr. 75 ul. Kościuszki 81 id działki 106105_9.0006.336/1 S6-336/1
+3.	Przedszkole nr. 99 ul. Sienkiewicza 108 id działki 106105_9.0009.89 S9-89.
+4.	Przedszkole nr. 207 ul. Piotrkowska 272 id działki 106103_9.0003.24/1 G3-24/1
+5.	Przedszkole nr. 220 ul. Jaracza 68 id działki 106105_9.0002.149/6 S2-149/6
+
+Jesteśmy przekonani, że realizacja projektu zwiększy bezpieczeństwo dzieci, personelu i rodziców, umożliwiając szybką reakcję służb na potencjalne zagrożenia. 
+Bo czasem wystarczy chwila nieuwagi…
+
+🚨 Dziecko potrącone hulajnogą i sprawca ucieka.
+🚪 Nieznajomy zbyt długo kręci się przy ogrodzeniu lub podejrzana osoba, która cyklicznie tam zagląda. 
+🚗 Porwania rodzicielskie, obserwacje, próby uprowadzenia.
+🌃 A po godzinach – rozbite szkło, hałas, wandale.
+
+To nie scenariusz z filmu – to realne sytuacje, które mogą zdarzyć się wszędzie.
+Ale można temu zapobiec.
+
+Kamery monitorujące wejścia do przedszkoli na osiedlu Katedralna, wpięte do SMM, to:
+✅ natychmiastowa reakcja służb,
+✅ dowód w przypadku zdarzenia
+✅ odstraszacz dla osób z nieczystymi intencjami,
+✅ ... i przede wszystkim – spokój rodziców.
+
+Głosując na „Wielkie Oko dla Przedszkola - czyli monitoring przed przedszkolami.”, dajesz dzieciom więcej niż kamery.
+Dajesz im ochronę.
+A sobie – pewność, że ktoś czuwa.
+
+📍Projekt osiedlowy – Katedralna.
+✍️ Twój głos naprawdę coś zmienia.
+
+Pomysł instalacji kamer przy wejściach do przedszkoli na osiedlu Katedralna nie wziął się znikąd. Zrodził się po moim spotkaniu z dyrektorami tych placówek w dniu 18 marca 2025 roku. Usłyszałem wtedy o realnych zagrożeniach, z jakimi codziennie mierzą się dzieci, rodzice i nauczyciele:
+– przypadki wandalizmu,
+– potrącenia przez hulajnogi,
+– a nawet wypadki komunikacyjne tuż pod przedszkolami.
+
+Co najbardziej niepokojące – przy tych przedszkolach brakuje monitoringu, który mógłby odstraszyć sprawców lub ułatwić reakcję służb.
+
+Dlatego powstał projekt „Wielkie Oko dla Przedszkola” – kamery zostaną zainstalowane na terenie miejskim (nie terenie przedszkola) i wpięte bezpośrednio do systemu monitoringu Straży Miejskiej.
+
+Co ważne – to nie jest monitoring wyłącznie „dla przedszkoli”.
+To narzędzie poprawiające bezpieczeństwo całej okolicy – bo kamery rejestrują też inne zdarzenia na ulicy i chodnikach, pomagają reagować na przestępstwa, wypadki czy akty wandalizmu. 
+
+Proszę o Państwa poparcie dla tego projektu.
+Tomasz Sójka"</p>
+    </div>
+    
+    <!-- Location Info -->
+    
+    
+    <!-- Actions -->
+    <div class="flex flex-wrap gap-4 mb-8">
+      <a 
+        href="/?id=S031KA" 
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Pokaż na mapie
+      </a>
+      
+      
+      <a 
+        href="https://www.google.com/maps?q=51.7718969331,19.4558228163" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Otwórz w Google Maps
+      </a>
+      
+      
+      
+      <a 
+        href="https://budzetobywatelski.uml.lodz.pl/szczegoly-projektu-2026-1401956735-1401963085-29fe984fd6119d8e85f7cfca29911c1e" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Zobacz na stronie urzędu
+      </a>
+      
+    </div>
+  </article>
+</main>
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Wielkie Oko dla Przedszkola - czyli monitoring przed przedszkolami. Zobaczyć. Zareagować. Uchronić. Osiedle Katedralna. Kamery będą umiejscowione na terenie miejskim przed Przedszkolami Miejskimi 5, 13, 57, 71, 75, 99, 100, 207, 220.",
+  "description": "Celem projektu jest montaż kamer monitoringu miejskiego umożliwiających obserwację wejść do przedszkoli publicznych zlokalizowanych na osiedlu Katedralna w Łodzi. Kamery zostaną zainstalowane na teren",
+  "identifier": "S031KA",
+  "areaServed": {
+    "@type": "City",
+    "name": "Łódź",
+    "addressCountry": "PL"
+  },
+  "about": {
+    "@type": "GovernmentProject",
+    "name": "Budżet Obywatelski Łódź 2025-2026",
+    "description": "Projekty budżetu obywatelskiego miasta Łodzi na lata 2025-2026"
+  },
+  "category": "Infrastruktura komunalna i bezpieczeństwo",
+  
+  "location": {
+    "@type": "Place",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.7718969331,
+      "longitude": 19.4558228163
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Łódź",
+      "addressCountry": "PL"
+    }
+  },
+  
+  "url": "https://budzetobywatelski.vercel.app/projekty/S031KA.html"
+}
+</script>
+
+</body>
+</html>

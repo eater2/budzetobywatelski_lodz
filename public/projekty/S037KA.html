@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Czysta Łódź – mycie elewacji i nawierzchni miejskich na osiedlu Katedralna – Budżet Obywatelski Łódź</title>
+  <meta name="description" content="Celem projektu jest poprawa estetyki przestrzeni miejskiej poprzez profesjonalne mycie elewacji budynków oraz nawierzchni chodników i placów za pomocą... Koszt: 1 050 000 zł. Kategoria: Inne. Osiedle: Katedralna.">
+  <meta name="keywords" content="budżet obywatelski łódź mapa, budżet obywatelski 2025 łódź, bo łódź 2026, mapa projektów łódź, lbo łódź mapa">
+  
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Czysta Łódź – mycie elewacji i nawierzchni miejskich na osiedlu Katedralna – Budżet Obywatelski Łódź">
+  <meta property="og:description" content="Celem projektu jest poprawa estetyki przestrzeni miejskiej poprzez profesjonalne mycie elewacji budynków oraz nawierzchni chodników i placów za pomocą... Koszt: 1 050 000 zł. Kategoria: Inne. Osiedle: Katedralna.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Czysta Łódź – mycie elewacji i nawierzchni miejskich na osiedlu Katedralna – Budżet Obywatelski Łódź">
+  <meta name="twitter:description" content="Celem projektu jest poprawa estetyki przestrzeni miejskiej poprzez profesjonalne mycie elewacji budynków oraz nawierzchni chodników i placów za pomocą... Koszt: 1 050 000 zł. Kategoria: Inne. Osiedle: Katedralna.">
+  
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.webmanifest">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="/data/projekty.json" as="fetch" crossorigin="anonymous">
+  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  
+  <!-- Tailwind CSS (CDN for now - will be replaced with custom build) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FFFFFF',
+            secondary: '#FAFAFA', 
+            tertiary: '#F7F7F7',
+            hover: '#F2F2F2',
+            'text-primary': '#111111',
+            'text-secondary': '#333333',
+            'text-tertiary': '#6B6B6B',
+          },
+          aspectRatio: {
+            '16/9': '16 / 9',
+            'border-default': '#E6E6E6',
+            'border-hover': '#DADADA',
+            'border-active': '#CFCFCF'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  
+  <!-- Custom styles -->
+  <style>
+    body { font-family: Inter, system-ui, -apple-system, sans-serif; }
+    .shadow-custom { box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+    .shadow-custom-md { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .shadow-custom-lg { box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+    
+    /* Ensure map container has proper dimensions and interactions */
+    #map {
+      position: relative !important;
+      width: 100% !important;
+      height: 100% !important;
+      z-index: 1 !important;
+    }
+    
+    /* Leaflet map fixes for proper mouse interaction */
+    .leaflet-container {
+      cursor: grab;
+    }
+    
+    .leaflet-container:active {
+      cursor: grabbing;
+    }
+    
+    .leaflet-container a {
+      color: inherit;
+    }
+    
+    .leaflet-control-zoom {
+      z-index: 1000 !important;
+    }
+    
+    /* Fix for potential CSS conflicts */
+    .leaflet-container .leaflet-marker-pane img,
+    .leaflet-container .leaflet-zoom-animated {
+      pointer-events: auto;
+    }
+    
+    /* Tailwind CSS reset conflicts fix */
+    .leaflet-container * {
+      box-sizing: content-box;
+    }
+    
+    .leaflet-container .leaflet-control {
+      box-sizing: border-box;
+    }
+    
+    /* Ensure map interactions work properly */
+    .leaflet-container {
+      touch-action: pan-x pan-y;
+    }
+  </style>
+  
+  
+</head>
+<body class="">
+
+<!-- Header -->
+<header class="bg-primary border-b border-border-default">
+  <div class="container mx-auto px-4 py-4">
+    <div class="flex items-center space-x-4">
+      <a href="/lista.html" class="text-text-tertiary hover:text-text-secondary">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+      </a>
+      <div>
+        <h1 class="text-xl font-bold text-text-primary">Projekt S037KA</h1>
+        <p class="text-text-tertiary">Budżet Obywatelski Łódź 2025–2026</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Project Details -->
+<main class="container mx-auto px-4 py-8">
+  <article class="max-w-4xl mx-auto">
+    <!-- Project Header -->
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold text-text-primary mb-4">Czysta Łódź – mycie elewacji i nawierzchni miejskich na osiedlu Katedralna</h1>
+      
+      <div class="flex flex-wrap gap-4 mb-6">
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          Inne
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          osiedlowe
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          Katedralna
+        </div>
+      </div>
+      
+      <div class="text-2xl font-bold text-text-primary mb-4">
+        1 050 000 zł
+      </div>
+    </div>
+    
+    <!-- Street View Image -->
+    
+    <div class="mb-8">
+      <img 
+        src="/api/streetview?lat=51.7662651195&lng=19.4672521477&size=800x400&heading=0&pitch=0&fov=90"
+        alt="Zdjęcie miejsca (Street View) – Czysta Łódź – mycie elewacji i nawierzchni miejskich na osiedlu Katedralna"
+        class="w-full h-64 md:h-80 object-cover rounded-lg shadow-custom"
+        loading="lazy"
+        onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iI0Y3RjdGNyIvPjx0ZXh0IHg9IjQwMCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic3lzdGVtLXVpIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNkI2QjZCIj5CcmFrIHpkasSZY2lhPC90ZXh0Pjwvc3ZnPg=='"
+      >
+    </div>
+    
+    
+    <!-- Project Description -->
+    <div class="prose max-w-none mb-8">
+      <h2 class="text-xl font-semibold text-text-primary mb-4">Opis projektu</h2>
+      <p class="text-text-secondary leading-relaxed whitespace-pre-wrap">Celem projektu jest poprawa estetyki przestrzeni miejskiej poprzez profesjonalne mycie elewacji budynków oraz nawierzchni chodników i placów za pomocą myjek ciśnieniowych. Skutecznie usuwają one zabrudzenia atmosferyczne i inne osady bez konieczności stosowania agresywnych środków chemicznych.
+
+Projekt zakłada przeznaczenie 90 000 zł na oczyszczanie frontowych elewacji najbardziej zabrudzonych kamienic, famuł oraz innych budynków miejskich. Wiele z nich mogło nie być myte od momenty budowy, a więc czasem nawet od około 100 lat. Projektem mogą zostać objęte zarówno elewacje zmywalne, gipsowe, jak i klinkierowe, z cegły lub piaskowca. Dodatkowo prace mogą objąć czyszczenie kostki brukowej i innych powierzchni publicznych na terenach należących do miasta Łodzi.
+
+Uzasadnienie projektu:
+✅ Poprawa estetyki miasta – czyste elewacje zwiększą atrakcyjność przestrzeni miejskiej i wpłyną na pozytywny odbiór otoczenia przez mieszkańców oraz turystów. ✅ Wpływ na komfort życia mieszkańców – zadbane budynki poprawią jakość przestrzeni publicznej i podniosą walory architektoniczne miasta. ✅ Korzyści turystyczne – estetyczna przestrzeń przyciąga więcej odwiedzających, co może pozytywnie wpłynąć na lokalne przedsiębiorstwa i ożywić miasto. ✅ Ekologiczne podejście – metoda mycia oparta na wodzie pod ciśnieniem pozwala ograniczyć użycie środków chemicznych, co wpisuje się w strategię ochrony środowiska. ✅ Jest to ekonomiczny sposób na poprawę estetyki przestrzeni publicznych w przypadku braku konieczności lub braku środków na pełną rewitalizację czy kapitalny remont obiektów. ✅ Poprawa stanu wizualnego budynków miejskich wpłynie również korzystnie na ich wartość oraz na potencjalną możliwość podniesienia z tego tytułu opłat płaconych miastu za wynajem. Może również wzrosnąć wartość mieszkań oraz działek położonych obok.
+
+Projekt wpisuje się w działania na rzecz poprawy jakości życia mieszkańców oraz dbałości o dziedzictwo kulturowe Łodzi. Regularne czyszczenie przestrzeni publicznych jest standardem w wielu europejskich miastach i przynosi wymierne korzyści zarówno estetyczne, jak i ekonomiczne. Efekty realizacji projektu będą widoczne i dostępne dla wszystkich mieszkańców Łodzi, ponieważ dotyczą publicznych budynków oraz przestrzeni miejskich.
+
+Elementy składowe projektu wraz z szacunkowymi kosztami
+1️⃣ Mycie elewacji budynków miejskich
+Koszt mycia 1 m²: 15-18 zł
+Budżet przeznaczony na elewacje: 70 000 zł
+Zakładana powierzchnia do umycia: 3 900 – 4 600 m²
+Liczba budynków (przy średniej powierzchni frontu 300-500 m²): 8-12 budynków
+
+2️⃣ Czyszczenie kostki brukowej, chodników i przestrzeni publicznych
+Koszt czyszczenia 1 m²: 10-12 zł
+Budżet przeznaczony na kostkę brukową: 10 000 zł
+Zakładana powierzchnia do czyszczenia: 800 – 1 000 m²
+
+REALIZACJA PROJEKTU
+W ramach projektu przewiduje się przeprowadzenie działań polegających na oczyszczeniu elewacji, fasad budynków oraz nawierzchni chodników w miejscach o wysokiej wartości estetycznej i użytkowej w przestrzeni miejskiej.
+
+Zakres prac będzie ustalany w oparciu o takie kryteria, jak:
+-poziom zabrudzenia,
+-estetyczne znaczenie danej lokalizacji dla przestrzeni publicznej,
+-stan techniczny umożliwiający bezpieczne czyszczenie,
+-widoczność elewacji z poziomu drogi publicznej (np. do 20 m od ulicy).
+
+Mieszkańcy będą mogli wskazywać miejsca wymagające oczyszczenia w ramach form konsultacji społecznych. Zgłoszenia zostaną uwzględnione przy określaniu lokalizacji objętych projektem, z zastrzeżeniem ich zgodności z zakresem działań i możliwościami realizacyjnymi.
+
+W zależności od powodzenia, projekt można rozwijać w kolejnych latach, zarówno w ramach BO, jak i wydatków budżetowych Rady Miasta. Projekt może również przybrać formę dopłat częściowych do mycia elewacji (zarówno dla właścicieli prywatnych, jak i publicznych) zachęcających do aktywizacji społeczeństwa w tym zakresie i multiplikujących możliwy do osiągnięcia efekt.</p>
+    </div>
+    
+    <!-- Location Info -->
+    
+    
+    <!-- Actions -->
+    <div class="flex flex-wrap gap-4 mb-8">
+      <a 
+        href="/?id=S037KA" 
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Pokaż na mapie
+      </a>
+      
+      
+      <a 
+        href="https://www.google.com/maps?q=51.7662651195,19.4672521477" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Otwórz w Google Maps
+      </a>
+      
+      
+      
+      <a 
+        href="https://budzetobywatelski.uml.lodz.pl/szczegoly-projektu-2026-1401956735-1401964615-d20faa8efc9fe5d0f2c48a894277662a" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Zobacz na stronie urzędu
+      </a>
+      
+    </div>
+  </article>
+</main>
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Czysta Łódź – mycie elewacji i nawierzchni miejskich na osiedlu Katedralna",
+  "description": "Celem projektu jest poprawa estetyki przestrzeni miejskiej poprzez profesjonalne mycie elewacji budynków oraz nawierzchni chodników i placów za pomocą myjek ciśnieniowych. Skutecznie usuwają one zabru",
+  "identifier": "S037KA",
+  "areaServed": {
+    "@type": "City",
+    "name": "Łódź",
+    "addressCountry": "PL"
+  },
+  "about": {
+    "@type": "GovernmentProject",
+    "name": "Budżet Obywatelski Łódź 2025-2026",
+    "description": "Projekty budżetu obywatelskiego miasta Łodzi na lata 2025-2026"
+  },
+  "category": "Inne",
+  
+  "location": {
+    "@type": "Place",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.7662651195,
+      "longitude": 19.4672521477
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Łódź",
+      "addressCountry": "PL"
+    }
+  },
+  
+  "url": "https://budzetobywatelski.vercel.app/projekty/S037KA.html"
+}
+</script>
+
+</body>
+</html>

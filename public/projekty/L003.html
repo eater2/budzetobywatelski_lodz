@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pozytywny Wyjazd z Retkini – Tablica Dobrej Myśli dla kierowców i pieszych – Budżet Obywatelski Łódź</title>
+  <meta name="description" content="Projekt zakłada stworzenie estetycznej i trwałej tablicy z codziennie zmieniającym się pozytywnym przekazem – inspirującą myślą, cytatem lub życzliwym... Koszt: 75 000 zł. Kategoria: Infrastruktura drogowa i komunikacja. Osiedle: Karolew-Retkinia Wschód.">
+  <meta name="keywords" content="budżet obywatelski łódź mapa, budżet obywatelski 2025 łódź, bo łódź 2026, mapa projektów łódź, lbo łódź mapa">
+  
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Pozytywny Wyjazd z Retkini – Tablica Dobrej Myśli dla kierowców i pieszych – Budżet Obywatelski Łódź">
+  <meta property="og:description" content="Projekt zakłada stworzenie estetycznej i trwałej tablicy z codziennie zmieniającym się pozytywnym przekazem – inspirującą myślą, cytatem lub życzliwym... Koszt: 75 000 zł. Kategoria: Infrastruktura drogowa i komunikacja. Osiedle: Karolew-Retkinia Wschód.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Pozytywny Wyjazd z Retkini – Tablica Dobrej Myśli dla kierowców i pieszych – Budżet Obywatelski Łódź">
+  <meta name="twitter:description" content="Projekt zakłada stworzenie estetycznej i trwałej tablicy z codziennie zmieniającym się pozytywnym przekazem – inspirującą myślą, cytatem lub życzliwym... Koszt: 75 000 zł. Kategoria: Infrastruktura drogowa i komunikacja. Osiedle: Karolew-Retkinia Wschód.">
+  
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.webmanifest">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="/data/projekty.json" as="fetch" crossorigin="anonymous">
+  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  
+  <!-- Tailwind CSS (CDN for now - will be replaced with custom build) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FFFFFF',
+            secondary: '#FAFAFA', 
+            tertiary: '#F7F7F7',
+            hover: '#F2F2F2',
+            'text-primary': '#111111',
+            'text-secondary': '#333333',
+            'text-tertiary': '#6B6B6B',
+          },
+          aspectRatio: {
+            '16/9': '16 / 9',
+            'border-default': '#E6E6E6',
+            'border-hover': '#DADADA',
+            'border-active': '#CFCFCF'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  
+  <!-- Custom styles -->
+  <style>
+    body { font-family: Inter, system-ui, -apple-system, sans-serif; }
+    .shadow-custom { box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+    .shadow-custom-md { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .shadow-custom-lg { box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+    
+    /* Ensure map container has proper dimensions and interactions */
+    #map {
+      position: relative !important;
+      width: 100% !important;
+      height: 100% !important;
+      z-index: 1 !important;
+    }
+    
+    /* Leaflet map fixes for proper mouse interaction */
+    .leaflet-container {
+      cursor: grab;
+    }
+    
+    .leaflet-container:active {
+      cursor: grabbing;
+    }
+    
+    .leaflet-container a {
+      color: inherit;
+    }
+    
+    .leaflet-control-zoom {
+      z-index: 1000 !important;
+    }
+    
+    /* Fix for potential CSS conflicts */
+    .leaflet-container .leaflet-marker-pane img,
+    .leaflet-container .leaflet-zoom-animated {
+      pointer-events: auto;
+    }
+    
+    /* Tailwind CSS reset conflicts fix */
+    .leaflet-container * {
+      box-sizing: content-box;
+    }
+    
+    .leaflet-container .leaflet-control {
+      box-sizing: border-box;
+    }
+    
+    /* Ensure map interactions work properly */
+    .leaflet-container {
+      touch-action: pan-x pan-y;
+    }
+  </style>
+  
+  
+</head>
+<body class="">
+
+<!-- Header -->
+<header class="bg-primary border-b border-border-default">
+  <div class="container mx-auto px-4 py-4">
+    <div class="flex items-center space-x-4">
+      <a href="/lista.html" class="text-text-tertiary hover:text-text-secondary">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+      </a>
+      <div>
+        <h1 class="text-xl font-bold text-text-primary">Projekt L003</h1>
+        <p class="text-text-tertiary">Budżet Obywatelski Łódź 2025–2026</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Project Details -->
+<main class="container mx-auto px-4 py-8">
+  <article class="max-w-4xl mx-auto">
+    <!-- Project Header -->
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold text-text-primary mb-4">Pozytywny Wyjazd z Retkini – Tablica Dobrej Myśli dla kierowców i pieszych</h1>
+      
+      <div class="flex flex-wrap gap-4 mb-6">
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          Infrastruktura drogowa i komunikacja
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          nieznany
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          Karolew-Retkinia Wschód
+        </div>
+      </div>
+      
+      <div class="text-2xl font-bold text-text-primary mb-4">
+        75 000 zł
+      </div>
+    </div>
+    
+    <!-- Street View Image -->
+    
+    <div class="mb-8">
+      <img 
+        src="/api/streetview?lat=51.7555119793&lng=19.4302322315&size=800x400&heading=0&pitch=0&fov=90"
+        alt="Zdjęcie miejsca (Street View) – Pozytywny Wyjazd z Retkini – Tablica Dobrej Myśli dla kierowców i pieszych"
+        class="w-full h-64 md:h-80 object-cover rounded-lg shadow-custom"
+        loading="lazy"
+        onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iI0Y3RjdGNyIvPjx0ZXh0IHg9IjQwMCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic3lzdGVtLXVpIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNkI2QjZCIj5CcmFrIHpkasSZY2lhPC90ZXh0Pjwvc3ZnPg=='"
+      >
+    </div>
+    
+    
+    <!-- Project Description -->
+    <div class="prose max-w-none mb-8">
+      <h2 class="text-xl font-semibold text-text-primary mb-4">Opis projektu</h2>
+      <p class="text-text-secondary leading-relaxed whitespace-pre-wrap">Projekt zakłada stworzenie estetycznej i trwałej tablicy z codziennie zmieniającym się pozytywnym przekazem – inspirującą myślą, cytatem lub życzliwym hasłem – skierowaną do kierowców i pieszych wyjeżdżających z Retkini w kierunku centrum Łodzi. Projekt zakłada możliwość  zgłaszania Myśli Dnia przez mieszkańców.
+Tablica Dobrej Myśli będzie:
+pełnić funkcję społeczno-edukacyjną,
+poprawiać nastroje w przestrzeni publicznej,
+promować życzliwość i kulturę drogową.
+
+Forma tablicy może być elektroniczna (LED z możliwością zdalnej zmiany treści)  w zależności od możliwości budżetowych i uzgodnień technicznych.
+
+ Uzasadnienie:
+Wyjazd z Retkini w okolice dworca Łódź Kaliska to jedno z bardziej zatłoczonych i stresujących miejsc w mieście.
+
+W przestrzeni miejskiej brakuje pozytywnych, życzliwych komunikatów – ten projekt odpowiada na potrzebę codziennej „dawki dobra”.
+To inicjatywa łącząca mieszkańców różnych dzielnic – Retkini, Karolewa, Śródmieścia i okolic.
+
+Projekt promuje kulturę życzliwości, poprawia estetykę miejską, a także wspiera psychiczne dobro mieszkańców, którzy codziennie korzystają z tej trasy.
+
+👥 Grupa docelowa:
+1. kierowcy i pasażerowie wyjeżdżający z Retkini
+2. piesi korzystający z okolicznych przystanków i skrzyżowań
+3. mieszkańcy Karolewa, Polesia, Śródmieścia i innych części Łodzi podróżujący w tym rejonie
+4. osoby oczekujące w korkach i na światłach – codziennie tysiące ludzi</p>
+    </div>
+    
+    <!-- Location Info -->
+    
+    
+    <!-- Actions -->
+    <div class="flex flex-wrap gap-4 mb-8">
+      <a 
+        href="/?id=L003" 
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Pokaż na mapie
+      </a>
+      
+      
+      <a 
+        href="https://www.google.com/maps?q=51.7555119793,19.4302322315" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Otwórz w Google Maps
+      </a>
+      
+      
+      
+      <a 
+        href="https://budzetobywatelski.uml.lodz.pl/szczegoly-projektu-2026-1401956735-1401956975-12a3382969f6768850153e71282b6f7e" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Zobacz na stronie urzędu
+      </a>
+      
+    </div>
+  </article>
+</main>
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Pozytywny Wyjazd z Retkini – Tablica Dobrej Myśli dla kierowców i pieszych",
+  "description": "Projekt zakłada stworzenie estetycznej i trwałej tablicy z codziennie zmieniającym się pozytywnym przekazem – inspirującą myślą, cytatem lub życzliwym hasłem – skierowaną do kierowców i pieszych wyjeż",
+  "identifier": "L003",
+  "areaServed": {
+    "@type": "City",
+    "name": "Łódź",
+    "addressCountry": "PL"
+  },
+  "about": {
+    "@type": "GovernmentProject",
+    "name": "Budżet Obywatelski Łódź 2025-2026",
+    "description": "Projekty budżetu obywatelskiego miasta Łodzi na lata 2025-2026"
+  },
+  "category": "Infrastruktura drogowa i komunikacja",
+  
+  "location": {
+    "@type": "Place",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.7555119793,
+      "longitude": 19.4302322315
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Łódź",
+      "addressCountry": "PL"
+    }
+  },
+  
+  "url": "https://budzetobywatelski.vercel.app/projekty/L003.html"
+}
+</script>
+
+</body>
+</html>

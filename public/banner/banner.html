@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projekt L068 - Młynek piłkarski zakątek</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Inter, system-ui, -apple-system, sans-serif;
+      background: #FFFFFF;
+      color: #333;
+      font-size: 12px;
+      line-height: 1.4;
+    }
+    .project-banner {
+      background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+      border: 1px solid #d1fae5;
+      border-radius: 8px;
+      padding: 12px;
+      height: 96px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .project-info {
+      flex: 1;
+      min-width: 0;
+    }
+    .project-badges {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 4px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: 500;
+    }
+    .badge-id {
+      background: #16a34a;
+      color: white;
+    }
+    .badge-category {
+      background: #dbeafe;
+      color: #1e40af;
+    }
+    .project-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #111;
+      margin: 0 0 4px 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .project-details {
+      display: flex;
+      gap: 12px;
+      font-size: 10px;
+      color: #6b7280;
+    }
+    .detail-item {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+    .project-action {
+      flex-shrink: 0;
+      margin-left: 12px;
+    }
+    .action-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: #111;
+      color: white;
+      text-decoration: none;
+      padding: 6px 10px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 500;
+      transition: background-color 0.2s;
+    }
+    .action-btn:hover {
+      background: #374151;
+    }
+    .action-btn svg {
+      width: 12px;
+      height: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="project-banner">
+    <div class="project-info">
+      <div class="project-badges">
+        <span class="badge badge-id">L068</span>
+        <span class="badge badge-category">Sport i rekreacja</span>
+      </div>
+      <h3 class="project-title">Młynek - piłkarski zakątek</h3>
+      <div class="project-details">
+        <div class="detail-item">
+          <span>📍</span>
+          <span>Chojny-Dąbrowa</span>
+        </div>
+        <div class="detail-item">
+          <span>💰</span>
+          <span>246 000 zł</span>
+        </div>
+      </div>
+    </div>
+    <div class="project-action">
+      <a href="/projekty/L068.html" target="_parent" class="action-btn">
+        Szczegóły
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // Track banner interactions
+    document.querySelector('.action-btn').addEventListener('click', function(e) {
+      console.log('Banner clicked: Project L068 - Młynek piłkarski zakątek');
+      
+      // Optional: Send analytics if needed
+      if (window.parent && window.parent.gtag) {
+        window.parent.gtag('event', 'banner_click', {
+          'project_id': 'L068',
+          'project_name': 'Młynek - piłkarski zakątek'
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budżet Obywatelski Łódź – mapa projektów 2025/2026</title>
+  <meta name="description" content="Interaktywna mapa projektów budżetu obywatelskiego Łodzi 2025/2026. Zobacz lokalizacje wszystkich projektów na mapie, filtruj po kategoriach i osiedlach.">
+  <meta name="keywords" content="budżet obywatelski łódź mapa, budżet obywatelski 2025 łódź, bo łódź 2026, mapa projektów łódź, lbo łódź mapa">
+  
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Budżet Obywatelski Łódź – mapa projektów 2025/2026">
+  <meta property="og:description" content="Interaktywna mapa projektów budżetu obywatelskiego Łodzi 2025/2026. Zobacz lokalizacje wszystkich projektów na mapie, filtruj po kategoriach i osiedlach.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Budżet Obywatelski Łódź – mapa projektów 2025/2026">
+  <meta name="twitter:description" content="Interaktywna mapa projektów budżetu obywatelskiego Łodzi 2025/2026. Zobacz lokalizacje wszystkich projektów na mapie, filtruj po kategoriach i osiedlach.">
+  
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.webmanifest">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="/data/projekty.json" as="fetch" crossorigin="anonymous">
+  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  
+  <!-- Tailwind CSS (CDN for now - will be replaced with custom build) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FFFFFF',
+            secondary: '#FAFAFA', 
+            tertiary: '#F7F7F7',
+            hover: '#F2F2F2',
+            'text-primary': '#111111',
+            'text-secondary': '#333333',
+            'text-tertiary': '#6B6B6B',
+            'border-default': '#E6E6E6',
+            'border-hover': '#DADADA',
+            'border-active': '#CFCFCF'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  
+  <!-- Custom styles -->
+  <style>
+    body { font-family: Inter, system-ui, -apple-system, sans-serif; }
+    .shadow-custom { box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+    .shadow-custom-md { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .shadow-custom-lg { box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+    
+    /* Ensure map container has proper dimensions and interactions */
+    #map {
+      position: relative !important;
+      width: 100% !important;
+      height: 100% !important;
+      z-index: 1 !important;
+    }
+    
+    /* Leaflet map fixes for proper mouse interaction */
+    .leaflet-container {
+      cursor: grab;
+    }
+    
+    .leaflet-container:active {
+      cursor: grabbing;
+    }
+    
+    .leaflet-container a {
+      color: inherit;
+    }
+    
+    .leaflet-control-zoom {
+      z-index: 1000 !important;
+    }
+    
+    /* Fix for potential CSS conflicts */
+    .leaflet-container .leaflet-marker-pane img,
+    .leaflet-container .leaflet-zoom-animated {
+      pointer-events: auto;
+    }
+    
+    /* Tailwind CSS reset conflicts fix */
+    .leaflet-container * {
+      box-sizing: content-box;
+    }
+    
+    .leaflet-container .leaflet-control {
+      box-sizing: border-box;
+    }
+    
+    /* Ensure map interactions work properly */
+    .leaflet-container {
+      touch-action: pan-x pan-y;
+    }
+  </style>
+  
+</head>
+<body class="bg-secondary">
+
+<!-- Header -->
+<header class="bg-primary border-b border-border-default">
+  <div class="container mx-auto px-4 py-4">
+    <div class="flex items-center justify-between">
+      <div>
+        <h1 class="text-2xl font-bold text-text-primary">Budżet Obywatelski Łódź</h1>
+        <p class="text-text-tertiary">2025–2026 • 968 projektów • Mapa</p>
+      </div>
+      <a href="/lista.html" class="px-4 py-2 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors">
+        Zobacz listę
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- Main Layout -->
+<div class="flex flex-col" style="height: calc(100vh - 80px);">
+  <!-- Map Container - 50% on desktop, 75% on mobile -->
+  <div class="relative h-1/2 md:h-1/2" style="height: 75vh; --tw-translate-y: 0;">
+    <div id="map" class="w-full h-full"></div>
+    
+    <!-- Map Loading -->
+    <div id="mapLoading" class="absolute inset-0 bg-primary bg-opacity-90 flex items-center justify-center">
+      <div class="text-center">
+        <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-text-tertiary mb-4"></div>
+        <p class="text-text-secondary">Ładowanie mapy...</p>
+      </div>
+    </div>
+    
+    <!-- Collapsible Filter Panel -->
+    <div id="filter-panel" class="absolute top-4 left-4 bg-white rounded-lg shadow-lg border border-gray-200 z-10 w-80 md:w-96 transition-transform duration-300 transform -translate-y-full md:translate-y-0">
+      <!-- Panel Header -->
+      <div class="flex items-center justify-between p-4 border-b border-gray-200 cursor-pointer" id="filter-toggle">
+        <div class="flex items-center space-x-2">
+          <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707v4.172a1 1 0 01-.596.904L12 20.9l-1.404-.702A1 1 0 0110 19.282V14.828a1 1 0 00-.293-.707L3.293 7.707A1 1 0 013 7V4z"/>
+          </svg>
+          <h3 class="font-semibold text-gray-900">Filtry</h3>
+        </div>
+        <svg id="filter-chevron" class="w-5 h-5 text-gray-400 transform rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </div>
+      
+      <!-- Panel Content -->
+      <div id="filter-content" class="p-4 space-y-4 hidden">
+        <!-- Search Bar -->
+        <div class="relative">
+          <input 
+            id="search-input"
+            type="search" 
+            placeholder="Wyszukaj projekt..." 
+            class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+          >
+          <svg class="absolute left-3 top-2.5 h-4 w-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 21-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>
+        </div>
+        
+        <!-- Category Filter -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Kategoria</label>
+          <select id="category-filter" class="w-full p-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <option value="">Wszystkie kategorie</option>
+          </select>
+        </div>
+        
+        <!-- District Filter -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Osiedle</label>
+          <select id="district-filter" class="w-full p-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <option value="">Wszystkie osiedla</option>
+            <option value="ponadosiedlowe">PONADOSIEDLOWE</option>
+          </select>
+        </div>
+        
+        <!-- View Toggle -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Widok</label>
+          <div class="flex rounded-lg border border-gray-300 overflow-hidden">
+            <button id="map-view-btn" class="flex-1 px-3 py-2 text-sm bg-gray-900 text-white">
+              Mapa
+            </button>
+            <button id="list-view-btn" class="flex-1 px-3 py-2 text-sm bg-white text-gray-700 hover:bg-gray-50 border-l border-gray-300">
+              Lista
+            </button>
+          </div>
+        </div>
+        
+        <!-- Clear Button -->
+        <button id="clear-filters" class="w-full px-3 py-2 text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg border border-gray-300">
+          Wyczyść filtry
+        </button>
+        
+        <!-- Results Count -->
+        <div class="text-center text-sm text-gray-500">
+          <span id="results-count">968</span> projektów
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Project List Panel - 50% on desktop, 25% on mobile -->
+  <div class="bg-white border-t border-gray-200 flex-1 overflow-hidden" style="min-height: 25vh;">
+    <div class="h-full overflow-y-auto p-4">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="font-semibold text-gray-900 text-sm">Projekty na mapie</h3>
+      </div>
+      
+      <!-- Project cards will be inserted here by JavaScript -->
+      <div id="project-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <div class="text-center text-gray-500 py-8 col-span-full">
+          <p class="text-sm">Ładowanie projektów...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Banner -->
+<div class="fixed bottom-4 right-4 z-50">
+  <iframe 
+    src="/banner/banner.html" 
+    class="w-80 h-24 border-0 rounded-lg shadow-custom-lg"
+    style="max-width: calc(100vw - 2rem);"
+    loading="lazy">
+  </iframe>
+</div>
+
+<!-- Map Page JavaScript -->
+<script type="module" src="/src/map.js"></script>
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Budżet Obywatelski Łódź – mapa projektów 2025/2026",
+  "description": "Interaktywna mapa projektów budżetu obywatelskiego Łodzi 2025/2026. Zobacz lokalizacje wszystkich projektów na mapie, filtruj po kategoriach i osiedlach.",
+  "url": "https://budzetobywatelski.uml.lodz.pl",
+  "inLanguage": "pl-PL",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Urząd Miasta Łodzi"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://budzetobywatelski.uml.lodz.pl/?search={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "about": {
+    "@type": "GovernmentProject",
+    "name": "Budżet Obywatelski Łódź 2025-2026",
+    "description": "Projekty budżetu obywatelskiego miasta Łodzi na lata 2025-2026"
+  }
+}
+</script>
+
+</body>
+</html>

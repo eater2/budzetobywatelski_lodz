@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Streetworkout ćwiczenia dla seniorów i dorosłych na Lumumby przy Wydziale Romanistyki UŁ. Zajęcia gimnastyczne i rehabilitacyjne/fizjoterapeutyczne z wykorzystaniem wagi własnego ciała #Sport #Rekreacja #Rozciąganie #Rehabilitacja #Zdrowy kręgosłup – Budżet Obywatelski Łódź</title>
+  <meta name="description" content="Wynajem trenera lub trenerów – osób mających doświadczenie w kalistenice/gimnastyce/streetworkoucie/rehabilitacji które  poprowadzą zajęcia dla dorosł... Koszt: 13 500 zł. Kategoria: Sport i rekreacja. Osiedle: Śródmieście-Wschód.">
+  <meta name="keywords" content="budżet obywatelski łódź mapa, budżet obywatelski 2025 łódź, bo łódź 2026, mapa projektów łódź, lbo łódź mapa">
+  
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Streetworkout ćwiczenia dla seniorów i dorosłych na Lumumby przy Wydziale Romanistyki UŁ. Zajęcia gimnastyczne i rehabilitacyjne/fizjoterapeutyczne z wykorzystaniem wagi własnego ciała #Sport #Rekreacja #Rozciąganie #Rehabilitacja #Zdrowy kręgosłup – Budżet Obywatelski Łódź">
+  <meta property="og:description" content="Wynajem trenera lub trenerów – osób mających doświadczenie w kalistenice/gimnastyce/streetworkoucie/rehabilitacji które  poprowadzą zajęcia dla dorosł... Koszt: 13 500 zł. Kategoria: Sport i rekreacja. Osiedle: Śródmieście-Wschód.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Streetworkout ćwiczenia dla seniorów i dorosłych na Lumumby przy Wydziale Romanistyki UŁ. Zajęcia gimnastyczne i rehabilitacyjne/fizjoterapeutyczne z wykorzystaniem wagi własnego ciała #Sport #Rekreacja #Rozciąganie #Rehabilitacja #Zdrowy kręgosłup – Budżet Obywatelski Łódź">
+  <meta name="twitter:description" content="Wynajem trenera lub trenerów – osób mających doświadczenie w kalistenice/gimnastyce/streetworkoucie/rehabilitacji które  poprowadzą zajęcia dla dorosł... Koszt: 13 500 zł. Kategoria: Sport i rekreacja. Osiedle: Śródmieście-Wschód.">
+  
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.webmanifest">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="/data/projekty.json" as="fetch" crossorigin="anonymous">
+  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  
+  <!-- Tailwind CSS (CDN for now - will be replaced with custom build) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FFFFFF',
+            secondary: '#FAFAFA', 
+            tertiary: '#F7F7F7',
+            hover: '#F2F2F2',
+            'text-primary': '#111111',
+            'text-secondary': '#333333',
+            'text-tertiary': '#6B6B6B',
+          },
+          aspectRatio: {
+            '16/9': '16 / 9',
+            'border-default': '#E6E6E6',
+            'border-hover': '#DADADA',
+            'border-active': '#CFCFCF'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  
+  <!-- Custom styles -->
+  <style>
+    body { font-family: Inter, system-ui, -apple-system, sans-serif; }
+    .shadow-custom { box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+    .shadow-custom-md { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .shadow-custom-lg { box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+    
+    /* Ensure map container has proper dimensions and interactions */
+    #map {
+      position: relative !important;
+      width: 100% !important;
+      height: 100% !important;
+      z-index: 1 !important;
+    }
+    
+    /* Leaflet map fixes for proper mouse interaction */
+    .leaflet-container {
+      cursor: grab;
+    }
+    
+    .leaflet-container:active {
+      cursor: grabbing;
+    }
+    
+    .leaflet-container a {
+      color: inherit;
+    }
+    
+    .leaflet-control-zoom {
+      z-index: 1000 !important;
+    }
+    
+    /* Fix for potential CSS conflicts */
+    .leaflet-container .leaflet-marker-pane img,
+    .leaflet-container .leaflet-zoom-animated {
+      pointer-events: auto;
+    }
+    
+    /* Tailwind CSS reset conflicts fix */
+    .leaflet-container * {
+      box-sizing: content-box;
+    }
+    
+    .leaflet-container .leaflet-control {
+      box-sizing: border-box;
+    }
+    
+    /* Ensure map interactions work properly */
+    .leaflet-container {
+      touch-action: pan-x pan-y;
+    }
+  </style>
+  
+  
+</head>
+<body class="">
+
+<!-- Header -->
+<header class="bg-primary border-b border-border-default">
+  <div class="container mx-auto px-4 py-4">
+    <div class="flex items-center space-x-4">
+      <a href="/lista.html" class="text-text-tertiary hover:text-text-secondary">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+      </a>
+      <div>
+        <h1 class="text-xl font-bold text-text-primary">Projekt S058WS</h1>
+        <p class="text-text-tertiary">Budżet Obywatelski Łódź 2025–2026</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Project Details -->
+<main class="container mx-auto px-4 py-8">
+  <article class="max-w-4xl mx-auto">
+    <!-- Project Header -->
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold text-text-primary mb-4">Streetworkout ćwiczenia dla seniorów i dorosłych na Lumumby przy Wydziale Romanistyki UŁ. Zajęcia gimnastyczne i rehabilitacyjne/fizjoterapeutyczne z wykorzystaniem wagi własnego ciała #Sport #Rekreacja #Rozciąganie #Rehabilitacja #Zdrowy kręgosłup</h1>
+      
+      <div class="flex flex-wrap gap-4 mb-6">
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          Sport i rekreacja
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          osiedlowe
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          Śródmieście-Wschód
+        </div>
+      </div>
+      
+      <div class="text-2xl font-bold text-text-primary mb-4">
+        13 500 zł
+      </div>
+    </div>
+    
+    <!-- Street View Image -->
+    
+    <div class="mb-8">
+      <img 
+        src="/api/streetview?lat=51.7760141446&lng=19.4930393489&size=800x400&heading=0&pitch=0&fov=90"
+        alt="Zdjęcie miejsca (Street View) – Streetworkout ćwiczenia dla seniorów i dorosłych na Lumumby przy Wydziale Romanistyki UŁ. Zajęcia gimnastyczne i rehabilitacyjne/fizjoterapeutyczne z wykorzystaniem wagi własnego ciała #Sport #Rekreacja #Rozciąganie #Rehabilitacja #Zdrowy kręgosłup"
+        class="w-full h-64 md:h-80 object-cover rounded-lg shadow-custom"
+        loading="lazy"
+        onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iI0Y3RjdGNyIvPjx0ZXh0IHg9IjQwMCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic3lzdGVtLXVpIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNkI2QjZCIj5CcmFrIHpkasSZY2lhPC90ZXh0Pjwvc3ZnPg=='"
+      >
+    </div>
+    
+    
+    <!-- Project Description -->
+    <div class="prose max-w-none mb-8">
+      <h2 class="text-xl font-semibold text-text-primary mb-4">Opis projektu</h2>
+      <p class="text-text-secondary leading-relaxed whitespace-pre-wrap">Wynajem trenera lub trenerów – osób mających doświadczenie w kalistenice/gimnastyce/streetworkoucie/rehabilitacji które  poprowadzą zajęcia dla dorosłych i seniorów w zakresie ćwiczeń • sportowych • rekreacyjnych • rozciągających •  rehabilitacyjnych (we własnym zakresie) • dbających o Zdrowy kręgosłup Ćwiczenia z wykorzystaniem wyłącznie wagi własnego ciała. 
+Zajęcia będą odbywały się wyłącznie z wykorzystaniem wagi własnego ciała na terenie siłowni streetworkout a  ich dopełnieniem będą zajęcia kardio dla tych konkretnych grup wiekowych.  Zajęcia będą nieodpłatne i ogólnodostępne.
+Zajęcia będą odbywały się 2-3 razy w tygodniu, w  sezonie wiosna/lato/jesień (np.: od czerwca do września) czyli w okresie kiedy chętniej wychodzimy na świeże powietrze. Łącznie min. 32 spotkania. 
+Grupa docelowa jest mocno sprecyzowana (seniorzy i dorośli) i jak wiemy ich sprawność jest bardzo różnorodna. 
+Dla części z nich celem zajęć będzie np.: nauka ćwiczeń jakie mogą wykonać samodzielnie podczas rehabilitacji  np. nauka chodzenia po operacjach nóg, stawów biodrowych z wykorzystaniem poręczy do dipów, itp. 
+Dla innych celem będzie  np. dojście do samodzielnego i jak najdłuższego zwisu swobodnego lub aktywnego aby dobrze rozciągnąć kręgosłup, itp A jeszcze dla innych, bardziej aktywnych, celem będzie aby za jakiś czas osiągnąć taki efekt: 1) https://www.youtube.com/watch?v=84rXHqjltjs 2) https://www.youtube.com/watch?v=DJzhxU6fNxM 
+Dodatkowo na terenie  obecnej siłowni streetworkout zostanie postawiona tablica z przykładowymi ćwiczeniami. Tablica i jej przekaz musi być czytelny dla wszystkich mieszkańców, w tym 60+ aby wiedzieli, że taka siłownia jest nie tylko dla młodych i sprawnych ale również dla osób starszych i seniorów niezależnie od sprawności fizycznej. Ta siłownia może pełnić funkcje sportowe i rehabilitacyjne. Siłownia ma być również przestrzenią międzypokoleniową do spotkań młodych z dorosłymi i seniorami. W zdrowiu i sprawności fizycznej.</p>
+    </div>
+    
+    <!-- Location Info -->
+    
+    
+    <!-- Actions -->
+    <div class="flex flex-wrap gap-4 mb-8">
+      <a 
+        href="/?id=S058WS" 
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Pokaż na mapie
+      </a>
+      
+      
+      <a 
+        href="https://www.google.com/maps?q=51.7760141446,19.4930393489" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Otwórz w Google Maps
+      </a>
+      
+      
+      
+      <a 
+        href="https://budzetobywatelski.uml.lodz.pl/szczegoly-projektu-2026-1401956735-1401966483-ca4964e0cf9e7650b35e3f718870b0c3" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Zobacz na stronie urzędu
+      </a>
+      
+    </div>
+  </article>
+</main>
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Streetworkout ćwiczenia dla seniorów i dorosłych na Lumumby przy Wydziale Romanistyki UŁ. Zajęcia gimnastyczne i rehabilitacyjne/fizjoterapeutyczne z wykorzystaniem wagi własnego ciała #Sport #Rekreacja #Rozciąganie #Rehabilitacja #Zdrowy kręgosłup",
+  "description": "Wynajem trenera lub trenerów – osób mających doświadczenie w kalistenice/gimnastyce/streetworkoucie/rehabilitacji które  poprowadzą zajęcia dla dorosłych i seniorów w zakresie ćwiczeń • sportowych • r",
+  "identifier": "S058WS",
+  "areaServed": {
+    "@type": "City",
+    "name": "Łódź",
+    "addressCountry": "PL"
+  },
+  "about": {
+    "@type": "GovernmentProject",
+    "name": "Budżet Obywatelski Łódź 2025-2026",
+    "description": "Projekty budżetu obywatelskiego miasta Łodzi na lata 2025-2026"
+  },
+  "category": "Sport i rekreacja",
+  
+  "location": {
+    "@type": "Place",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.7760141446,
+      "longitude": 19.4930393489
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Łódź",
+      "addressCountry": "PL"
+    }
+  },
+  
+  "url": "https://budzetobywatelski.vercel.app/projekty/S058WS.html"
+}
+</script>
+
+</body>
+</html>

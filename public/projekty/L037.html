@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bezpieczna szkoła - nowoczesne szatnie męskie w kompleksie sportowym w IX LO dla uczniów i mieszkańców Łodzi – Budżet Obywatelski Łódź</title>
+  <meta name="description" content="Projekt zakłada kompleksowy remont szatni męskich z toaletami i prysznicami znajdujących się przy salach gimnastycznych w centrum sportowym. Ma on na ... Koszt: 159 000 zł. Kategoria: Infrastruktura komunalna i bezpieczeństwo. Osiedle: .">
+  <meta name="keywords" content="budżet obywatelski łódź mapa, budżet obywatelski 2025 łódź, bo łódź 2026, mapa projektów łódź, lbo łódź mapa">
+  
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Bezpieczna szkoła - nowoczesne szatnie męskie w kompleksie sportowym w IX LO dla uczniów i mieszkańców Łodzi – Budżet Obywatelski Łódź">
+  <meta property="og:description" content="Projekt zakłada kompleksowy remont szatni męskich z toaletami i prysznicami znajdujących się przy salach gimnastycznych w centrum sportowym. Ma on na ... Koszt: 159 000 zł. Kategoria: Infrastruktura komunalna i bezpieczeństwo. Osiedle: .">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Bezpieczna szkoła - nowoczesne szatnie męskie w kompleksie sportowym w IX LO dla uczniów i mieszkańców Łodzi – Budżet Obywatelski Łódź">
+  <meta name="twitter:description" content="Projekt zakłada kompleksowy remont szatni męskich z toaletami i prysznicami znajdujących się przy salach gimnastycznych w centrum sportowym. Ma on na ... Koszt: 159 000 zł. Kategoria: Infrastruktura komunalna i bezpieczeństwo. Osiedle: .">
+  
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.webmanifest">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="/data/projekty.json" as="fetch" crossorigin="anonymous">
+  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  
+  <!-- Tailwind CSS (CDN for now - will be replaced with custom build) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FFFFFF',
+            secondary: '#FAFAFA', 
+            tertiary: '#F7F7F7',
+            hover: '#F2F2F2',
+            'text-primary': '#111111',
+            'text-secondary': '#333333',
+            'text-tertiary': '#6B6B6B',
+          },
+          aspectRatio: {
+            '16/9': '16 / 9',
+            'border-default': '#E6E6E6',
+            'border-hover': '#DADADA',
+            'border-active': '#CFCFCF'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  
+  <!-- Custom styles -->
+  <style>
+    body { font-family: Inter, system-ui, -apple-system, sans-serif; }
+    .shadow-custom { box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+    .shadow-custom-md { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .shadow-custom-lg { box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+    
+    /* Ensure map container has proper dimensions and interactions */
+    #map {
+      position: relative !important;
+      width: 100% !important;
+      height: 100% !important;
+      z-index: 1 !important;
+    }
+    
+    /* Leaflet map fixes for proper mouse interaction */
+    .leaflet-container {
+      cursor: grab;
+    }
+    
+    .leaflet-container:active {
+      cursor: grabbing;
+    }
+    
+    .leaflet-container a {
+      color: inherit;
+    }
+    
+    .leaflet-control-zoom {
+      z-index: 1000 !important;
+    }
+    
+    /* Fix for potential CSS conflicts */
+    .leaflet-container .leaflet-marker-pane img,
+    .leaflet-container .leaflet-zoom-animated {
+      pointer-events: auto;
+    }
+    
+    /* Tailwind CSS reset conflicts fix */
+    .leaflet-container * {
+      box-sizing: content-box;
+    }
+    
+    .leaflet-container .leaflet-control {
+      box-sizing: border-box;
+    }
+    
+    /* Ensure map interactions work properly */
+    .leaflet-container {
+      touch-action: pan-x pan-y;
+    }
+  </style>
+  
+  
+</head>
+<body class="">
+
+<!-- Header -->
+<header class="bg-primary border-b border-border-default">
+  <div class="container mx-auto px-4 py-4">
+    <div class="flex items-center space-x-4">
+      <a href="/lista.html" class="text-text-tertiary hover:text-text-secondary">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+      </a>
+      <div>
+        <h1 class="text-xl font-bold text-text-primary">Projekt L037</h1>
+        <p class="text-text-tertiary">Budżet Obywatelski Łódź 2025–2026</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Project Details -->
+<main class="container mx-auto px-4 py-8">
+  <article class="max-w-4xl mx-auto">
+    <!-- Project Header -->
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold text-text-primary mb-4">Bezpieczna szkoła - nowoczesne szatnie męskie w kompleksie sportowym w IX LO dla uczniów i mieszkańców Łodzi</h1>
+      
+      <div class="flex flex-wrap gap-4 mb-6">
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          Infrastruktura komunalna i bezpieczeństwo
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          nieznany
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          
+        </div>
+      </div>
+      
+      <div class="text-2xl font-bold text-text-primary mb-4">
+        159 000 zł
+      </div>
+    </div>
+    
+    <!-- Street View Image -->
+    
+    <div class="mb-8">
+      <img 
+        src="/api/streetview?lat=51.7281705815&lng=19.4657930738&size=800x400&heading=0&pitch=0&fov=90"
+        alt="Zdjęcie miejsca (Street View) – Bezpieczna szkoła - nowoczesne szatnie męskie w kompleksie sportowym w IX LO dla uczniów i mieszkańców Łodzi"
+        class="w-full h-64 md:h-80 object-cover rounded-lg shadow-custom"
+        loading="lazy"
+        onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iI0Y3RjdGNyIvPjx0ZXh0IHg9IjQwMCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic3lzdGVtLXVpIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNkI2QjZCIj5CcmFrIHpkasSZY2lhPC90ZXh0Pjwvc3ZnPg=='"
+      >
+    </div>
+    
+    
+    <!-- Project Description -->
+    <div class="prose max-w-none mb-8">
+      <h2 class="text-xl font-semibold text-text-primary mb-4">Opis projektu</h2>
+      <p class="text-text-secondary leading-relaxed whitespace-pre-wrap">Projekt zakłada kompleksowy remont szatni męskich z toaletami i prysznicami znajdujących się przy salach gimnastycznych w centrum sportowym. Ma on na celu  zapewnienie odpowiednich warunków do utrzymywania higieny osobistej oraz bezpiecznego i komfortowego korzystania przez uczniów IX LO i mieszkańców Łodzi. Ta część kompleksu sportowego wymaga pilnej renowacji i modernizacji, dzięki której młodzież IX LO i mieszkańcy Łodzi będą mieli godne i bezpieczne warunki do podejmowania aktywności fizycznej. Obecne szatnie z toaletami i prysznicami są stare i bardzo zniszczone wskutek długoletniej eksploatacji, więc osoby korzystające z tych miejsc mają  utrudniony dostęp do realizacji podstawowych potrzeb fizjologicznych oraz dbania o higienę. Istniejące wyposażenie jest przestarzałe i nie spełnia obecnych standardów jakościowych. Płytki, armatura czy kabiny prysznicowe są zużyte i w złym stanie, co z kolei jest siedliskiem bakterii i pleśni. Stan pomieszczeń zniechęca do korzystania z nich, a to z kolei jest przyczyną problemów z przestrzeganiem zasad higieny osobistej. Brak odpowiednich warunków do higieny może wpływać na zmniejszenie aktywności fizycznej. Niechęć do korzystania z zaniedbanych szatni może prowadzić do unikania zajęć sportowych, co z kolei ma negatywny wpływ na zdrowie i kondycję fizyczną. Z kompleksu sanitarnego  korzystają uczniowie podczas lekcji wychowania fizycznego i zajęć pozalekcyjnych, a także mieszkańcy Łodzi. IX LO współpracując ze środowiskiem lokalnym udostępnia szatnie i łazienki klubom sportowym prowadzącym zajęcia w szkole, rodzicom i opiekunom dzieci, a także przedszkolakom uczestniczącym w projekcie realizowanym przez IX LO „Akademia Przedszkolaka”, w ramach którego dzieci z Przedszkola Miejskiego nr 89 uczestniczą w lekcjach prowadzonych dla nich przez nauczycieli wf. Podczas Drzwi Otwartych Szkoły z toalet w szatniach korzystają wszyscy, którzy zwiedzają szkołę i zapoznają się z jej bazą. Są one również do dyspozycji uczestników półkolonii, jak i wszystkich, którzy uczestniczą w imprezach organizowanych na sali gimnastycznej. Kompleksowy remont szatni z toaletami i prysznicami jest nie tylko kwestią estetyki czy wygody, ale przede wszystkim bezpieczeństwa, zdrowia i dobrostanu użytkowników. Poprawa warunków w tych pomieszczeniach może przyczynić się do zwiększenia chęci uczestnictwa w aktywności fizycznej, poprawy stanu zdrowia oraz ogólnego samopoczucia społeczności szkolnej i lokalnej. Z wyremontowanych pomieszczeń będzie korzystać młodzież w ramach lekcji WF i zajęć pozalekcyjnych oraz wszyscy mieszkańcy Łodzi przebywający na terenie kompleksu sportowego i szkoły.</p>
+    </div>
+    
+    <!-- Location Info -->
+    
+    
+    <!-- Actions -->
+    <div class="flex flex-wrap gap-4 mb-8">
+      <a 
+        href="/?id=L037" 
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Pokaż na mapie
+      </a>
+      
+      
+      <a 
+        href="https://www.google.com/maps?q=51.7281705815,19.4657930738" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Otwórz w Google Maps
+      </a>
+      
+      
+      
+      <a 
+        href="https://budzetobywatelski.uml.lodz.pl/szczegoly-projektu-2026-1401956735-1401960359-97ec50f31410d11cb9e9bdab2ba03e67" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Zobacz na stronie urzędu
+      </a>
+      
+    </div>
+  </article>
+</main>
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Bezpieczna szkoła - nowoczesne szatnie męskie w kompleksie sportowym w IX LO dla uczniów i mieszkańców Łodzi",
+  "description": "Projekt zakłada kompleksowy remont szatni męskich z toaletami i prysznicami znajdujących się przy salach gimnastycznych w centrum sportowym. Ma on na celu  zapewnienie odpowiednich warunków do utrzymy",
+  "identifier": "L037",
+  "areaServed": {
+    "@type": "City",
+    "name": "Łódź",
+    "addressCountry": "PL"
+  },
+  "about": {
+    "@type": "GovernmentProject",
+    "name": "Budżet Obywatelski Łódź 2025-2026",
+    "description": "Projekty budżetu obywatelskiego miasta Łodzi na lata 2025-2026"
+  },
+  "category": "Infrastruktura komunalna i bezpieczeństwo",
+  
+  "location": {
+    "@type": "Place",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.7281705815,
+      "longitude": 19.4657930738
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Łódź",
+      "addressCountry": "PL"
+    }
+  },
+  
+  "url": "https://budzetobywatelski.vercel.app/projekty/L037.html"
+}
+</script>
+
+</body>
+</html>

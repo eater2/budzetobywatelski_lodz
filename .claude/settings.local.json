@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run scrape:*)",
+      "Bash(node:*)",
+      "Bash(grep:*)",
+      "WebFetch(domain:www.openstreetmap.org)",
+      "WebSearch",
+      "Bash(echo:*)",
+      "Bash(python3:*)",
+      "Bash(npm run build:*)",
+      "Bash(copy:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npx serve:*)",
+      "Bash(taskkill:*)",
+      "Bash(gh:*)",
+      "Bash(git config:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

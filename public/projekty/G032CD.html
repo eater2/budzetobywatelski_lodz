@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Przebudowa drogi rowerowej na Młynek - na odcinku Dąbrowskiego - Bławatna (etap II) – Budżet Obywatelski Łódź</title>
+  <meta name="description" content="Przedmiotem projektu jest przebudowa istniejącego ciągu pieszo–rowerowego o długości ok. 233 m i szerokości 4 m (przy założeniu, że obecnie chodnik sk... Koszt: 932 000 zł. Kategoria: Infrastruktura drogowa i komunikacja. Osiedle: Chojny-Dąbrowa.">
+  <meta name="keywords" content="budżet obywatelski łódź mapa, budżet obywatelski 2025 łódź, bo łódź 2026, mapa projektów łódź, lbo łódź mapa">
+  
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Przebudowa drogi rowerowej na Młynek - na odcinku Dąbrowskiego - Bławatna (etap II) – Budżet Obywatelski Łódź">
+  <meta property="og:description" content="Przedmiotem projektu jest przebudowa istniejącego ciągu pieszo–rowerowego o długości ok. 233 m i szerokości 4 m (przy założeniu, że obecnie chodnik sk... Koszt: 932 000 zł. Kategoria: Infrastruktura drogowa i komunikacja. Osiedle: Chojny-Dąbrowa.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Przebudowa drogi rowerowej na Młynek - na odcinku Dąbrowskiego - Bławatna (etap II) – Budżet Obywatelski Łódź">
+  <meta name="twitter:description" content="Przedmiotem projektu jest przebudowa istniejącego ciągu pieszo–rowerowego o długości ok. 233 m i szerokości 4 m (przy założeniu, że obecnie chodnik sk... Koszt: 932 000 zł. Kategoria: Infrastruktura drogowa i komunikacja. Osiedle: Chojny-Dąbrowa.">
+  
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.webmanifest">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="/data/projekty.json" as="fetch" crossorigin="anonymous">
+  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  
+  <!-- Tailwind CSS (CDN for now - will be replaced with custom build) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FFFFFF',
+            secondary: '#FAFAFA', 
+            tertiary: '#F7F7F7',
+            hover: '#F2F2F2',
+            'text-primary': '#111111',
+            'text-secondary': '#333333',
+            'text-tertiary': '#6B6B6B',
+          },
+          aspectRatio: {
+            '16/9': '16 / 9',
+            'border-default': '#E6E6E6',
+            'border-hover': '#DADADA',
+            'border-active': '#CFCFCF'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  
+  <!-- Custom styles -->
+  <style>
+    body { font-family: Inter, system-ui, -apple-system, sans-serif; }
+    .shadow-custom { box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+    .shadow-custom-md { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .shadow-custom-lg { box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+    
+    /* Ensure map container has proper dimensions and interactions */
+    #map {
+      position: relative !important;
+      width: 100% !important;
+      height: 100% !important;
+      z-index: 1 !important;
+    }
+    
+    /* Leaflet map fixes for proper mouse interaction */
+    .leaflet-container {
+      cursor: grab;
+    }
+    
+    .leaflet-container:active {
+      cursor: grabbing;
+    }
+    
+    .leaflet-container a {
+      color: inherit;
+    }
+    
+    .leaflet-control-zoom {
+      z-index: 1000 !important;
+    }
+    
+    /* Fix for potential CSS conflicts */
+    .leaflet-container .leaflet-marker-pane img,
+    .leaflet-container .leaflet-zoom-animated {
+      pointer-events: auto;
+    }
+    
+    /* Tailwind CSS reset conflicts fix */
+    .leaflet-container * {
+      box-sizing: content-box;
+    }
+    
+    .leaflet-container .leaflet-control {
+      box-sizing: border-box;
+    }
+    
+    /* Ensure map interactions work properly */
+    .leaflet-container {
+      touch-action: pan-x pan-y;
+    }
+  </style>
+  
+  
+</head>
+<body class="">
+
+<!-- Header -->
+<header class="bg-primary border-b border-border-default">
+  <div class="container mx-auto px-4 py-4">
+    <div class="flex items-center space-x-4">
+      <a href="/lista.html" class="text-text-tertiary hover:text-text-secondary">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+      </a>
+      <div>
+        <h1 class="text-xl font-bold text-text-primary">Projekt G032CD</h1>
+        <p class="text-text-tertiary">Budżet Obywatelski Łódź 2025–2026</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Project Details -->
+<main class="container mx-auto px-4 py-8">
+  <article class="max-w-4xl mx-auto">
+    <!-- Project Header -->
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold text-text-primary mb-4">Przebudowa drogi rowerowej na Młynek - na odcinku Dąbrowskiego - Bławatna (etap II)</h1>
+      
+      <div class="flex flex-wrap gap-4 mb-6">
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          Infrastruktura drogowa i komunikacja
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          osiedlowe
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          Chojny-Dąbrowa
+        </div>
+      </div>
+      
+      <div class="text-2xl font-bold text-text-primary mb-4">
+        932 000 zł
+      </div>
+    </div>
+    
+    <!-- Street View Image -->
+    
+    <div class="mb-8">
+      <img 
+        src="/api/streetview?lat=51.7320959471&lng=19.5242929251&size=800x400&heading=0&pitch=0&fov=90"
+        alt="Zdjęcie miejsca (Street View) – Przebudowa drogi rowerowej na Młynek - na odcinku Dąbrowskiego - Bławatna (etap II)"
+        class="w-full h-64 md:h-80 object-cover rounded-lg shadow-custom"
+        loading="lazy"
+        onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iI0Y3RjdGNyIvPjx0ZXh0IHg9IjQwMCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic3lzdGVtLXVpIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNkI2QjZCIj5CcmFrIHpkasSZY2lhPC90ZXh0Pjwvc3ZnPg=='"
+      >
+    </div>
+    
+    
+    <!-- Project Description -->
+    <div class="prose max-w-none mb-8">
+      <h2 class="text-xl font-semibold text-text-primary mb-4">Opis projektu</h2>
+      <p class="text-text-secondary leading-relaxed whitespace-pre-wrap">Przedmiotem projektu jest przebudowa istniejącego ciągu pieszo–rowerowego o długości ok. 233 m i szerokości 4 m (przy założeniu, że obecnie chodnik składa się z 8 płyt o wym. 50x50cm), łącznie ok. 932 m²) poprzez wykonanie nowej, gładkiej nawierzchni asfaltowej, dostosowanej do ruchu pieszych i rowerzystów.
+Szacunkowy koszt inwestycji – zgodnie z cennikiem miasta Łodzi (400–1400 zł/m²) – wynosi od ok. 373 tys. zł do 1,3 mln zł, w zależności od zakresu i warunków technicznych. Dla uśrednienia przyjmuje się kwotę 1000zł/1m2 tej inwestycji.
+
+Kontynuacja zwycięskiego projektu G024CD etap I:
+Realizacja drugiego etapu przebudowy ciągu pieszo–rowerowego ma kluczowe znaczenie dla spójności infrastruktury oraz bezpieczeństwa i komfortu użytkowników. Obecnie istniejący chodnik jest w złym stanie technicznym – powierzchnia z płyt betonowych jest nierówna, popękana i nieprzystosowana do bezpiecznego ruchu rowerowego. Korzystanie z niej jest utrudnione zarówno dla pieszych, jak i rowerzystów, osób starszych, rodziców z wózkami czy osób z niepełnosprawnościami.
+
+Szczególne znaczenie tego ciągu wynika z faktu, że prowadzi on bezpośrednio do dużego, popularnego parku na Młynku – często odwiedzanego przez mieszkańców okolicznych osiedli. To trasa spacerowa, rekreacyjna i rowerowa, intensywnie wykorzystywana zwłaszcza w sezonie wiosenno-letnim. Nierówna i niewygodna nawierzchnia staje się istotnym utrudnieniem dla codziennego, rekreacyjnego i rodzinnego korzystania z tej przestrzeni.
+
+Proponowana nawierzchnia asfaltowa zapewni:
+
+1)	wysoki komfort jazdy – bez drgań i ryzyka zahaczenia kołami o szczeliny między płytami,
+2)	większe bezpieczeństwo – równy teren to mniejsze ryzyko potknięć i upadków,
+3)	lepszą dostępność – brak przeszkód dla wózków dziecięcych i inwalidzkich
+4)	spójność urbanistyczną – kontynuacja etapu I stworzy jednolity, funkcjonalny ciąg komunikacyjny,
+5)	zachętę do aktywności fizycznej i zrównoważonego transportu – mieszkańcy chętniej wybierają rower i spacer, gdy infrastruktura temu sprzyja.
+
+Zakłada się, że remont istniejącej nawierzchni składałby się z następujących kroków jak poniżej. 
+a)	usunięcie starych płyt chodnikowych i krawężników,
+b)	ewentualne usunięcie zanieczyszczonej podbudowy (jeśli nie spełnia norm nośności),
+c)	roboty ziemne,
+d)	wykonanie nowej podbudowy,
+e)	regulacja infrastruktury podziemnej (opcjonalnie),
+f)	ustawienie nowych krawężników i obrzeży (wyznaczenie granicy chodnika i ścieżki rowerowej),
+g)	wykonanie warstw nawierzchni asfaltowej,
+h)	wykonanie oznakowania poziomego i pionowego,
+i)	zieleń i wykończenia (odtworzenie trawników, nasadzenia w razie potrzeby).
+Ostateczny zakres działań zależny będzie od szczegółowego rozpoznania terenu i wyceny wykonawcy.</p>
+    </div>
+    
+    <!-- Location Info -->
+    
+    
+    <!-- Actions -->
+    <div class="flex flex-wrap gap-4 mb-8">
+      <a 
+        href="/?id=G032CD" 
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Pokaż na mapie
+      </a>
+      
+      
+      <a 
+        href="https://www.google.com/maps?q=51.7320959471,19.5242929251" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Otwórz w Google Maps
+      </a>
+      
+      
+      
+      <a 
+        href="https://budzetobywatelski.uml.lodz.pl/szczegoly-projektu-2026-1401956735-1401959607-0f26b0fb1ebc482aef1dc5b6bf300ee9" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Zobacz na stronie urzędu
+      </a>
+      
+    </div>
+  </article>
+</main>
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Przebudowa drogi rowerowej na Młynek - na odcinku Dąbrowskiego - Bławatna (etap II)",
+  "description": "Przedmiotem projektu jest przebudowa istniejącego ciągu pieszo–rowerowego o długości ok. 233 m i szerokości 4 m (przy założeniu, że obecnie chodnik składa się z 8 płyt o wym. 50x50cm), łącznie ok. 932",
+  "identifier": "G032CD",
+  "areaServed": {
+    "@type": "City",
+    "name": "Łódź",
+    "addressCountry": "PL"
+  },
+  "about": {
+    "@type": "GovernmentProject",
+    "name": "Budżet Obywatelski Łódź 2025-2026",
+    "description": "Projekty budżetu obywatelskiego miasta Łodzi na lata 2025-2026"
+  },
+  "category": "Infrastruktura drogowa i komunikacja",
+  
+  "location": {
+    "@type": "Place",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.7320959471,
+      "longitude": 19.5242929251
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Łódź",
+      "addressCountry": "PL"
+    }
+  },
+  
+  "url": "https://budzetobywatelski.vercel.app/projekty/G032CD.html"
+}
+</script>
+
+</body>
+</html>

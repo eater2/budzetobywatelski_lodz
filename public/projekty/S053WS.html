@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Streetworkout park (do ćwiczeń z wagą własnego ciała) w zielonych okolicach Wydziału Romanistyki UŁ. ETAP 2: Doposażenie o brakujące urządzenia. Przestrzeń dla młodzieży, studentów, dorosłych i seniorów #Sport #Rekreacja #Rozciąganie #Rehabilitacja – Budżet Obywatelski Łódź</title>
+  <meta name="description" content="Projekt ma na celu doposażenie małego „street workout parku” (do ćwiczeń z wagą własnego ciała) dla młodzieży, studentów, dorosłych i seniorów w ramac... Koszt: 149 100 zł. Kategoria: Sport i rekreacja. Osiedle: Śródmieście-Wschód.">
+  <meta name="keywords" content="budżet obywatelski łódź mapa, budżet obywatelski 2025 łódź, bo łódź 2026, mapa projektów łódź, lbo łódź mapa">
+  
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Streetworkout park (do ćwiczeń z wagą własnego ciała) w zielonych okolicach Wydziału Romanistyki UŁ. ETAP 2: Doposażenie o brakujące urządzenia. Przestrzeń dla młodzieży, studentów, dorosłych i seniorów #Sport #Rekreacja #Rozciąganie #Rehabilitacja – Budżet Obywatelski Łódź">
+  <meta property="og:description" content="Projekt ma na celu doposażenie małego „street workout parku” (do ćwiczeń z wagą własnego ciała) dla młodzieży, studentów, dorosłych i seniorów w ramac... Koszt: 149 100 zł. Kategoria: Sport i rekreacja. Osiedle: Śródmieście-Wschód.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Streetworkout park (do ćwiczeń z wagą własnego ciała) w zielonych okolicach Wydziału Romanistyki UŁ. ETAP 2: Doposażenie o brakujące urządzenia. Przestrzeń dla młodzieży, studentów, dorosłych i seniorów #Sport #Rekreacja #Rozciąganie #Rehabilitacja – Budżet Obywatelski Łódź">
+  <meta name="twitter:description" content="Projekt ma na celu doposażenie małego „street workout parku” (do ćwiczeń z wagą własnego ciała) dla młodzieży, studentów, dorosłych i seniorów w ramac... Koszt: 149 100 zł. Kategoria: Sport i rekreacja. Osiedle: Śródmieście-Wschód.">
+  
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.webmanifest">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="/data/projekty.json" as="fetch" crossorigin="anonymous">
+  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  
+  <!-- Tailwind CSS (CDN for now - will be replaced with custom build) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FFFFFF',
+            secondary: '#FAFAFA', 
+            tertiary: '#F7F7F7',
+            hover: '#F2F2F2',
+            'text-primary': '#111111',
+            'text-secondary': '#333333',
+            'text-tertiary': '#6B6B6B',
+          },
+          aspectRatio: {
+            '16/9': '16 / 9',
+            'border-default': '#E6E6E6',
+            'border-hover': '#DADADA',
+            'border-active': '#CFCFCF'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  
+  <!-- Custom styles -->
+  <style>
+    body { font-family: Inter, system-ui, -apple-system, sans-serif; }
+    .shadow-custom { box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+    .shadow-custom-md { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .shadow-custom-lg { box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+    
+    /* Ensure map container has proper dimensions and interactions */
+    #map {
+      position: relative !important;
+      width: 100% !important;
+      height: 100% !important;
+      z-index: 1 !important;
+    }
+    
+    /* Leaflet map fixes for proper mouse interaction */
+    .leaflet-container {
+      cursor: grab;
+    }
+    
+    .leaflet-container:active {
+      cursor: grabbing;
+    }
+    
+    .leaflet-container a {
+      color: inherit;
+    }
+    
+    .leaflet-control-zoom {
+      z-index: 1000 !important;
+    }
+    
+    /* Fix for potential CSS conflicts */
+    .leaflet-container .leaflet-marker-pane img,
+    .leaflet-container .leaflet-zoom-animated {
+      pointer-events: auto;
+    }
+    
+    /* Tailwind CSS reset conflicts fix */
+    .leaflet-container * {
+      box-sizing: content-box;
+    }
+    
+    .leaflet-container .leaflet-control {
+      box-sizing: border-box;
+    }
+    
+    /* Ensure map interactions work properly */
+    .leaflet-container {
+      touch-action: pan-x pan-y;
+    }
+  </style>
+  
+  
+</head>
+<body class="">
+
+<!-- Header -->
+<header class="bg-primary border-b border-border-default">
+  <div class="container mx-auto px-4 py-4">
+    <div class="flex items-center space-x-4">
+      <a href="/lista.html" class="text-text-tertiary hover:text-text-secondary">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+      </a>
+      <div>
+        <h1 class="text-xl font-bold text-text-primary">Projekt S053WS</h1>
+        <p class="text-text-tertiary">Budżet Obywatelski Łódź 2025–2026</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Project Details -->
+<main class="container mx-auto px-4 py-8">
+  <article class="max-w-4xl mx-auto">
+    <!-- Project Header -->
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold text-text-primary mb-4">Streetworkout park (do ćwiczeń z wagą własnego ciała) w zielonych okolicach Wydziału Romanistyki UŁ. ETAP 2: Doposażenie o brakujące urządzenia. Przestrzeń dla młodzieży, studentów, dorosłych i seniorów #Sport #Rekreacja #Rozciąganie #Rehabilitacja</h1>
+      
+      <div class="flex flex-wrap gap-4 mb-6">
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          Sport i rekreacja
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          osiedlowe
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          Śródmieście-Wschód
+        </div>
+      </div>
+      
+      <div class="text-2xl font-bold text-text-primary mb-4">
+        149 100 zł
+      </div>
+    </div>
+    
+    <!-- Street View Image -->
+    
+    <div class="mb-8">
+      <img 
+        src="/api/streetview?lat=51.7760651617&lng=19.4929190168&size=800x400&heading=0&pitch=0&fov=90"
+        alt="Zdjęcie miejsca (Street View) – Streetworkout park (do ćwiczeń z wagą własnego ciała) w zielonych okolicach Wydziału Romanistyki UŁ. ETAP 2: Doposażenie o brakujące urządzenia. Przestrzeń dla młodzieży, studentów, dorosłych i seniorów #Sport #Rekreacja #Rozciąganie #Rehabilitacja"
+        class="w-full h-64 md:h-80 object-cover rounded-lg shadow-custom"
+        loading="lazy"
+        onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iI0Y3RjdGNyIvPjx0ZXh0IHg9IjQwMCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic3lzdGVtLXVpIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNkI2QjZCIj5CcmFrIHpkasSZY2lhPC90ZXh0Pjwvc3ZnPg=='"
+      >
+    </div>
+    
+    
+    <!-- Project Description -->
+    <div class="prose max-w-none mb-8">
+      <h2 class="text-xl font-semibold text-text-primary mb-4">Opis projektu</h2>
+      <p class="text-text-secondary leading-relaxed whitespace-pre-wrap">Projekt ma na celu doposażenie małego „street workout parku” (do ćwiczeń z wagą własnego ciała) dla młodzieży, studentów, dorosłych i seniorów w ramach zwycięskiego zadania BO 2020/2021 nr S019WS o brakujące elementy które ze względu na przekroczony budżet inwestycji musiały zostać usuniete z projektu wykonawczego – inwestycji realizowanej w 2021.
+Elementy małego parku siłowni typu "street workout" do ćwiczeń z wagą własnego ciała:
+•	Koła gimnastyczne normalne (1 komplet) i niskie (1 komplet), z elementami ułatwiającymi wejście osobom o różnej sprawności 
+Kółka gimnastyczne są doposażone o dodatkowe elementy (wypusty) umożliwiające wejście na kółka osobom o mniejszej sprawności fizycznej (skoczności) oraz pozwalają odwiesić kółka na bok aby można było zawiesić własny zestaw kółek lub własną linę do wspinania.
+•	Rura pionowa do „pole dance” i wspinania – 1szt
+•	Boxy do ćwiczeń plyometrycznych o różnej wysokości – 2szt
+•	Drążki niskie  o różnej wysokości - 3szt
+
+
+Siłownia typu „street workout park” będzie pełniła funkcje sportowe i rehabilitacyjne (we własnym zakresie). 
+
+
+Wymagania dot. Urządzeń:
+•	Wszystkie rury okrągłe użyte do produkcji drążków, barierek i poręczy muszą mieć grubość ścianki min. 3 mm.
+•	Średnica/przekrój słupów konstrukcyjnych wyższych niż 140 cm: min. 85mm
+•	Drążki o długości do 140 cm o średnicy Ø min. 27mm, max. 35 mm
+•	Poręcze równoległe o średnicy: Ø min.42 mm, max. 60 mm
+•	Rura do pole dance o średnicy: min. 42 mm, max Ø 50 mm
+•	Drabinka pionowa i pozioma: (szczeble) Ø min. 30 max. 42mm
+•	Lina do wspinania: średnica od 30 do 45 mm
+•	Kółka gimnastyczne – średnica wewnętrzna koła: 230-300 mm; średnica rury: Ø27 do Ø34 mm
+•	Każda rura oraz profil stalowy muszą być ocynkowane lub malowane proszkowo z cynkowym podkładem proszkowym lub wykonane w ocynku ogniowym lub z stali nierdzewnej.
+•	Kolor słupów i kolor drążków i poręczy musi się odznaczać dla osób o słabnącym wzroku.(kontrastowa kolorystyka)
+•	Słupy konstrukcyjne o wymiarach 100x100 mm i grubości ścianki 3 mm.
+•	Wszystkie łączenia rur muszą być wykonane w sposób uniemożliwiający wystawanie ostrych krawędzi.
+•	Elementy muszą być łączone ze słupami przy użyciu śrub o średnicy nie mniejszej niż 10 mm.
+•	Wszystkie śruby muszą być zabezpieczone zaślepkami polimerowymi.
+•	Wszystkie słupy i rury muszą być zaślepione w sposób uniemożliwiający dostęp wody do ich wnętrza.
+•	Wszystkie ostre krawędzie musza być zaokrąglone promieniem minimalnym 3 mm.
+•	Konstrukcja Parku musi zostać przymocowana do fundamentu betonowego poprzez zastosowanie kotew pierścieniowych M12 x 140. Kotwy należy zabezpieczyć polimerowymi kapturkami.
+•	Fundament musi sięgać minimum 80 cm pod poziom gruntu lub głębiej, zależnie od lokalnej głębokości przemarzania gruntu.
+•	Fundamenty wykonane z betonu klasy min. C20/25, nie muszą być zbrojone.
+•	Dopuszcza się zmianę wymiarów urządzeń o 3%.
+
+
+
+Wymagania dot. bezpieczeństwa i certyfikacji:
+•	Przed odbiorem końcowym obiektu, urządzenia muszą zostać zbadane przez niezależną i akredytowaną Jednostkę Certyfikującą, która zweryfikuje czy obiekt jest zgodny z obowiązującą normą oraz spełnia najwyższe standardy dot. jakości I bezpieczeństwa.
+•	Certyfikat bezpieczeństwa musi potwierdzać zgodność urządzeń z wymaganiami normy EN 16630:2015.
+•	Urządzenia muszą być wykonane i zaprojektowane zgodne z wymaganiami PFSW:1601-1 Polskiej Federacji Parkour i Freerun. (http://www.federacjaparkour.pl/ )
+•	Urządzenia muszą posiadać certyfikat Polskiego Związku Kalisteniki i Street Workoutu, gwarantujący że produkt spełnia wymagania stawiane przez sportowców tego typu obiektom. (https://www.pzkisw.pl/ )
+
+
+Wymagania dot. Wykonawcy:
+•	Wykonawca udzieli co najmniej trzyletniej gwarancji na konstrukcję urządzeń i elementy metalowe.
+•	Wykonawcy muszą posiadać doświadczenie w realizacji zadań inwestycyjnych o charakterze i złożoności porównywalnej z zakresem przedmiotu zamówienia. Wykonali i dostarczyli w ciągu ostatnich 3 lat przynajmniej kilka street workout lub parkour parków na kwotę powyżej 45 tys. zł brutto każdy, udokumentowane referencjami. 
+•	Niedopuszczalne są referencje z realizacji skateparków, siłowni zewnętrznych, placów zabaw itp.</p>
+    </div>
+    
+    <!-- Location Info -->
+    
+    
+    <!-- Actions -->
+    <div class="flex flex-wrap gap-4 mb-8">
+      <a 
+        href="/?id=S053WS" 
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Pokaż na mapie
+      </a>
+      
+      
+      <a 
+        href="https://www.google.com/maps?q=51.7760651617,19.4929190168" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Otwórz w Google Maps
+      </a>
+      
+      
+      
+      <a 
+        href="https://budzetobywatelski.uml.lodz.pl/szczegoly-projektu-2026-1401956735-1401966339-c985800d423c6e7c886f38c21d5b89d3" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Zobacz na stronie urzędu
+      </a>
+      
+    </div>
+  </article>
+</main>
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Streetworkout park (do ćwiczeń z wagą własnego ciała) w zielonych okolicach Wydziału Romanistyki UŁ. ETAP 2: Doposażenie o brakujące urządzenia. Przestrzeń dla młodzieży, studentów, dorosłych i seniorów #Sport #Rekreacja #Rozciąganie #Rehabilitacja",
+  "description": "Projekt ma na celu doposażenie małego „street workout parku” (do ćwiczeń z wagą własnego ciała) dla młodzieży, studentów, dorosłych i seniorów w ramach zwycięskiego zadania BO 2020/2021 nr S019WS o br",
+  "identifier": "S053WS",
+  "areaServed": {
+    "@type": "City",
+    "name": "Łódź",
+    "addressCountry": "PL"
+  },
+  "about": {
+    "@type": "GovernmentProject",
+    "name": "Budżet Obywatelski Łódź 2025-2026",
+    "description": "Projekty budżetu obywatelskiego miasta Łodzi na lata 2025-2026"
+  },
+  "category": "Sport i rekreacja",
+  
+  "location": {
+    "@type": "Place",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.7760651617,
+      "longitude": 19.4929190168
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Łódź",
+      "addressCountry": "PL"
+    }
+  },
+  
+  "url": "https://budzetobywatelski.vercel.app/projekty/S053WS.html"
+}
+</script>
+
+</body>
+</html>

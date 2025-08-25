@@ -1,0 +1,35 @@
+{
+  "name": "budzetobywatelski",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scrape": "node scripts/scrape/index.js",
+    "scrape:verbose": "node scripts/scrape/index.js --verbose",
+    "scrape:txt": "node scripts/scrape/index-txt.js",
+    "scrape:txt:verbose": "node scripts/scrape/index-txt.js --verbose",
+    "build": "node scripts/build.js",
+    "dev": "npm run build && npx serve public -l 3000",
+    "deploy": "npm run build && vercel --prod",
+    "clean": "rm -rf public/*.html public/projekty/*.html public/sitemap.xml"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "cheerio": "^1.1.2",
+    "dotenv": "^17.2.1",
+    "fs-extra": "^11.3.1",
+    "p-limit": "^7.1.0",
+    "pdf-parse": "^1.1.1",
+    "pdf2json": "^3.2.0",
+    "pdfjs-dist": "^5.4.54",
+    "puppeteer": "^24.17.0"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1",
+    "vercel": "^32.0.0"
+  }
+}
