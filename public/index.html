@@ -69,6 +69,7 @@
       position: relative !important;
       width: 100% !important;
       height: 100% !important;
+      min-height: 400px !important;
       z-index: 1 !important;
     }
     
@@ -97,11 +98,21 @@
     
     /* Tailwind CSS reset conflicts fix */
     .leaflet-container * {
-      box-sizing: content-box;
+      box-sizing: content-box !important;
     }
     
     .leaflet-container .leaflet-control {
-      box-sizing: border-box;
+      box-sizing: border-box !important;
+    }
+    
+    /* Additional Leaflet fixes for Tailwind conflicts */
+    .leaflet-container {
+      font: inherit !important;
+      line-height: normal !important;
+    }
+    
+    .leaflet-container img {
+      max-width: none !important;
     }
     
     /* Ensure map interactions work properly */
