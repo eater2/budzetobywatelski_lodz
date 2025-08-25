@@ -1,4 +1,5 @@
 {
+  "buildCommand": "touch public/index.html",
   "outputDirectory": "public",
   "rewrites": [
     {

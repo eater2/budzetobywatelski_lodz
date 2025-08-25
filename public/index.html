@@ -158,7 +158,8 @@
 <!-- Map Page JavaScript -->
 <script>
   console.log('DEBUG: HTML loaded, about to load map.js');
-  console.log('VERSION: 2025-08-25 15:25 UTC - Cache-busting test - SHOULD BE VISIBLE NOW');
+  console.log('BUILD_TIMESTAMP: ' + Date.now() + ' - Force cache invalidation');
+  console.log('VERSION: 2025-08-25 15:30 UTC - With build command to bypass Vercel cache');
   
   // More detailed debugging
   window.addEventListener('load', () => {
