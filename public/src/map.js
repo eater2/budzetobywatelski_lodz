@@ -85,6 +85,11 @@ class MapPage {
     tileLayer.addTo(this.map);
     console.log('DEBUG: Tile layer added');
     
+    // Debug tile loading
+    tileLayer.on('loading', () => console.log('DEBUG: Tiles loading started'));
+    tileLayer.on('load', () => console.log('DEBUG: Tiles loaded successfully'));
+    tileLayer.on('tileerror', (e) => console.error('DEBUG: Tile load error:', e));
+    
     // Initialize markers group
     this.markersGroup = L.layerGroup().addTo(this.map);
     console.log('DEBUG: Markers group initialized');

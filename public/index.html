@@ -24,7 +24,6 @@
   
   <!-- Preload critical resources -->
   <link rel="preload" href="/data/projekty.json" as="fetch" crossorigin="anonymous">
-  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style" crossorigin="anonymous">
   
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="anonymous">
@@ -250,14 +249,22 @@
   // More detailed debugging
   window.addEventListener('load', () => {
     console.log('DEBUG: Window loaded');
-    console.log('DEBUG: Map div exists:', document.getElementById('map'));
-    console.log('DEBUG: Map div dimensions:', document.getElementById('map')?.getBoundingClientRect());
+    const mapDiv = document.getElementById('map');
+    console.log('DEBUG: Map div exists:', mapDiv);
+    console.log('DEBUG: Map div dimensions:', mapDiv?.getBoundingClientRect());
+    console.log('DEBUG: Map div computed style height:', getComputedStyle(mapDiv)?.height);
     console.log('DEBUG: Leaflet available:', typeof L !== 'undefined' ? 'Yes' : 'No');
     console.log('DEBUG: MapPage instance:', window.mapPage);
     
     // Check if map loading div is still visible
     const loadingDiv = document.getElementById('mapLoading');
     console.log('DEBUG: Map loading div display:', loadingDiv?.style.display || 'default');
+    
+    // Check if Leaflet CSS classes are applied
+    if (mapDiv) {
+      console.log('DEBUG: Map div classes:', mapDiv.className);
+      console.log('DEBUG: Has leaflet-container class:', mapDiv.classList.contains('leaflet-container'));
+    }
   });
 </script>
 <script type="module" src="/src/map.js"></script>
