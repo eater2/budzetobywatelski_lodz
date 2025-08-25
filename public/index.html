@@ -24,10 +24,10 @@
   
   <!-- Preload critical resources -->
   <link rel="preload" href="/data/projekty.json" as="fetch" crossorigin="anonymous">
-  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style">
+  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style" crossorigin="anonymous">
   
   <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="anonymous">
   
   <!-- Tailwind CSS (CDN for now - will be replaced with custom build) -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -246,15 +246,21 @@
 <!-- Map Page JavaScript -->
 <script>
   console.log('DEBUG: HTML loaded, about to load map.js');
-</script>
-<script type="module" src="/src/map.js"></script>
-<script>
+  
+  // More detailed debugging
   window.addEventListener('load', () => {
     console.log('DEBUG: Window loaded');
     console.log('DEBUG: Map div exists:', document.getElementById('map'));
+    console.log('DEBUG: Map div dimensions:', document.getElementById('map')?.getBoundingClientRect());
     console.log('DEBUG: Leaflet available:', typeof L !== 'undefined' ? 'Yes' : 'No');
+    console.log('DEBUG: MapPage instance:', window.mapPage);
+    
+    // Check if map loading div is still visible
+    const loadingDiv = document.getElementById('mapLoading');
+    console.log('DEBUG: Map loading div display:', loadingDiv?.style.display || 'default');
   });
 </script>
+<script type="module" src="/src/map.js"></script>
 
 <!-- JSON-LD Structured Data -->
 <script type="application/ld+json">

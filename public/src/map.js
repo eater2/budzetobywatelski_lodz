@@ -52,39 +52,56 @@ class MapPage {
   }
 
   initMap() {
-    // Initialize Leaflet map centered on Łódź with proper interaction options
-    this.map = L.map('map', {
-      center: [51.7592, 19.4550],
-      zoom: 11,
-      scrollWheelZoom: true,
-      doubleClickZoom: true,
-      dragging: true,
-      touchZoom: true,
-      boxZoom: true,
-      keyboard: true,
-      zoomControl: true
-    });
+    console.log('DEBUG: initMap called');
+    console.log('DEBUG: Map element exists:', document.getElementById('map'));
+    
+    try {
+      // Initialize Leaflet map centered on Łódź with proper interaction options
+      this.map = L.map('map', {
+        center: [51.7592, 19.4550],
+        zoom: 11,
+        scrollWheelZoom: true,
+        doubleClickZoom: true,
+        dragging: true,
+        touchZoom: true,
+        boxZoom: true,
+        keyboard: true,
+        zoomControl: true
+      });
+      
+      console.log('DEBUG: Map initialized successfully', this.map);
+    } catch (error) {
+      console.error('DEBUG: Error initializing map:', error);
+    }
     
     // Add OpenStreetMap tiles
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    console.log('DEBUG: Adding tile layer');
+    const tileLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       maxZoom: 18,
       minZoom: 5
-    }).addTo(this.map);
+    });
+    
+    tileLayer.addTo(this.map);
+    console.log('DEBUG: Tile layer added');
     
     // Initialize markers group
     this.markersGroup = L.layerGroup().addTo(this.map);
+    console.log('DEBUG: Markers group initialized');
     
     // Force invalidate size after a short delay to ensure proper rendering
     setTimeout(() => {
+      console.log('DEBUG: Invalidating map size');
       this.map.invalidateSize();
     }, 100);
     
     // Hide loading indicator once map is ready
     this.map.whenReady(() => {
+      console.log('DEBUG: Map is ready');
       const loadingDiv = document.getElementById('mapLoading');
       if (loadingDiv) {
         loadingDiv.style.display = 'none';
+        console.log('DEBUG: Loading div hidden');
       }
     });
     
