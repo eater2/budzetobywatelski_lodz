@@ -6,47 +6,10 @@
       "runtime": "edge"
     }
   },
-  "headers": [
-    {
-      "source": "/api/streetview",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, s-maxage=2592000, stale-while-revalidate=86400"
-        },
-        {
-          "key": "Content-Type",
-          "value": "image/jpeg"
-        }
-      ]
-    },
-    {
-      "source": "/data/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600, s-maxage=3600"
-        },
-        {
-          "key": "Content-Type",
-          "value": "application/json"
-        }
-      ]
-    },
-    {
-      "source": "/(.*\\.(js|css|svg|png|jpg|jpeg|webp|ico))",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    }
-  ],
   "rewrites": [
     {
-      "source": "/projekty/:id",
-      "destination": "/projekty/:id.html"
+      "source": "/projekty/(.*)",
+      "destination": "/projekty/$1.html"
     }
   ],
   "cleanUrls": true,
