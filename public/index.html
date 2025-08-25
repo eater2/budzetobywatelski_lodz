@@ -132,7 +132,7 @@
 <!-- Main Layout -->
 <div class="flex flex-col" style="height: calc(100vh - 80px);">
   <!-- Map Container - 50% on desktop, 75% on mobile -->
-  <div class="relative h-1/2 md:h-1/2" style="height: 75vh; --tw-translate-y: 0;">
+  <div class="relative" style="height: 75vh;">
     <div id="map" class="w-full h-full"></div>
     
     <!-- Map Loading -->
@@ -244,7 +244,17 @@
 </div>
 
 <!-- Map Page JavaScript -->
+<script>
+  console.log('DEBUG: HTML loaded, about to load map.js');
+</script>
 <script type="module" src="/src/map.js"></script>
+<script>
+  window.addEventListener('load', () => {
+    console.log('DEBUG: Window loaded');
+    console.log('DEBUG: Map div exists:', document.getElementById('map'));
+    console.log('DEBUG: Leaflet available:', typeof L !== 'undefined' ? 'Yes' : 'No');
+  });
+</script>
 
 <!-- JSON-LD Structured Data -->
 <script type="application/ld+json">
