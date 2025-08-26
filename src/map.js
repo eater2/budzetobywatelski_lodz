@@ -399,8 +399,18 @@ class MapPage {
       }
       
       // District filter
-      if (this.filters.district && project.osiedle !== this.filters.district) {
-        return false;
+      if (this.filters.district) {
+        if (this.filters.district.toUpperCase() === 'PONADOSIEDLOWE') {
+          // Show projects where typ is not 'osiedlowe'
+          if (project.typ === 'osiedlowe') {
+            return false;
+          }
+        } else {
+          // Normal district filtering
+          if (project.osiedle !== this.filters.district) {
+            return false;
+          }
+        }
       }
       
       return true;
