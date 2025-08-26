@@ -1,5 +1,5 @@
 {
-  "buildCommand": "touch public/index.html",
+  "buildCommand": "npm run build",
   "outputDirectory": "public",
   "rewrites": [
     {

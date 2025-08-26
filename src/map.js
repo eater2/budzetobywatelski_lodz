@@ -16,6 +16,11 @@ class MapPage {
 
   async init() {
     try {
+      // Version logging for deployment tracking
+      const buildTimestamp = new Date().toISOString();
+      console.log(`🚀 Budżet Obywatelski Łódź - Map App v${buildTimestamp}`);
+      console.log('📍 Loading 968 projects for Łódź 2025-2026...');
+      
       // Load project data
       await this.loadData();
       

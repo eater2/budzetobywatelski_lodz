@@ -347,8 +347,14 @@ ${content}
   </div>
 </div>
 
+<!-- Build Version -->
+<script>
+  console.log('🔧 Build timestamp: ${new Date().toISOString()}');
+  console.log('📦 Static files generated for Vercel deployment');
+</script>
+
 <!-- Map Page JavaScript -->
-<script type="module" src="/src/map.js"></script>
+<script type="module" src="/src/map.js?v=${Date.now()}"></script>
 
 <!-- Vercel Analytics -->
 <script defer src="/_vercel/insights/script.js"></script>
