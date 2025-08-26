@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Park Helenów: Nowa nawierzchnia boisk do siatkówki, koszykówki i piłki nożnej. – Budżet Obywatelski Łódź</title>
   <meta name="description" content="Ułożenie nowej nawierzchni na obecnie funkcjonujących boiskach w parku Helenów: do siatkówki, koszykówki i piłki nożnej. 
-Projekt może być zrealizowan... Koszt: 1 155 000 zł. Kategoria: Sport i rekreacja. Osiedle: Bałuty-Doły.">
+Projekt może być zrealizowan... Koszt: 1 155 000 zł. Kategoria: Sport i rekreacja. Osiedle: Bałuty - Bałuty Doły.">
   <meta name="keywords" content="budżet obywatelski łódź mapa, budżet obywatelski 2025 łódź, bo łódź 2026, mapa projektów łódź, lbo łódź mapa">
   
   <!-- OpenGraph -->
   <meta property="og:title" content="Park Helenów: Nowa nawierzchnia boisk do siatkówki, koszykówki i piłki nożnej. – Budżet Obywatelski Łódź">
   <meta property="og:description" content="Ułożenie nowej nawierzchni na obecnie funkcjonujących boiskach w parku Helenów: do siatkówki, koszykówki i piłki nożnej. 
-Projekt może być zrealizowan... Koszt: 1 155 000 zł. Kategoria: Sport i rekreacja. Osiedle: Bałuty-Doły.">
+Projekt może być zrealizowan... Koszt: 1 155 000 zł. Kategoria: Sport i rekreacja. Osiedle: Bałuty - Bałuty Doły.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pl_PL">
   
@@ -19,7 +19,7 @@ Projekt może być zrealizowan... Koszt: 1 155 000 zł. Kategoria: Sport i rek
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Park Helenów: Nowa nawierzchnia boisk do siatkówki, koszykówki i piłki nożnej. – Budżet Obywatelski Łódź">
   <meta name="twitter:description" content="Ułożenie nowej nawierzchni na obecnie funkcjonujących boiskach w parku Helenów: do siatkówki, koszykówki i piłki nożnej. 
-Projekt może być zrealizowan... Koszt: 1 155 000 zł. Kategoria: Sport i rekreacja. Osiedle: Bałuty-Doły.">
+Projekt może być zrealizowan... Koszt: 1 155 000 zł. Kategoria: Sport i rekreacja. Osiedle: Bałuty - Bałuty Doły.">
   
   <!-- Icons -->
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -27,10 +27,10 @@ Projekt może być zrealizowan... Koszt: 1 155 000 zł. Kategoria: Sport i rek
   
   <!-- Preload critical resources -->
   <link rel="preload" href="/data/projekty.json" as="fetch" crossorigin="anonymous">
-  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style">
+  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style" crossorigin="anonymous">
   
   <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="anonymous">
   
   <!-- Tailwind CSS (CDN for now - will be replaced with custom build) -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -46,12 +46,12 @@ Projekt może być zrealizowan... Koszt: 1 155 000 zł. Kategoria: Sport i rek
             'text-primary': '#111111',
             'text-secondary': '#333333',
             'text-tertiary': '#6B6B6B',
-          },
-          aspectRatio: {
-            '16/9': '16 / 9',
             'border-default': '#E6E6E6',
             'border-hover': '#DADADA',
             'border-active': '#CFCFCF'
+          },
+          aspectRatio: {
+            '16/9': '16 / 9'
           },
           fontFamily: {
             sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
@@ -125,7 +125,7 @@ Projekt może być zrealizowan... Koszt: 1 155 000 zł. Kategoria: Sport i rek
 <header class="bg-primary border-b border-border-default">
   <div class="container mx-auto px-4 py-4">
     <div class="flex items-center space-x-4">
-      <a href="/lista.html" class="text-text-tertiary hover:text-text-secondary">
+      <a href="/?lat=51.7831086717&lng=19.46751826&zoom=16&id=B205BD" class="text-text-tertiary hover:text-text-secondary">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
         </svg>
@@ -153,7 +153,7 @@ Projekt może być zrealizowan... Koszt: 1 155 000 zł. Kategoria: Sport i rek
           osiedlowe
         </div>
         <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
-          Bałuty-Doły
+          Bałuty - Bałuty Doły
         </div>
       </div>
       
@@ -161,19 +161,6 @@ Projekt może być zrealizowan... Koszt: 1 155 000 zł. Kategoria: Sport i rek
         1 155 000 zł
       </div>
     </div>
-    
-    <!-- Street View Image -->
-    
-    <div class="mb-8">
-      <img 
-        src="/api/streetview?lat=51.7831086717&lng=19.46751826&size=800x400&heading=0&pitch=0&fov=90"
-        alt="Zdjęcie miejsca (Street View) – Park Helenów: Nowa nawierzchnia boisk do siatkówki, koszykówki i piłki nożnej."
-        class="w-full h-64 md:h-80 object-cover rounded-lg shadow-custom"
-        loading="lazy"
-        onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iI0Y3RjdGNyIvPjx0ZXh0IHg9IjQwMCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic3lzdGVtLXVpIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNkI2QjZCIj5CcmFrIHpkasSZY2lhPC90ZXh0Pjwvc3ZnPg=='"
-      >
-    </div>
-    
     
     <!-- Project Description -->
     <div class="prose max-w-none mb-8">
@@ -184,11 +171,16 @@ Projekt może być zrealizowany z uwzględnieniem obecnych fundamentów lub zag�
     
     <!-- Location Info -->
     
+    <div class="mb-8">
+      <h2 class="text-xl font-semibold text-text-primary mb-4">Lokalizacja</h2>
+      <p class="text-text-secondary">Park Helenów</p>
+    </div>
+    
     
     <!-- Actions -->
     <div class="flex flex-wrap gap-4 mb-8">
       <a 
-        href="/?id=B205BD" 
+        href="/?lat=51.7831086717&lng=19.46751826&zoom=16&id=B205BD" 
         class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
       >
         Pokaż na mapie

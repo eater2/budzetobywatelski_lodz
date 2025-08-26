@@ -14,12 +14,6 @@ async function generateSitemap(data, publicDir) {
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <url>
-    <loc>${baseUrl}/lista.html</loc>
-    <lastmod>${currentDate}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
   
   <!-- Individual Project Pages -->`;
 
@@ -42,7 +36,7 @@ async function generateSitemap(data, publicDir) {
 </urlset>`;
 
   await fs.writeFile(path.join(publicDir, 'sitemap.xml'), sitemap);
-  console.log(`✅ Generated sitemap.xml with ${data.projects?.length + 2 || 2} URLs`);
+  console.log(`✅ Generated sitemap.xml with ${data.projects?.length + 1 || 1} URLs`);
 }
 
 module.exports = generateSitemap;

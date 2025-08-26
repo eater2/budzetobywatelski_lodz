@@ -99,7 +99,6 @@ class BuildSystem {
     
     // Generate main pages
     await generateHTML.generateMapPage(this.projektyData, this.publicDir);
-    await generateHTML.generateListPage(this.projektyData, this.publicDir);
     
     // Generate individual project pages (for SEO)
     if (this.projektyData.projects) {
@@ -182,7 +181,7 @@ class BuildSystem {
       console.log('\n📊 Build Summary:');
       console.log(`   • Projects: ${projects}`);
       console.log(`   • Geo features: ${geoFeatures}`);
-      console.log(`   • Pages generated: index.html, lista.html, ${projects} project pages`);
+      console.log(`   • Pages generated: index.html, ${projects} project pages`);
       console.log(`   • SEO: sitemap.xml, robots.txt, meta tags`);
       console.log(`   • Ready for deployment to Vercel`);
       

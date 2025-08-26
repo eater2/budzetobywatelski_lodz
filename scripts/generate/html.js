@@ -29,10 +29,10 @@ class HTMLGenerator {
   
   <!-- Preload critical resources -->
   <link rel="preload" href="/data/projekty.json" as="fetch" crossorigin="anonymous">
-  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style">
+  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style" crossorigin="anonymous">
   
   <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="anonymous">
   
   <!-- Tailwind CSS (CDN for now - will be replaced with custom build) -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -48,12 +48,12 @@ class HTMLGenerator {
             'text-primary': '#111111',
             'text-secondary': '#333333',
             'text-tertiary': '#6B6B6B',
-          },
-          aspectRatio: {
-            '16/9': '16 / 9',
             'border-default': '#E6E6E6',
             'border-hover': '#DADADA',
             'border-active': '#CFCFCF'
+          },
+          aspectRatio: {
+            '16/9': '16 / 9'
           },
           fontFamily: {
             sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
@@ -137,26 +137,71 @@ ${content}
     
     const content = `
 <!-- Header -->
-<header class="bg-primary border-b border-border-default">
-  <div class="container mx-auto px-4 py-4">
-    <div class="flex items-center justify-between">
+<header class="bg-primary border-b border-border-default h-[10vh] md:h-[12vh] lg:h-[12vh] mt-2 md:mt-0">
+  <div class="container mx-auto px-4 h-full flex items-center">
+    <div class="flex items-center justify-between w-full">
       <div>
-        <h1 class="text-2xl font-bold text-text-primary">Budżet Obywatelski Łódź</h1>
-        <p class="text-text-tertiary">2025–2026 • ${projectCount} projektów • Mapa</p>
+        <h1 class="text-xl md:text-2xl font-bold text-text-primary">Budżet Obywatelski Łódź</h1>
+        <p class="text-sm md:text-base text-text-tertiary">2025–2026 • ${projectCount} projektów • Mapa</p>
       </div>
-      <a href="/lista.html" class="px-4 py-2 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors">
-        Zobacz listę
-      </a>
+      <div class="flex items-center gap-2">
+        <button id="filter-toggle" class="flex items-center gap-2 px-3 py-2 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors md:hidden">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <span class="text-sm">Filtry</span>
+        </button>
+        <button id="filter-toggle-desktop" class="flex items-center gap-2 px-3 py-2 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors hidden md:block">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <span class="text-sm">Filtry</span>
+        </button>
+      </div>
     </div>
   </div>
 </header>
 
-<!-- Main Layout -->
-<div class="flex flex-col" style="height: calc(100vh - 80px);">
-  <!-- Left Panel -->
-  <div class="w-96 bg-primary border-r border-border-default flex flex-col overflow-hidden">
+<!-- Main Layout Container -->
+<div id="main-layout" class="flex flex-col md:flex-row relative mt-1 min-h-screen" style="height: calc(100vh - 10vh - 0.75rem);">
+  <style>
+    @media (min-width: 768px) {
+      #main-layout { height: calc(100vh - 12vh - 0.25rem); }
+    }
+    @media (max-width: 767px) {
+      #main-layout { 
+        height: auto; 
+        min-height: calc(100vh - 10vh - 0.75rem); 
+      }
+    }
+  </style>
+  
+  <!-- Filter Panel Expand Button (always in DOM, shown when collapsed) -->
+  <button id="filter-panel-expand" class="hidden md:hidden absolute left-0 top-20 bg-primary border border-border-default border-l-0 rounded-r-md px-1 py-3 hover:bg-hover transition-colors z-30">
+    <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
+    </svg>
+  </button>
+  
+  <!-- Left Filter Panel (Collapsible) -->
+  <div id="filter-panel" class="absolute md:relative z-20 bg-primary border-r border-border-default flex flex-col overflow-hidden transition-all duration-300 transform -translate-x-full md:translate-x-0 h-full md:w-96" data-collapsed="false">
     <!-- Search Bar -->
     <div class="p-4 border-b border-border-default">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="font-semibold text-text-primary">Filtry</h3>
+        <div class="flex items-center gap-2">
+          <button id="close-filter" class="md:hidden text-text-tertiary hover:text-text-primary">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+          <button id="filter-panel-toggle" class="hidden md:block p-1 hover:bg-hover rounded transition-colors">
+            <svg id="filter-collapse-icon" class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
       <div class="relative">
         <input 
           id="search-input"
@@ -172,8 +217,6 @@ ${content}
     
     <!-- Filters -->
     <div class="p-4 border-b border-border-default">
-      <h3 class="font-semibold text-text-primary mb-3">Filtry</h3>
-      
       <!-- Category Filter -->
       <div class="mb-3">
         <label class="block text-sm font-medium text-text-secondary mb-2">Kategoria</label>
@@ -181,7 +224,6 @@ ${content}
           <option value="">Wszystkie kategorie</option>
         </select>
       </div>
-      
       
       <!-- District Filter -->
       <div class="mb-3">
@@ -191,63 +233,86 @@ ${content}
         </select>
       </div>
       
-      
-      <!-- View Toggle -->
-      <div class="mb-3">
-        <label class="block text-sm font-medium text-text-secondary mb-2">Widok</label>
-        <div class="flex rounded-lg border border-border-default overflow-hidden">
-          <button id="map-view-btn" class="flex-1 px-3 py-2 text-sm bg-gray-900 text-white">
-            Mapa
-          </button>
-          <button id="list-view-btn" class="flex-1 px-3 py-2 text-sm bg-white text-gray-700 hover:bg-gray-50 border-l border-border-default">
-            Lista
-          </button>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Project List Panel -->
-    <div class="flex-1 overflow-y-auto p-4">
-      <div class="flex items-center justify-between mb-4">
-        <h3 class="font-semibold text-text-primary">Projekty <span id="results-count" class="text-text-tertiary">(${projectCount})</span></h3>
-        <button id="clear-filters" class="text-sm text-text-tertiary hover:text-text-secondary">Wyczyść</button>
-      </div>
-      
-      <!-- Project cards will be inserted here by JavaScript -->
-      <div id="project-list" class="space-y-3">
-        <div class="text-center text-text-tertiary py-8">
-          <p>Ładowanie projektów...</p>
-        </div>
-      </div>
+      <!-- Clear Filters Button -->
+      <button id="clear-filters" class="w-full px-3 py-2 text-sm bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors">
+        Wyczyść filtry
+      </button>
     </div>
   </div>
+
+  <!-- Overlay for mobile -->
+  <div id="filter-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-10 hidden md:hidden"></div>
   
-  <!-- Map Container -->
-  <div class="flex-1 relative">
-    <div id="map" class="w-full h-full"></div>
+  <!-- Main Content Area -->
+  <div class="flex-1 flex flex-col md:flex-col">
+    <!-- Map Container - Fixed 60% height on mobile, 40% on desktop -->
+    <div id="map-container" class="h-[60vh] md:h-[40%] relative transition-all duration-300 flex-shrink-0">
+      <div id="map" class="w-full h-full"></div>
+      
+      <!-- Map Loading -->
+      <div id="mapLoading" class="absolute inset-0 bg-primary bg-opacity-90 flex items-center justify-center">
+        <div class="text-center">
+          <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-text-tertiary mb-4"></div>
+          <p class="text-text-secondary">Ładowanie mapy...</p>
+        </div>
+      </div>
+    </div>
     
-    <!-- Map Loading -->
-    <div id="mapLoading" class="absolute inset-0 bg-primary bg-opacity-90 flex items-center justify-center">
-      <div class="text-center">
-        <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-text-tertiary mb-4"></div>
-        <p class="text-text-secondary">Ładowanie mapy...</p>
+    <!-- Project List - Scrollable on mobile, 60% on desktop -->
+    <div id="projects-panel" class="flex-1 md:h-[60%] bg-primary border-t border-border-default overflow-hidden flex flex-col transition-all duration-300 relative" data-collapsed="false">
+      <div id="projects-header" class="p-4 border-b border-border-default sticky top-0 bg-primary z-10">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <h3 class="font-semibold text-text-primary">Projekty <span id="results-count" class="text-text-tertiary">(${projectCount})</span></h3>
+            <button id="projects-panel-toggle" class="hidden md:block p-1 hover:bg-hover rounded transition-colors">
+              <svg id="projects-collapse-icon" class="w-5 h-5 text-text-secondary transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+          </div>
+          <select id="sort-filter" class="px-3 py-2 border border-border-default rounded-lg text-sm">
+            <option value="name">Nazwa A-Z</option>
+            <option value="cost-desc">Koszt malejąco</option>
+            <option value="cost-asc">Koszt rosnąco</option>
+            <option value="district">Osiedle A-Z</option>
+          </select>
+        </div>
+      </div>
+      
+      <!-- Project cards container -->
+      <div class="flex-1 overflow-y-auto p-4 min-h-[50vh] md:min-h-0">
+        <div id="project-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pb-6">
+          <div class="col-span-full text-center text-text-tertiary py-8">
+            <p>Ładowanie projektów...</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <!-- Banner -->
-<div class="fixed bottom-4 right-4 z-50">
-  <iframe 
-    src="/banner/banner.html" 
-    class="w-80 h-24 border-0 rounded-lg shadow-custom-lg"
-    style="max-width: calc(100vw - 2rem);"
-    loading="lazy">
-  </iframe>
+<div id="banner-container" class="fixed top-[calc(10vh+0.5rem)] md:top-[12vh] right-4 z-50 transition-all duration-300">
+  <div class="relative">
+    <button id="close-banner" class="absolute -top-2 -right-2 bg-white border border-border-default rounded-full p-1 hover:bg-hover transition-colors shadow-md z-10">
+      <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+    <iframe 
+      src="/banner/banner.html" 
+      class="w-80 h-24 border-0 rounded-lg shadow-custom-lg bg-white"
+      style="max-width: calc(100vw - 2rem);"
+      loading="lazy">
+    </iframe>
+  </div>
 </div>
 
 <!-- Map Page JavaScript -->
 <script type="module" src="/src/map.js"></script>
+
+<!-- Vercel Analytics -->
+<script defer src="/_vercel/insights/script.js"></script>
 
 <!-- JSON-LD Structured Data -->
 <script type="application/ld+json">
@@ -278,140 +343,6 @@ ${content}
     console.log('✅ Generated index.html (map page)');
   }
 
-  static async generateListPage(data, publicDir) {
-    const title = 'Lista projektów – Budżet Obywatelski Łódź 2025/2026';
-    const description = 'Kompletna lista projektów budżetu obywatelskiego Łodzi 2025/2026 ze zdjęciami Street View, kosztami i szczegółowymi opisami. Filtruj i sortuj projekty.';
-    
-    const projectCount = data.projects?.length || 0;
-    
-    const content = `
-<!-- Header -->
-<header class="bg-primary border-b border-border-default">
-  <div class="container mx-auto px-4 py-4">
-    <div class="flex items-center justify-between">
-      <div class="flex items-center space-x-4">
-        <a href="/" class="text-text-tertiary hover:text-text-secondary">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-          </svg>
-        </a>
-        <div>
-          <h1 class="text-2xl font-bold text-text-primary">Budżet Obywatelski Łódź</h1>
-          <p class="text-text-tertiary">2025–2026 • ${projectCount} projektów • Lista</p>
-        </div>
-      </div>
-      <a href="/" class="px-4 py-2 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors">
-        Zobacz mapę
-      </a>
-    </div>
-  </div>
-</header>
-
-<!-- Filters Bar -->
-<div class="bg-primary border-b border-border-default sticky top-0 z-10">
-  <div class="container mx-auto px-4 py-4">
-    <!-- Search -->
-    <div class="mb-4">
-      <div class="relative max-w-md">
-        <input 
-          id="search-input"
-          type="search" 
-          placeholder="Wyszukaj projekt, opis lub lokalizację..." 
-          class="w-full pl-10 pr-4 py-3 border border-border-default rounded-lg focus:outline-none focus:ring-2 focus:ring-border-active"
-        >
-        <svg class="absolute left-3 top-3.5 h-4 w-4 text-text-tertiary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 21-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-        </svg>
-      </div>
-    </div>
-    
-    <!-- Filter Row -->
-    <div class="flex flex-wrap gap-4 items-center">
-      <select id="category-filter" class="px-3 py-2 border border-border-default rounded-lg">
-        <option value="">Wszystkie kategorie</option>
-      </select>
-      
-      
-      <select id="district-filter" class="px-3 py-2 border border-border-default rounded-lg">
-        <option value="">Wszystkie osiedla</option>
-      </select>
-      
-      
-      <select id="sort-select" class="px-3 py-2 border border-border-default rounded-lg">
-        <option value="name">Nazwa A-Z</option>
-        <option value="cost-desc">Koszt: od najwyższego</option>
-        <option value="cost-asc">Koszt: od najniższego</option>
-        <option value="district">Osiedle A-Z</option>
-      </select>
-      
-      <!-- View Toggle -->
-      <div class="flex rounded-lg border border-border-default overflow-hidden">
-        <button id="map-view-btn" class="px-3 py-2 text-sm bg-white text-gray-700 hover:bg-gray-50 border-r border-border-default">
-          Mapa
-        </button>
-        <button id="list-view-btn" class="px-3 py-2 text-sm bg-gray-900 text-white">
-          Lista
-        </button>
-      </div>
-      
-      <button id="clear-filters" class="px-3 py-2 text-text-tertiary hover:text-text-secondary">
-        Wyczyść filtry
-      </button>
-      
-      <div class="ml-auto text-sm text-text-tertiary">
-        <span id="results-count">${projectCount}</span> projektów
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Main Content -->
-<main class="container mx-auto px-4 py-6">
-  <!-- Project Grid -->
-  <div id="project-list" class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-    <!-- Project cards will be inserted here by JavaScript -->
-    <div class="col-span-full text-center text-text-tertiary py-12">
-      <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-text-tertiary mx-auto mb-4"></div>
-      <p>Ładowanie projektów...</p>
-    </div>
-  </div>
-  
-  <!-- Load More Button -->
-  <div class="text-center mt-8">
-    <button id="loadMore" class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors hidden">
-      Pokaż więcej projektów
-    </button>
-  </div>
-</main>
-
-<!-- List JavaScript -->
-<script src="/src/list.js" type="module"></script>
-
-<!-- JSON-LD Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "${title}",
-  "description": "${description}",
-  "numberOfItems": ${projectCount},
-  "areaServed": {
-    "@type": "City",
-    "name": "Łódź",
-    "addressCountry": "PL"
-  },
-  "about": {
-    "@type": "GovernmentProject", 
-    "name": "Budżet Obywatelski Łódź 2025-2026",
-    "description": "Projekty budżetu obywatelskiego miasta Łodzi na lata 2025-2026"
-  }
-}
-</script>`;
-
-    const html = this.generateBaseHTML(title, description, content);
-    await fs.writeFile(path.join(publicDir, 'lista.html'), html);
-    console.log('✅ Generated lista.html (list page)');
-  }
 
   static async generateProjectPage(project, publicDir) {
     const title = `${project.nazwa} – Budżet Obywatelski Łódź`;
@@ -422,7 +353,7 @@ ${content}
 <header class="bg-primary border-b border-border-default">
   <div class="container mx-auto px-4 py-4">
     <div class="flex items-center space-x-4">
-      <a href="/lista.html" class="text-text-tertiary hover:text-text-secondary">
+      <a href="${project.lat && project.lng ? `/?lat=${project.lat}&lng=${project.lng}&zoom=16&id=${project.id}` : '/'}" class="text-text-tertiary hover:text-text-secondary">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
         </svg>
@@ -459,19 +390,6 @@ ${content}
       </div>
     </div>
     
-    <!-- Street View Image -->
-    ${project.lat && project.lng ? `
-    <div class="mb-8">
-      <img 
-        src="/api/streetview?lat=${project.lat}&lng=${project.lng}&size=800x400&heading=${project.heading || 0}&pitch=${project.pitch || 0}&fov=${project.fov || 90}"
-        alt="Zdjęcie miejsca (Street View) – ${project.nazwa}"
-        class="w-full h-64 md:h-80 object-cover rounded-lg shadow-custom"
-        loading="lazy"
-        onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iI0Y3RjdGNyIvPjx0ZXh0IHg9IjQwMCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic3lzdGVtLXVpIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNkI2QjZCIj5CcmFrIHpkasSZY2lhPC90ZXh0Pjwvc3ZnPg=='"
-      >
-    </div>
-    ` : ''}
-    
     <!-- Project Description -->
     <div class="prose max-w-none mb-8">
       <h2 class="text-xl font-semibold text-text-primary mb-4">Opis projektu</h2>
@@ -489,7 +407,7 @@ ${content}
     <!-- Actions -->
     <div class="flex flex-wrap gap-4 mb-8">
       <a 
-        href="/?id=${project.id}" 
+        href="${project.lat && project.lng ? `/?lat=${project.lat}&lng=${project.lng}&zoom=16&id=${project.id}` : `/?id=${project.id}`}" 
         class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
       >
         Pokaż na mapie

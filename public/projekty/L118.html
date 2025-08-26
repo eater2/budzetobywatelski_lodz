@@ -4,19 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>"W CZAS-ie i poza CZAS-em. Zajęcia aktywizujące dla Seniorów w Centrum Zdrowego i Aktywnego Seniora - ul. Cieszkowskiego 6" – Budżet Obywatelski Łódź</title>
-  <meta name="description" content="Seniorzy dzisiaj mają zupełnie inne potrzeby niż kilka lat temu. Chcą jak najdłużej pozostać aktywni fizycznie i umysłowo. Kochają ruch, taniec, wspól... Koszt: 50 000 zł. Kategoria: Zdrowie i pomoc społeczna. Osiedle: Rokicie.">
+  <meta name="description" content="Seniorzy dzisiaj mają zupełnie inne potrzeby niż kilka lat temu. Chcą jak najdłużej pozostać aktywni fizycznie i umysłowo. Kochają ruch, taniec, wspól... Koszt: 50 000 zł. Kategoria: Zdrowie i pomoc społeczna. Osiedle: PONADOSIEDLOWE.">
   <meta name="keywords" content="budżet obywatelski łódź mapa, budżet obywatelski 2025 łódź, bo łódź 2026, mapa projektów łódź, lbo łódź mapa">
   
   <!-- OpenGraph -->
   <meta property="og:title" content=""W CZAS-ie i poza CZAS-em. Zajęcia aktywizujące dla Seniorów w Centrum Zdrowego i Aktywnego Seniora - ul. Cieszkowskiego 6" – Budżet Obywatelski Łódź">
-  <meta property="og:description" content="Seniorzy dzisiaj mają zupełnie inne potrzeby niż kilka lat temu. Chcą jak najdłużej pozostać aktywni fizycznie i umysłowo. Kochają ruch, taniec, wspól... Koszt: 50 000 zł. Kategoria: Zdrowie i pomoc społeczna. Osiedle: Rokicie.">
+  <meta property="og:description" content="Seniorzy dzisiaj mają zupełnie inne potrzeby niż kilka lat temu. Chcą jak najdłużej pozostać aktywni fizycznie i umysłowo. Kochają ruch, taniec, wspól... Koszt: 50 000 zł. Kategoria: Zdrowie i pomoc społeczna. Osiedle: PONADOSIEDLOWE.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pl_PL">
   
   <!-- Twitter -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content=""W CZAS-ie i poza CZAS-em. Zajęcia aktywizujące dla Seniorów w Centrum Zdrowego i Aktywnego Seniora - ul. Cieszkowskiego 6" – Budżet Obywatelski Łódź">
-  <meta name="twitter:description" content="Seniorzy dzisiaj mają zupełnie inne potrzeby niż kilka lat temu. Chcą jak najdłużej pozostać aktywni fizycznie i umysłowo. Kochają ruch, taniec, wspól... Koszt: 50 000 zł. Kategoria: Zdrowie i pomoc społeczna. Osiedle: Rokicie.">
+  <meta name="twitter:description" content="Seniorzy dzisiaj mają zupełnie inne potrzeby niż kilka lat temu. Chcą jak najdłużej pozostać aktywni fizycznie i umysłowo. Kochają ruch, taniec, wspól... Koszt: 50 000 zł. Kategoria: Zdrowie i pomoc społeczna. Osiedle: PONADOSIEDLOWE.">
   
   <!-- Icons -->
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -24,10 +24,10 @@
   
   <!-- Preload critical resources -->
   <link rel="preload" href="/data/projekty.json" as="fetch" crossorigin="anonymous">
-  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style">
+  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style" crossorigin="anonymous">
   
   <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="anonymous">
   
   <!-- Tailwind CSS (CDN for now - will be replaced with custom build) -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -43,12 +43,12 @@
             'text-primary': '#111111',
             'text-secondary': '#333333',
             'text-tertiary': '#6B6B6B',
-          },
-          aspectRatio: {
-            '16/9': '16 / 9',
             'border-default': '#E6E6E6',
             'border-hover': '#DADADA',
             'border-active': '#CFCFCF'
+          },
+          aspectRatio: {
+            '16/9': '16 / 9'
           },
           fontFamily: {
             sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
@@ -122,7 +122,7 @@
 <header class="bg-primary border-b border-border-default">
   <div class="container mx-auto px-4 py-4">
     <div class="flex items-center space-x-4">
-      <a href="/lista.html" class="text-text-tertiary hover:text-text-secondary">
+      <a href="/?lat=51.7337687476&lng=19.4490427628&zoom=16&id=L118" class="text-text-tertiary hover:text-text-secondary">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
         </svg>
@@ -147,10 +147,10 @@
           Zdrowie i pomoc społeczna
         </div>
         <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
-          nieznany
+          ponadosiedlowe
         </div>
         <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
-          Rokicie
+          PONADOSIEDLOWE
         </div>
       </div>
       
@@ -158,19 +158,6 @@
         50 000 zł
       </div>
     </div>
-    
-    <!-- Street View Image -->
-    
-    <div class="mb-8">
-      <img 
-        src="/api/streetview?lat=51.7337687476&lng=19.4490427628&size=800x400&heading=0&pitch=0&fov=90"
-        alt="Zdjęcie miejsca (Street View) – "W CZAS-ie i poza CZAS-em. Zajęcia aktywizujące dla Seniorów w Centrum Zdrowego i Aktywnego Seniora - ul. Cieszkowskiego 6""
-        class="w-full h-64 md:h-80 object-cover rounded-lg shadow-custom"
-        loading="lazy"
-        onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iI0Y3RjdGNyIvPjx0ZXh0IHg9IjQwMCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic3lzdGVtLXVpIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNkI2QjZCIj5CcmFrIHpkasSZY2lhPC90ZXh0Pjwvc3ZnPg=='"
-      >
-    </div>
-    
     
     <!-- Project Description -->
     <div class="prose max-w-none mb-8">
@@ -181,11 +168,16 @@ Zaproponowanie dodatkowych zajęć, czy aktywności, które są bardziej wymagaj
     
     <!-- Location Info -->
     
+    <div class="mb-8">
+      <h2 class="text-xl font-semibold text-text-primary mb-4">Lokalizacja</h2>
+      <p class="text-text-secondary">ŁÓDŹ-GÓRNA; Osiedle: Rokicie; Numer działki: 31; Id działki: 106103_9.0010.31</p>
+    </div>
+    
     
     <!-- Actions -->
     <div class="flex flex-wrap gap-4 mb-8">
       <a 
-        href="/?id=L118" 
+        href="/?lat=51.7337687476&lng=19.4490427628&zoom=16&id=L118" 
         class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
       >
         Pokaż na mapie

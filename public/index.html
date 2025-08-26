@@ -24,6 +24,7 @@
   
   <!-- Preload critical resources -->
   <link rel="preload" href="/data/projekty.json" as="fetch" crossorigin="anonymous">
+  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style" crossorigin="anonymous">
   
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="anonymous">
@@ -46,6 +47,9 @@
             'border-hover': '#DADADA',
             'border-active': '#CFCFCF'
           },
+          aspectRatio: {
+            '16/9': '16 / 9'
+          },
           fontFamily: {
             sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
           }
@@ -64,129 +68,205 @@
     .shadow-custom-md { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
     .shadow-custom-lg { box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
     
-    /* Map container with proper layout */
-    #map { 
-      height: 75vh; 
-      width: 100%; 
+    /* Ensure map container has proper dimensions and interactions */
+    #map {
+      position: relative !important;
+      width: 100% !important;
+      height: 100% !important;
+      z-index: 1 !important;
+    }
+    
+    /* Leaflet map fixes for proper mouse interaction */
+    .leaflet-container {
+      cursor: grab;
+    }
+    
+    .leaflet-container:active {
+      cursor: grabbing;
+    }
+    
+    .leaflet-container a {
+      color: inherit;
+    }
+    
+    .leaflet-control-zoom {
+      z-index: 1000 !important;
+    }
+    
+    /* Fix for potential CSS conflicts */
+    .leaflet-container .leaflet-marker-pane img,
+    .leaflet-container .leaflet-zoom-animated {
+      pointer-events: auto;
+    }
+    
+    /* Tailwind CSS reset conflicts fix */
+    .leaflet-container * {
+      box-sizing: content-box;
+    }
+    
+    .leaflet-container .leaflet-control {
+      box-sizing: border-box;
+    }
+    
+    /* Ensure map interactions work properly */
+    .leaflet-container {
+      touch-action: pan-x pan-y;
     }
   </style>
+  
   
 </head>
 <body class="bg-secondary">
 
 <!-- Header -->
-<header class="bg-primary border-b border-border-default">
-  <div class="container mx-auto px-4 py-4">
-    <div class="flex items-center justify-between">
+<header class="bg-primary border-b border-border-default h-[10vh] md:h-[12vh] lg:h-[12vh] mt-2 md:mt-0">
+  <div class="container mx-auto px-4 h-full flex items-center">
+    <div class="flex items-center justify-between w-full">
       <div>
-        <h1 class="text-2xl font-bold text-text-primary">Budżet Obywatelski Łódź</h1>
-        <p class="text-text-tertiary">2025–2026 • 968 projektów • Mapa</p>
+        <h1 class="text-xl md:text-2xl font-bold text-text-primary">Budżet Obywatelski Łódź</h1>
+        <p class="text-sm md:text-base text-text-tertiary">2025–2026 • 968 projektów • Mapa</p>
       </div>
-      <a href="/lista.html" class="px-4 py-2 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors">
-        Zobacz listę
-      </a>
+      <div class="flex items-center gap-2">
+        <button id="filter-toggle" class="flex items-center gap-2 px-3 py-2 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors md:hidden">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <span class="text-sm">Filtry</span>
+        </button>
+        <button id="filter-toggle-desktop" class="flex items-center gap-2 px-3 py-2 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors hidden md:block">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <span class="text-sm">Filtry</span>
+        </button>
+      </div>
     </div>
   </div>
 </header>
 
-<!-- Main Layout -->
-<div class="flex flex-col" style="height: calc(100vh - 80px);">
-  <!-- Map Container - 75% on mobile, 50% on desktop -->
-  <div class="relative" style="height: 75vh;">
-    <div id="map" style="height: 75vh; width: 100%;"></div>
-    
-    <!-- Map Loading -->
-    <div id="mapLoading" class="absolute inset-0 bg-primary bg-opacity-90 flex items-center justify-center">
-      <div class="text-center">
-        <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-text-tertiary mb-4"></div>
-        <p class="text-text-secondary">Ładowanie mapy...</p>
-      </div>
-    </div>
-    
-    <!-- Collapsible Filter Panel -->
-    <div id="filter-panel" class="absolute top-4 left-4 bg-white rounded-lg shadow-lg border border-gray-200 z-10 w-80 md:w-96 transition-transform duration-300 transform -translate-y-full md:translate-y-0">
-      <!-- Panel Header -->
-      <div class="flex items-center justify-between p-4 border-b border-gray-200 cursor-pointer" id="filter-toggle">
-        <div class="flex items-center space-x-2">
-          <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707v4.172a1 1 0 01-.596.904L12 20.9l-1.404-.702A1 1 0 0110 19.282V14.828a1 1 0 00-.293-.707L3.293 7.707A1 1 0 013 7V4z"/>
-          </svg>
-          <h3 class="font-semibold text-gray-900">Filtry</h3>
+<!-- Main Layout Container -->
+<div id="main-layout" class="flex flex-col md:flex-row relative mt-1 min-h-screen" style="height: calc(100vh - 10vh - 0.75rem);">
+  <style>
+    @media (min-width: 768px) {
+      #main-layout { height: calc(100vh - 12vh - 0.25rem); }
+    }
+    @media (max-width: 767px) {
+      #main-layout { 
+        height: auto; 
+        min-height: calc(100vh - 10vh - 0.75rem); 
+      }
+    }
+  </style>
+  
+  <!-- Filter Panel Expand Button (always in DOM, shown when collapsed) -->
+  <button id="filter-panel-expand" class="hidden md:hidden absolute left-0 top-20 bg-primary border border-border-default border-l-0 rounded-r-md px-1 py-3 hover:bg-hover transition-colors z-30">
+    <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
+    </svg>
+  </button>
+  
+  <!-- Left Filter Panel (Collapsible) -->
+  <div id="filter-panel" class="absolute md:relative z-20 bg-primary border-r border-border-default flex flex-col overflow-hidden transition-all duration-300 transform -translate-x-full md:translate-x-0 h-full md:w-96" data-collapsed="false">
+    <!-- Search Bar -->
+    <div class="p-4 border-b border-border-default">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="font-semibold text-text-primary">Filtry</h3>
+        <div class="flex items-center gap-2">
+          <button id="close-filter" class="md:hidden text-text-tertiary hover:text-text-primary">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+          <button id="filter-panel-toggle" class="hidden md:block p-1 hover:bg-hover rounded transition-colors">
+            <svg id="filter-collapse-icon" class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7"></path>
+            </svg>
+          </button>
         </div>
-        <svg id="filter-chevron" class="w-5 h-5 text-gray-400 transform rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+      </div>
+      <div class="relative">
+        <input 
+          id="search-input"
+          type="search" 
+          placeholder="Wyszukaj projekt lub miejsce..." 
+          class="w-full pl-10 pr-4 py-3 border border-border-default rounded-lg focus:outline-none focus:ring-2 focus:ring-border-active"
+        >
+        <svg class="absolute left-3 top-3.5 h-4 w-4 text-text-tertiary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 21-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
         </svg>
       </div>
+    </div>
+    
+    <!-- Filters -->
+    <div class="p-4 border-b border-border-default">
+      <!-- Category Filter -->
+      <div class="mb-3">
+        <label class="block text-sm font-medium text-text-secondary mb-2">Kategoria</label>
+        <select id="category-filter" class="w-full p-2 border border-border-default rounded-lg">
+          <option value="">Wszystkie kategorie</option>
+        </select>
+      </div>
       
-      <!-- Panel Content -->
-      <div id="filter-content" class="p-4 space-y-4 hidden">
-        <!-- Search Bar -->
-        <div class="relative">
-          <input 
-            id="search-input"
-            type="search" 
-            placeholder="Wyszukaj projekt..." 
-            class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
-          >
-          <svg class="absolute left-3 top-2.5 h-4 w-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 21-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-          </svg>
-        </div>
-        
-        <!-- Category Filter -->
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1">Kategoria</label>
-          <select id="category-filter" class="w-full p-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-            <option value="">Wszystkie kategorie</option>
-          </select>
-        </div>
-        
-        <!-- District Filter -->
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1">Osiedle</label>
-          <select id="district-filter" class="w-full p-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-            <option value="">Wszystkie osiedla</option>
-            <option value="ponadosiedlowe">PONADOSIEDLOWE</option>
-          </select>
-        </div>
-        
-        <!-- View Toggle -->
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1">Widok</label>
-          <div class="flex rounded-lg border border-gray-300 overflow-hidden">
-            <button id="map-view-btn" class="flex-1 px-3 py-2 text-sm bg-gray-900 text-white">
-              Mapa
-            </button>
-            <button id="list-view-btn" class="flex-1 px-3 py-2 text-sm bg-white text-gray-700 hover:bg-gray-50 border-l border-gray-300">
-              Lista
-            </button>
-          </div>
-        </div>
-        
-        <!-- Clear Button -->
-        <button id="clear-filters" class="w-full px-3 py-2 text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg border border-gray-300">
-          Wyczyść filtry
-        </button>
-        
-        <!-- Results Count -->
-        <div class="text-center text-sm text-gray-500">
-          <span id="results-count">968</span> projektów
+      <!-- District Filter -->
+      <div class="mb-3">
+        <label class="block text-sm font-medium text-text-secondary mb-2">Osiedle</label>
+        <select id="district-filter" class="w-full p-2 border border-border-default rounded-lg">
+          <option value="">Wszystkie osiedla</option>
+        </select>
+      </div>
+      
+      <!-- Clear Filters Button -->
+      <button id="clear-filters" class="w-full px-3 py-2 text-sm bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors">
+        Wyczyść filtry
+      </button>
+    </div>
+  </div>
+
+  <!-- Overlay for mobile -->
+  <div id="filter-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-10 hidden md:hidden"></div>
+  
+  <!-- Main Content Area -->
+  <div class="flex-1 flex flex-col md:flex-col">
+    <!-- Map Container - Fixed 60% height on mobile, 40% on desktop -->
+    <div id="map-container" class="h-[60vh] md:h-[40%] relative transition-all duration-300 flex-shrink-0">
+      <div id="map" class="w-full h-full"></div>
+      
+      <!-- Map Loading -->
+      <div id="mapLoading" class="absolute inset-0 bg-primary bg-opacity-90 flex items-center justify-center">
+        <div class="text-center">
+          <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-text-tertiary mb-4"></div>
+          <p class="text-text-secondary">Ładowanie mapy...</p>
         </div>
       </div>
     </div>
-  </div>
-  
-  <!-- Project List Panel - 25% on mobile, 50% on desktop -->
-  <div class="bg-white border-t border-gray-200 flex-1 overflow-hidden" style="min-height: 25vh;">
-    <div class="h-full overflow-y-auto p-4">
-      <div class="flex items-center justify-between mb-3">
-        <h3 class="font-semibold text-gray-900 text-sm">Projekty na mapie</h3>
+    
+    <!-- Project List - Scrollable on mobile, 60% on desktop -->
+    <div id="projects-panel" class="flex-1 md:h-[60%] bg-primary border-t border-border-default overflow-hidden flex flex-col transition-all duration-300 relative" data-collapsed="false">
+      <div id="projects-header" class="p-4 border-b border-border-default sticky top-0 bg-primary z-10">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <h3 class="font-semibold text-text-primary">Projekty <span id="results-count" class="text-text-tertiary">(968)</span></h3>
+            <button id="projects-panel-toggle" class="hidden md:block p-1 hover:bg-hover rounded transition-colors">
+              <svg id="projects-collapse-icon" class="w-5 h-5 text-text-secondary transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+          </div>
+          <select id="sort-filter" class="px-3 py-2 border border-border-default rounded-lg text-sm">
+            <option value="name">Nazwa A-Z</option>
+            <option value="cost-desc">Koszt malejąco</option>
+            <option value="cost-asc">Koszt rosnąco</option>
+            <option value="district">Osiedle A-Z</option>
+          </select>
+        </div>
       </div>
       
-      <!-- Project cards will be inserted here by JavaScript -->
-      <div id="project-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-        <div class="text-center text-gray-500 py-8 col-span-full">
-          <p class="text-sm">Ładowanie projektów...</p>
+      <!-- Project cards container -->
+      <div class="flex-1 overflow-y-auto p-4 min-h-[50vh] md:min-h-0">
+        <div id="project-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pb-6">
+          <div class="col-span-full text-center text-text-tertiary py-8">
+            <p>Ładowanie projektów...</p>
+          </div>
         </div>
       </div>
     </div>
@@ -194,35 +274,43 @@
 </div>
 
 <!-- Banner -->
-<div class="fixed bottom-4 right-4 z-50">
-  <iframe 
-    src="/banner/banner.html" 
-    class="w-80 h-24 border-0 rounded-lg shadow-custom-lg"
-    style="max-width: calc(100vw - 2rem);"
-    loading="lazy">
-  </iframe>
+<div id="banner-container" class="fixed top-[calc(10vh+0.5rem)] md:top-[12vh] right-4 z-50 transition-all duration-300">
+  <div class="relative">
+    <button id="close-banner" class="absolute -top-2 -right-2 bg-white border border-border-default rounded-full p-1 hover:bg-hover transition-colors shadow-md z-10">
+      <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+    <iframe 
+      src="/banner/banner.html" 
+      class="w-80 h-24 border-0 rounded-lg shadow-custom-lg bg-white"
+      style="max-width: calc(100vw - 2rem);"
+      loading="lazy">
+    </iframe>
+  </div>
 </div>
 
 <!-- Map Page JavaScript -->
 <script type="module" src="/src/map.js"></script>
 
+<!-- Vercel Analytics -->
+<script defer src="/_vercel/insights/script.js"></script>
+
 <!-- JSON-LD Structured Data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebSite",
+  "@type": "Map",
   "name": "Budżet Obywatelski Łódź – mapa projektów 2025/2026",
   "description": "Interaktywna mapa projektów budżetu obywatelskiego Łodzi 2025/2026. Zobacz lokalizacje wszystkich projektów na mapie, filtruj po kategoriach i osiedlach.",
-  "url": "https://budzetobywatelski.uml.lodz.pl",
-  "inLanguage": "pl-PL",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Urząd Miasta Łodzi"
+  "areaServed": {
+    "@type": "City",
+    "name": "Łódź",
+    "addressCountry": "PL"
   },
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://budzetobywatelski.uml.lodz.pl/?search={search_term_string}",
-    "query-input": "required name=search_term_string"
+  "hasMap": {
+    "@type": "Map",
+    "mapType": "VenueMap"
   },
   "about": {
     "@type": "GovernmentProject",

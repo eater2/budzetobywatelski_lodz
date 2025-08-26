@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Najazd niedaleko Naruszewicza dla samochodów – Budżet Obywatelski Łódź</title>
   <meta name="description" content="W okolicy często osoby naprawiają pod blokiem auto często się spotyka, najazdy dla samochodów zamiast męczyć się pod autem.
-Najazd miał by być ogólnod... Koszt: 63 000 zł. Kategoria: Infrastruktura komunalna i bezpieczeństwo. Osiedle: Chojny-Dąbrowa.">
+Najazd miał by być ogólnod... Koszt: 63 000 zł. Kategoria: Infrastruktura komunalna i bezpieczeństwo. Osiedle: Górna - Chojny - Dąbrowa.">
   <meta name="keywords" content="budżet obywatelski łódź mapa, budżet obywatelski 2025 łódź, bo łódź 2026, mapa projektów łódź, lbo łódź mapa">
   
   <!-- OpenGraph -->
   <meta property="og:title" content="Najazd niedaleko Naruszewicza dla samochodów – Budżet Obywatelski Łódź">
   <meta property="og:description" content="W okolicy często osoby naprawiają pod blokiem auto często się spotyka, najazdy dla samochodów zamiast męczyć się pod autem.
-Najazd miał by być ogólnod... Koszt: 63 000 zł. Kategoria: Infrastruktura komunalna i bezpieczeństwo. Osiedle: Chojny-Dąbrowa.">
+Najazd miał by być ogólnod... Koszt: 63 000 zł. Kategoria: Infrastruktura komunalna i bezpieczeństwo. Osiedle: Górna - Chojny - Dąbrowa.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pl_PL">
   
@@ -19,7 +19,7 @@ Najazd miał by być ogólnod... Koszt: 63 000 zł. Kategoria: Infrastruktura k
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Najazd niedaleko Naruszewicza dla samochodów – Budżet Obywatelski Łódź">
   <meta name="twitter:description" content="W okolicy często osoby naprawiają pod blokiem auto często się spotyka, najazdy dla samochodów zamiast męczyć się pod autem.
-Najazd miał by być ogólnod... Koszt: 63 000 zł. Kategoria: Infrastruktura komunalna i bezpieczeństwo. Osiedle: Chojny-Dąbrowa.">
+Najazd miał by być ogólnod... Koszt: 63 000 zł. Kategoria: Infrastruktura komunalna i bezpieczeństwo. Osiedle: Górna - Chojny - Dąbrowa.">
   
   <!-- Icons -->
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -27,10 +27,10 @@ Najazd miał by być ogólnod... Koszt: 63 000 zł. Kategoria: Infrastruktura k
   
   <!-- Preload critical resources -->
   <link rel="preload" href="/data/projekty.json" as="fetch" crossorigin="anonymous">
-  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style">
+  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style" crossorigin="anonymous">
   
   <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="anonymous">
   
   <!-- Tailwind CSS (CDN for now - will be replaced with custom build) -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -46,12 +46,12 @@ Najazd miał by być ogólnod... Koszt: 63 000 zł. Kategoria: Infrastruktura k
             'text-primary': '#111111',
             'text-secondary': '#333333',
             'text-tertiary': '#6B6B6B',
-          },
-          aspectRatio: {
-            '16/9': '16 / 9',
             'border-default': '#E6E6E6',
             'border-hover': '#DADADA',
             'border-active': '#CFCFCF'
+          },
+          aspectRatio: {
+            '16/9': '16 / 9'
           },
           fontFamily: {
             sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
@@ -125,7 +125,7 @@ Najazd miał by być ogólnod... Koszt: 63 000 zł. Kategoria: Infrastruktura k
 <header class="bg-primary border-b border-border-default">
   <div class="container mx-auto px-4 py-4">
     <div class="flex items-center space-x-4">
-      <a href="/lista.html" class="text-text-tertiary hover:text-text-secondary">
+      <a href="/?lat=51.7293252224&lng=19.4807215832&zoom=16&id=G030CD" class="text-text-tertiary hover:text-text-secondary">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
         </svg>
@@ -153,7 +153,7 @@ Najazd miał by być ogólnod... Koszt: 63 000 zł. Kategoria: Infrastruktura k
           osiedlowe
         </div>
         <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
-          Chojny-Dąbrowa
+          Górna - Chojny - Dąbrowa
         </div>
       </div>
       
@@ -161,19 +161,6 @@ Najazd miał by być ogólnod... Koszt: 63 000 zł. Kategoria: Infrastruktura k
         63 000 zł
       </div>
     </div>
-    
-    <!-- Street View Image -->
-    
-    <div class="mb-8">
-      <img 
-        src="/api/streetview?lat=51.7293252224&lng=19.4807215832&size=800x400&heading=0&pitch=0&fov=90"
-        alt="Zdjęcie miejsca (Street View) – Najazd niedaleko Naruszewicza dla samochodów"
-        class="w-full h-64 md:h-80 object-cover rounded-lg shadow-custom"
-        loading="lazy"
-        onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iI0Y3RjdGNyIvPjx0ZXh0IHg9IjQwMCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic3lzdGVtLXVpIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNkI2QjZCIj5CcmFrIHpkasSZY2lhPC90ZXh0Pjwvc3ZnPg=='"
-      >
-    </div>
-    
     
     <!-- Project Description -->
     <div class="prose max-w-none mb-8">
@@ -184,11 +171,16 @@ Najazd miał by być ogólnodostępny do szybkich napraw bądź sprawdzenia pod 
     
     <!-- Location Info -->
     
+    <div class="mb-8">
+      <h2 class="text-xl font-semibold text-text-primary mb-4">Lokalizacja</h2>
+      <p class="text-text-secondary">ŁÓDŹ-GÓRNA; Osiedle: Chojny-Dąbrowa; Numer działki: 140/41; Id działki: 106103_9.0016.140/41</p>
+    </div>
+    
     
     <!-- Actions -->
     <div class="flex flex-wrap gap-4 mb-8">
       <a 
-        href="/?id=G030CD" 
+        href="/?lat=51.7293252224&lng=19.4807215832&zoom=16&id=G030CD" 
         class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
       >
         Pokaż na mapie

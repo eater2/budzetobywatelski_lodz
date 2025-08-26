@@ -4,19 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zakup nowych książek i bezpłatny dostęp do audiobooków i ebooków dla mieszkańców Łodzi we wszystkich Filiach Biblioteki Miejskiej w Łodzi. – Budżet Obywatelski Łódź</title>
-  <meta name="description" content="Zadanie dedykowane jest wszystkim mieszkańcom Miasta, którzy lubią czytać książki zarówno papierowe jak i w elektronicznej wersji. Ceny książek papier... Koszt: 1 400 000 zł. Kategoria: Kultura i dziedzictwo. Osiedle: .">
+  <meta name="description" content="Zadanie dedykowane jest wszystkim mieszkańcom Miasta, którzy lubią czytać książki zarówno papierowe jak i w elektronicznej wersji. Ceny książek papier... Koszt: 1 400 000 zł. Kategoria: Kultura i dziedzictwo. Osiedle: PONADOSIEDLOWE.">
   <meta name="keywords" content="budżet obywatelski łódź mapa, budżet obywatelski 2025 łódź, bo łódź 2026, mapa projektów łódź, lbo łódź mapa">
   
   <!-- OpenGraph -->
   <meta property="og:title" content="Zakup nowych książek i bezpłatny dostęp do audiobooków i ebooków dla mieszkańców Łodzi we wszystkich Filiach Biblioteki Miejskiej w Łodzi. – Budżet Obywatelski Łódź">
-  <meta property="og:description" content="Zadanie dedykowane jest wszystkim mieszkańcom Miasta, którzy lubią czytać książki zarówno papierowe jak i w elektronicznej wersji. Ceny książek papier... Koszt: 1 400 000 zł. Kategoria: Kultura i dziedzictwo. Osiedle: .">
+  <meta property="og:description" content="Zadanie dedykowane jest wszystkim mieszkańcom Miasta, którzy lubią czytać książki zarówno papierowe jak i w elektronicznej wersji. Ceny książek papier... Koszt: 1 400 000 zł. Kategoria: Kultura i dziedzictwo. Osiedle: PONADOSIEDLOWE.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pl_PL">
   
   <!-- Twitter -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Zakup nowych książek i bezpłatny dostęp do audiobooków i ebooków dla mieszkańców Łodzi we wszystkich Filiach Biblioteki Miejskiej w Łodzi. – Budżet Obywatelski Łódź">
-  <meta name="twitter:description" content="Zadanie dedykowane jest wszystkim mieszkańcom Miasta, którzy lubią czytać książki zarówno papierowe jak i w elektronicznej wersji. Ceny książek papier... Koszt: 1 400 000 zł. Kategoria: Kultura i dziedzictwo. Osiedle: .">
+  <meta name="twitter:description" content="Zadanie dedykowane jest wszystkim mieszkańcom Miasta, którzy lubią czytać książki zarówno papierowe jak i w elektronicznej wersji. Ceny książek papier... Koszt: 1 400 000 zł. Kategoria: Kultura i dziedzictwo. Osiedle: PONADOSIEDLOWE.">
   
   <!-- Icons -->
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -24,10 +24,10 @@
   
   <!-- Preload critical resources -->
   <link rel="preload" href="/data/projekty.json" as="fetch" crossorigin="anonymous">
-  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style">
+  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style" crossorigin="anonymous">
   
   <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="anonymous">
   
   <!-- Tailwind CSS (CDN for now - will be replaced with custom build) -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -43,12 +43,12 @@
             'text-primary': '#111111',
             'text-secondary': '#333333',
             'text-tertiary': '#6B6B6B',
-          },
-          aspectRatio: {
-            '16/9': '16 / 9',
             'border-default': '#E6E6E6',
             'border-hover': '#DADADA',
             'border-active': '#CFCFCF'
+          },
+          aspectRatio: {
+            '16/9': '16 / 9'
           },
           fontFamily: {
             sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
@@ -122,7 +122,7 @@
 <header class="bg-primary border-b border-border-default">
   <div class="container mx-auto px-4 py-4">
     <div class="flex items-center space-x-4">
-      <a href="/lista.html" class="text-text-tertiary hover:text-text-secondary">
+      <a href="/?lat=51.7764813492&lng=19.4539152692&zoom=16&id=L025" class="text-text-tertiary hover:text-text-secondary">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
         </svg>
@@ -147,10 +147,10 @@
           Kultura i dziedzictwo
         </div>
         <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
-          nieznany
+          ponadosiedlowe
         </div>
         <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
-          
+          PONADOSIEDLOWE
         </div>
       </div>
       
@@ -158,19 +158,6 @@
         1 400 000 zł
       </div>
     </div>
-    
-    <!-- Street View Image -->
-    
-    <div class="mb-8">
-      <img 
-        src="/api/streetview?lat=51.7764813492&lng=19.4539152692&size=800x400&heading=0&pitch=0&fov=90"
-        alt="Zdjęcie miejsca (Street View) – Zakup nowych książek i bezpłatny dostęp do audiobooków i ebooków dla mieszkańców Łodzi we wszystkich Filiach Biblioteki Miejskiej w Łodzi."
-        class="w-full h-64 md:h-80 object-cover rounded-lg shadow-custom"
-        loading="lazy"
-        onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iI0Y3RjdGNyIvPjx0ZXh0IHg9IjQwMCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0ic3lzdGVtLXVpIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNkI2QjZCIj5CcmFrIHpkasSZY2lhPC90ZXh0Pjwvc3ZnPg=='"
-      >
-    </div>
-    
     
     <!-- Project Description -->
     <div class="prose max-w-none mb-8">
@@ -188,11 +175,16 @@ Rosnące ceny książek papierowych i dostępu do zbiorów elektronicznych spowo
     
     <!-- Location Info -->
     
+    <div class="mb-8">
+      <h2 class="text-xl font-semibold text-text-primary mb-4">Lokalizacja</h2>
+      <p class="text-text-secondary">Dodatkowe lokalizacje.Plac Wolności 4 – siedziba główna, oraz sieć filii w całym mieście: Filia nr 2, ul. Łagiewnicka 118, Filia nr 3, ul. Osiedlowa 6, Filia nr 4, ul. Zachodnia 76, Filia nr 6, ul. Marynarska 9, Filia nr 8, ul. H. Radlińskiej 2, Filia nr 9, ul. Chryzantem 2, Filia nr 10, ul. 11 Listopada 79, Filia nr 12, ul. Zachodnia 12, Filia nr 13, ul. Rojna 39, Filia nr 14, ul. Powstańców Wielkopolskich 3, Filia nr 15, ul. Boya-Żeleńskiego 15, Filia nr 16, ul. Motylowa 13, Filia nr 17, ul. Mackiewicza 35, Filia nr 18, ul. Wodnika 7, Filia nr 19, ul. Żubardzka 3, Filia nr 20, ul. Turoszowska 9a, Filia nr 21, ul. Długosza 21/23, Filia nr 22, ul. Tomaszewicza 2, Filia nr 23, ul. Perla 9, Filia nr 25, ul. Wileńska 59/63, Filia nr 26, ul. Kostki Napierskiego 4, Filia nr 27, ul. Ks.J. Popiełuszki 17, Filia nr 28, ul. Zielona 77, Filia nr 29, ul. Moniuszki 5, Filia nr 31, ul. Garnizonowa 38, Filia nr 32, ul. Gdańska 8, Filia nr 33, ul. Ossowskiego 4, Filia nr 35, ul. Wróblewskiego 67, Filia nr 37, ul. Sienkiewicza 67, Filia nr 38, ul. Rewolucji 1905r. 84 Filia nr39, Plac Wolności 4, Filia nr 40, ul. Wschodnia 42, Filia nr 41, ul. Narutowicza 91a, Filia nr 42, ul. Lumumby 12, Filia nr 47, ul. Brzeźna 10, Filia nr 49, ul. Narutowicza 8/10, Filia nr 52, ul. Ketlinga 21, Filia r 53, ul. Jurczyńskiego 30a, Filia nr 54, ul. Szaniawskiego 5a, Filia nr 55, ul. Wilcza 7, Filia nr 56, ul. Sacharowa 63, Filia nr 57, ul. Bartoka 27, Filia nr 58, ul. Zakładowa 50, Filia nr 59, ul. Skalna 2, Filia nr 61, ul. Tatrzańska 63, Filia nr 63, ul. Tuwima 46, Filia nr 64, ul. Zaolziańska 49, Filia nr 65, ul. Przybyszewskiego 46/48, Filia nr 66, ul. Natalii 4, Filia nr 69, ul. Bednarska 24, Filia nr 70, ul. Łączna 29/31, Filia nr 71, ul. Cieszkowskiego 11a, Filia nr 72, ul. Kadłubka 40, Filia nr 73, ul. Piękna 35/39, Filia nr 74, ul. Dąbrowskiego 91, Filia nr 78, ul Tatrzańska 124, Filia nr 79, ul. Ujście 4.</p>
+    </div>
+    
     
     <!-- Actions -->
     <div class="flex flex-wrap gap-4 mb-8">
       <a 
-        href="/?id=L025" 
+        href="/?lat=51.7764813492&lng=19.4539152692&zoom=16&id=L025" 
         class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
       >
         Pokaż na mapie
