@@ -16,6 +16,11 @@ class MapPage {
 
   async init() {
     try {
+      // Version logging for deployment tracking
+      const buildTimestamp = new Date().toISOString();
+      console.log(`🚀 Budżet Obywatelski Łódź - Map App v${buildTimestamp}`);
+      console.log('📍 Loading 968 projects for Łódź 2025-2026...');
+      
       // Load project data
       await this.loadData();
       
@@ -141,6 +146,22 @@ class MapPage {
     // Filter panel toggle
     this.initFilterToggle();
     
+    // Banner close button
+    const closeBanner = document.getElementById('close-banner');
+    const bannerContainer = document.getElementById('banner-container');
+    if (closeBanner && bannerContainer) {
+      closeBanner.addEventListener('click', () => {
+        bannerContainer.style.display = 'none';
+        // Save preference in localStorage
+        localStorage.setItem('bannerHidden', 'true');
+      });
+      
+      // Check if banner was previously hidden
+      if (localStorage.getItem('bannerHidden') === 'true') {
+        bannerContainer.style.display = 'none';
+      }
+    }
+    
     // Search input
     const searchInput = document.getElementById('search-input');
     if (searchInput) {
@@ -175,63 +196,194 @@ class MapPage {
       });
     }
     
-    // View toggle buttons
-    const mapViewBtn = document.getElementById('map-view-btn');
-    const listViewBtn = document.getElementById('list-view-btn');
-    
-    if (listViewBtn) {
-      listViewBtn.addEventListener('click', () => {
-        window.location.href = '/lista.html' + this.buildURLParams();
+    // Sort dropdown
+    const sortFilter = document.getElementById('sort-filter');
+    if (sortFilter) {
+      sortFilter.addEventListener('change', (e) => {
+        this.sortProjects(e.target.value);
+        this.updateDisplay();
       });
     }
+    
+    // View toggle buttons (removed as we no longer have them in new layout)
   }
 
   initFilterToggle() {
-    const filterToggle = document.getElementById('filter-toggle');
-    const filterContent = document.getElementById('filter-content');
-    const filterChevron = document.getElementById('filter-chevron');
+    const filterToggleMobile = document.getElementById('filter-toggle');
+    const filterToggleDesktop = document.getElementById('filter-toggle-desktop');
     const filterPanel = document.getElementById('filter-panel');
+    const filterOverlay = document.getElementById('filter-overlay');
+    const closeFilter = document.getElementById('close-filter');
+    const filterPanelToggle = document.getElementById('filter-panel-toggle');
+    const filterPanelExpand = document.getElementById('filter-panel-expand');
+    const filterCollapseIcon = document.getElementById('filter-collapse-icon');
+    const projectsPanel = document.getElementById('projects-panel');
+    const projectsPanelToggle = document.getElementById('projects-panel-toggle');
+    const projectsCollapseIcon = document.getElementById('projects-collapse-icon');
+    const projectsHeader = document.getElementById('projects-header');
+    const mapContainer = document.getElementById('map-container');
     
-    if (filterToggle && filterContent && filterChevron && filterPanel) {
-      // Check if mobile
-      const isMobile = window.innerWidth < 768;
-      
-      // Set initial state - collapsed on mobile, open on desktop
-      if (isMobile) {
-        filterContent.classList.add('hidden');
-        filterChevron.classList.add('rotate-180');
-        filterPanel.classList.add('-translate-y-full');
-      } else {
-        filterContent.classList.remove('hidden');
-        filterChevron.classList.remove('rotate-180');
-        filterPanel.classList.remove('-translate-y-full');
-      }
-      
-      filterToggle.addEventListener('click', () => {
-        const isHidden = filterContent.classList.contains('hidden');
-        
-        if (isHidden) {
-          filterContent.classList.remove('hidden');
-          filterChevron.classList.remove('rotate-180');
-          filterPanel.classList.remove('-translate-y-full');
-        } else {
-          filterContent.classList.add('hidden');
-          filterChevron.classList.add('rotate-180');
-          filterPanel.classList.add('-translate-y-full');
-        }
-      });
-      
-      // Handle window resize
-      window.addEventListener('resize', () => {
-        const isMobileNow = window.innerWidth < 768;
-        if (!isMobileNow && filterContent.classList.contains('hidden')) {
-          // On desktop, show filters by default
-          filterContent.classList.remove('hidden');
-          filterChevron.classList.remove('rotate-180');
-          filterPanel.classList.remove('-translate-y-full');
-        }
+    // Mobile filter toggle
+    if (filterToggleMobile && filterPanel && filterOverlay) {
+      filterToggleMobile.addEventListener('click', () => {
+        filterPanel.classList.remove('-translate-x-full');
+        filterOverlay.classList.remove('hidden');
       });
     }
+    
+    // Desktop filter panel collapse toggle
+    if (filterPanelToggle && filterPanel && filterPanelExpand) {
+      filterPanelToggle.addEventListener('click', () => {
+        // Collapse panel - make it width 0 and hide content
+        filterPanel.classList.remove('md:w-96');
+        filterPanel.classList.add('md:w-0', 'md:opacity-0');
+        filterPanel.dataset.collapsed = 'true';
+        
+        // Show expand button
+        filterPanelExpand.classList.remove('hidden', 'md:hidden');
+        filterPanelExpand.classList.add('md:block');
+        
+        // Invalidate map size when toggling panel
+        setTimeout(() => {
+          if (this.map) {
+            this.map.invalidateSize();
+          }
+        }, 300);
+      });
+    }
+    
+    // Filter panel expand button
+    if (filterPanelExpand && filterPanel) {
+      filterPanelExpand.addEventListener('click', () => {
+        // Expand panel - restore width and opacity
+        filterPanel.classList.remove('md:w-0', 'md:opacity-0');
+        filterPanel.classList.add('md:w-96');
+        filterPanel.dataset.collapsed = 'false';
+        
+        // Hide expand button
+        filterPanelExpand.classList.add('hidden', 'md:hidden');
+        
+        // Invalidate map size
+        setTimeout(() => {
+          if (this.map) {
+            this.map.invalidateSize();
+          }
+        }, 300);
+      });
+    }
+    
+    // Projects panel collapse toggle
+    if (projectsPanelToggle && projectsPanel && projectsCollapseIcon && mapContainer) {
+      projectsPanelToggle.addEventListener('click', () => {
+        const isCollapsed = projectsPanel.dataset.collapsed === 'true';
+        
+        if (isCollapsed) {
+          // Expand panel - restore original size
+          projectsPanel.classList.remove('h-14');
+          projectsPanel.classList.add('h-[45%]', 'md:h-[60%]');
+          projectsPanel.dataset.collapsed = 'false';
+          projectsCollapseIcon.style.transform = 'rotate(0deg)';
+          
+          // Restore map container size
+          mapContainer.classList.remove('h-[calc(100%-3.5rem)]', 'md:h-[calc(100%-3.5rem)]');
+          mapContainer.classList.add('h-[55%]', 'md:h-[40%]');
+          
+          // Show full content
+          const projectList = projectsPanel.querySelector('.overflow-y-auto');
+          if (projectList) {
+            projectList.classList.remove('hidden');
+          }
+        } else {
+          // Collapse panel to just header (h-14 = 3.5rem)
+          projectsPanel.classList.remove('h-[45%]', 'md:h-[60%]');
+          projectsPanel.classList.add('h-14');
+          projectsPanel.dataset.collapsed = 'true';
+          projectsCollapseIcon.style.transform = 'rotate(-180deg)';
+          
+          // Expand map container to fill remaining space
+          mapContainer.classList.remove('h-[55%]', 'md:h-[40%]');
+          mapContainer.classList.add('h-[calc(100%-3.5rem)]', 'md:h-[calc(100%-3.5rem)]');
+          
+          // Hide content, keep header visible
+          const projectList = projectsPanel.querySelector('.overflow-y-auto');
+          if (projectList) {
+            projectList.classList.add('hidden');
+          }
+        }
+        
+        // Invalidate map size when toggling panel
+        setTimeout(() => {
+          if (this.map) {
+            this.map.invalidateSize();
+          }
+        }, 300);
+      });
+    }
+    
+    // Desktop hamburger menu toggle (keeping for compatibility)
+    if (filterToggleDesktop && filterPanel && filterPanelExpand) {
+      filterToggleDesktop.addEventListener('click', () => {
+        const isCollapsed = filterPanel.dataset.collapsed === 'true';
+        
+        if (isCollapsed) {
+          // Expand panel
+          filterPanel.classList.remove('md:w-0', 'md:opacity-0');
+          filterPanel.classList.add('md:w-96');
+          filterPanel.dataset.collapsed = 'false';
+          filterPanelExpand.classList.add('hidden', 'md:hidden');
+        } else {
+          // Collapse panel
+          filterPanel.classList.remove('md:w-96');
+          filterPanel.classList.add('md:w-0', 'md:opacity-0');
+          filterPanel.dataset.collapsed = 'true';
+          filterPanelExpand.classList.remove('hidden', 'md:hidden');
+          filterPanelExpand.classList.add('md:block');
+        }
+        
+        setTimeout(() => {
+          if (this.map) {
+            this.map.invalidateSize();
+          }
+        }, 300);
+      });
+    }
+    
+    // Close filter on mobile
+    if (closeFilter && filterPanel && filterOverlay) {
+      closeFilter.addEventListener('click', () => {
+        filterPanel.classList.add('-translate-x-full');
+        filterOverlay.classList.add('hidden');
+      });
+    }
+    
+    // Close on overlay click
+    if (filterOverlay && filterPanel) {
+      filterOverlay.addEventListener('click', () => {
+        filterPanel.classList.add('-translate-x-full');
+        filterOverlay.classList.add('hidden');
+      });
+    }
+    
+    // Handle window resize
+    window.addEventListener('resize', () => {
+      const isMobile = window.innerWidth < 768;
+      
+      if (isMobile && filterPanel && filterOverlay) {
+        // Ensure mobile state is correct
+        if (!filterPanel.classList.contains('-translate-x-full')) {
+          filterOverlay.classList.remove('hidden');
+        }
+      } else if (filterPanel && filterOverlay) {
+        // Desktop - hide overlay and reset panel position
+        filterOverlay.classList.add('hidden');
+        filterPanel.classList.remove('-translate-x-full');
+      }
+      
+      // Invalidate map size on resize
+      if (this.map) {
+        this.map.invalidateSize();
+      }
+    });
   }
 
   applyFilters() {
@@ -273,7 +425,48 @@ class MapPage {
     );
   }
 
+  sortProjects(sortType) {
+    // First separate L068 project if it exists in filtered projects
+    const l068Index = this.filteredProjects.findIndex(p => p.id === 'L068');
+    let l068Project = null;
+    
+    if (l068Index !== -1) {
+      l068Project = this.filteredProjects.splice(l068Index, 1)[0];
+    }
+    
+    // Sort the remaining projects
+    switch(sortType) {
+      case 'name':
+        this.filteredProjects.sort((a, b) => a.nazwa.localeCompare(b.nazwa, 'pl'));
+        break;
+      case 'cost-desc':
+        this.filteredProjects.sort((a, b) => b.koszt - a.koszt);
+        break;
+      case 'cost-asc':
+        this.filteredProjects.sort((a, b) => a.koszt - b.koszt);
+        break;
+      case 'district':
+        this.filteredProjects.sort((a, b) => {
+          const districtA = a.osiedle || '';
+          const districtB = b.osiedle || '';
+          return districtA.localeCompare(districtB, 'pl');
+        });
+        break;
+      default:
+        // Default to name sort
+        this.filteredProjects.sort((a, b) => a.nazwa.localeCompare(b.nazwa, 'pl'));
+    }
+    
+    // Place L068 project first if it exists
+    if (l068Project) {
+      this.filteredProjects.unshift(l068Project);
+    }
+  }
+
   updateDisplay() {
+    // Ensure L068 is always first
+    this.ensureL068First();
+    
     // Update map markers
     this.updateMapMarkers();
     
@@ -282,6 +475,15 @@ class MapPage {
     
     // Update project list in sidebar
     this.updateProjectList();
+  }
+  
+  ensureL068First() {
+    // Find L068 project and move it to the front if it exists
+    const l068Index = this.filteredProjects.findIndex(p => p.id === 'L068');
+    if (l068Index > 0) {
+      const l068Project = this.filteredProjects.splice(l068Index, 1)[0];
+      this.filteredProjects.unshift(l068Project);
+    }
   }
 
   updateMapMarkers() {
@@ -292,7 +494,33 @@ class MapPage {
     const geocodedProjects = this.filteredProjects.filter(p => p.lat && p.lng);
     
     geocodedProjects.forEach(project => {
-      const marker = L.marker([project.lat, project.lng]);
+      let marker;
+      
+      // Create special marker for L068 project
+      if (project.id === 'L068') {
+        // Custom orange marker for L068 (very similar to default Leaflet marker)
+        const customIcon = new L.Icon({
+          iconUrl: 'data:image/svg+xml;base64,' + btoa(`
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 41" width="25" height="41">
+              <path fill="#ff7800" stroke="#fff" stroke-width="2" d="M12.5,0C5.6,0,0,5.6,0,12.5c0,6.9,12.5,28.5,12.5,28.5s12.5-21.6,12.5-28.5C25,5.6,19.4,0,12.5,0z"/>
+              <circle fill="#fff" cx="12.5" cy="12.5" r="6"/>
+            </svg>
+          `),
+          iconSize: [25, 41],
+          iconAnchor: [12, 41],
+          popupAnchor: [1, -34],
+          shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+          shadowSize: [41, 41],
+          shadowAnchor: [12, 41]
+        });
+        marker = L.marker([project.lat, project.lng], { 
+          icon: customIcon,
+          zIndexOffset: 1000  // High z-index to appear above other markers
+        });
+      } else {
+        // Regular marker for other projects
+        marker = L.marker([project.lat, project.lng]);
+      }
       
       // Create popup content
       const popupContent = this.createMarkerPopup(project);
@@ -306,8 +534,8 @@ class MapPage {
       this.markersGroup.addLayer(marker);
     });
     
-    // Fit map to markers if there are any
-    if (geocodedProjects.length > 0) {
+    // Only fit map to markers on desktop, keep Łódź center on mobile
+    if (geocodedProjects.length > 0 && window.innerWidth >= 768) {
       const group = new L.featureGroup(this.markersGroup.getLayers());
       if (group.getBounds().isValid()) {
         this.map.fitBounds(group.getBounds(), { padding: [20, 20] });
@@ -330,7 +558,8 @@ class MapPage {
         </div>
         <div class="mt-3 space-y-2">
           <a href="/projekty/${project.id}.html" 
-             class="inline-block bg-gray-900 text-white px-3 py-1 text-xs rounded hover:bg-gray-700 transition-colors">
+             class="inline-block bg-gray-600 px-3 py-1.5 text-xs rounded hover:bg-gray-700 transition-colors font-medium" 
+             style="color: white !important;">
             Zobacz szczegóły
           </a>
         </div>
@@ -341,11 +570,8 @@ class MapPage {
   updateResultsCount() {
     const countElement = document.getElementById('results-count');
     if (countElement) {
-      const total = this.projects.length;
       const filtered = this.filteredProjects.length;
-      const geocoded = this.filteredProjects.filter(p => p.lat && p.lng).length;
-      
-      countElement.textContent = `Znaleziono ${filtered} z ${total} projektów${geocoded < filtered ? ` (${geocoded} z lokalizacją)` : ''}`;
+      countElement.textContent = `(${filtered})`;
     }
   }
 
@@ -485,6 +711,7 @@ class MapPage {
   focusOnProject(projectId) {
     const project = this.projects.find(p => p.id === projectId);
     if (project && project.lat && project.lng) {
+      // Zoom to project location
       this.map.setView([project.lat, project.lng], 16);
       
       // Find and open the marker popup
@@ -537,6 +764,32 @@ class MapPage {
   parseURLParams() {
     const urlParams = new URLSearchParams(window.location.search);
     
+    // Handle map location parameters first
+    if (urlParams.has('lat') && urlParams.has('lng')) {
+      const lat = parseFloat(urlParams.get('lat'));
+      const lng = parseFloat(urlParams.get('lng'));
+      const zoom = urlParams.has('zoom') ? parseInt(urlParams.get('zoom')) : 16;
+      
+      if (!isNaN(lat) && !isNaN(lng)) {
+        this.map.setView([lat, lng], zoom);
+        
+        // If there's a project ID, highlight it
+        if (urlParams.has('id')) {
+          const projectId = urlParams.get('id');
+          setTimeout(() => {
+            this.highlightProjectById(projectId);
+          }, 500);
+        }
+      }
+    }
+    // Handle project ID without coordinates
+    else if (urlParams.has('id')) {
+      const projectId = urlParams.get('id');
+      setTimeout(() => {
+        this.highlightProjectById(projectId);
+      }, 500);
+    }
+    
     // Apply URL parameters to filters
     if (urlParams.has('search')) {
       this.filters.search = urlParams.get('search');
@@ -588,13 +841,70 @@ class MapPage {
       errorDiv.remove();
     }, 5000);
   }
+
+  zoomToProject(project) {
+    if (project && project.lat && project.lng) {
+      this.map.setView([project.lat, project.lng], 16);
+      
+      // Find and open the marker popup
+      this.markers.forEach(marker => {
+        if (marker.getLatLng().lat === project.lat && marker.getLatLng().lng === project.lng) {
+          marker.openPopup();
+        }
+      });
+    }
+  }
+
+  highlightProjectById(projectId) {
+    const project = this.projects.find(p => p.id === projectId);
+    if (project) {
+      this.zoomToProject(project);
+    }
+  }
+
+  parseURLParams() {
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    // Check if we have coordinates from project detail page navigation
+    if (urlParams.has('lat') && urlParams.has('lng')) {
+      const lat = parseFloat(urlParams.get('lat'));
+      const lng = parseFloat(urlParams.get('lng'));
+      const zoom = parseInt(urlParams.get('zoom')) || 16;
+      const projectId = urlParams.get('id');
+      
+      if (!isNaN(lat) && !isNaN(lng)) {
+        // Wait for map to be ready, then set view and highlight project
+        setTimeout(() => {
+          this.map.setView([lat, lng], zoom);
+          
+          if (projectId) {
+            // Find and highlight the project
+            this.highlightProject(projectId);
+            
+            // Find and open marker popup
+            this.markersGroup.eachLayer(marker => {
+              if (marker.getLatLng().lat === lat && marker.getLatLng().lng === lng) {
+                marker.openPopup();
+              }
+            });
+          }
+        }, 500);
+      }
+    }
+  }
+
+  zoomToProject(project) {
+    if (project && project.lat && project.lng) {
+      this.map.setView([project.lat, project.lng], 16);
+      this.highlightProject(project.id);
+    }
+  }
 }
 
 // Initialize map page when DOM is loaded
-let mapPage;
 document.addEventListener('DOMContentLoaded', () => {
-  mapPage = new MapPage();
+  const mapPage = new MapPage();
+  
+  // Export for global access
+  window.mapPage = mapPage;
 });
-
-// Export for global access
-window.mapPage = mapPage;
