@@ -2,6 +2,8 @@
 
 Interaktywna mapa projektów budżetu obywatelskiego miasta Łodzi na lata 2025-2026. Strona prezentuje wszystkie 968 projektów zgłoszonych w ramach budżetu obywatelskiego, umożliwiając przeglądanie ich na mapie oraz w formie listy z zaawansowanymi filtrami.
 
+🚀 **Aplikacja:** https://budzetobywatelski-lodz.vercel.app/
+
 🌐 **Oficjalna strona:** https://budzetobywatelski.uml.lodz.pl/
 
 ## Opis projektu
