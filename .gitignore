@@ -70,6 +70,7 @@ nogit/
 *.temp
 temp/
 tmp/
+node_modules//
 
 # Local development
 .cache/
