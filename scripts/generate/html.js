@@ -94,6 +94,21 @@ class HTMLGenerator {
     .shadow-custom-md { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
     .shadow-custom-lg { box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
     
+    /* Line clamp utilities for text truncation */
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    
+    .line-clamp-3 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    
     /* Ensure map container has proper dimensions and interactions */
     #map {
       position: relative !important;
@@ -312,8 +327,65 @@ ${content}
   </div>
 </div>
 
+<!-- Projects Listing Section -->
+<section class="bg-primary border-t border-border-default">
+  <div class="container mx-auto px-4 py-8">
+    <div class="mb-6">
+      <h2 class="text-2xl font-bold text-text-primary mb-2">Wszystkie projekty (${projectCount})</h2>
+      <p class="text-text-secondary">Kompletna lista projektów Budżetu Obywatelskiego Łódź 2025-2026</p>
+    </div>
+    
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      ${data.projects.map(project => `
+        <article class="border border-border-default rounded-lg p-4 hover:border-border-hover hover:bg-secondary transition-colors">
+          <header class="mb-3">
+            <h3 class="font-medium text-text-primary mb-2 line-clamp-2">
+              <a href="/projekty/${project.id}.html" class="hover:underline">${project.nazwa}</a>
+            </h3>
+            <div class="flex items-center justify-between text-sm mb-2">
+              <span class="text-text-secondary">ID: ${project.id}</span>
+              <span class="font-medium text-text-primary">${new Intl.NumberFormat('pl-PL').format(project.koszt)} zł</span>
+            </div>
+          </header>
+          
+          <div class="mb-3">
+            <p class="text-sm text-text-secondary line-clamp-3 mb-2">
+              ${project.opis ? project.opis.substring(0, 120) + (project.opis.length > 120 ? '...' : '') : 'Brak opisu projektu.'}
+            </p>
+          </div>
+          
+          <footer class="flex flex-wrap gap-1 mb-3">
+            <span class="px-2 py-1 bg-tertiary text-xs rounded-full text-text-secondary">${project.kategoria}</span>
+            <span class="px-2 py-1 bg-tertiary text-xs rounded-full text-text-secondary">${project.osiedle}</span>
+            <span class="px-2 py-1 bg-tertiary text-xs rounded-full text-text-secondary">${project.typ}</span>
+          </footer>
+          
+          <div class="flex gap-2">
+            <a 
+              href="/projekty/${project.id}.html" 
+              class="flex-1 px-3 py-2 text-xs bg-secondary hover:bg-hover border border-border-default rounded text-center text-text-secondary hover:text-text-primary transition-colors"
+            >
+              Szczegóły
+            </a>
+            ${project.lat && project.lng ? `
+            <a 
+              href="/?lat=${project.lat}&lng=${project.lng}&zoom=16&id=${project.id}" 
+              class="px-3 py-2 text-xs bg-secondary hover:bg-hover border border-border-default rounded text-text-secondary hover:text-text-primary transition-colors"
+              title="Pokaż na mapie"
+            >
+              📍
+            </a>
+            ` : ''}
+          </div>
+        </article>
+      `).join('')}
+    </div>
+  </div>
+</section>
+
 <!-- Footer -->
-<footer class="bg-tertiary border-t border-border-default mt-8">
+<footer class="bg-tertiary border-t border-border-default">
   <div class="container mx-auto px-4 py-8">
     <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
       <!-- Left side - Repository and date -->

@@ -92,6 +92,21 @@ Labirynt wyposażony będzie w zaką... Koszt: 450 000 zł. Kategoria: Sport i 
     .shadow-custom-md { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
     .shadow-custom-lg { box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
     
+    /* Line clamp utilities for text truncation */
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    
+    .line-clamp-3 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    
     /* Ensure map container has proper dimensions and interactions */
     #map {
       position: relative !important;

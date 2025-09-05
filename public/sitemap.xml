@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Main Pages -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <!-- Main Page -->
   <url>
     <loc>https://budzetobywatelski.vercel.app/</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <mobile:mobile/>
   </url>
   
   <!-- Individual Project Pages -->
@@ -14,4283 +20,4997 @@
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B002TW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B003TW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://budzetobywatelski.vercel.app/projekty/B007BC.html</loc>
-    <lastmod>2025-09-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B005BZ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B006BD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
+  </url>
+  <url>
+    <loc>https://budzetobywatelski.vercel.app/projekty/B007BC.html</loc>
+    <lastmod>2025-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B008BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B009BD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B012BZ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B013BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B014TW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B015RA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B016BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B017BD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B018RA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B020JM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B022BD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B023BD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B027BD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B028BD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B029BD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B031BD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B032BD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B033LA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B035LA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B036BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B037BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B039BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B040BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B042RA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B044BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B046RA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B047JM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B048WL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B049BZ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B051JM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B054BD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B055TW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B057RA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B060JM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B061TW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B062TW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B063TW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B065LA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B069RA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B071BD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B073JM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B074JM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B075TW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B077BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B082BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B083BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B084BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B085BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B086BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B088BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B089BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B090BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B093BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B104BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B110RA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B112BD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B113JM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B115RA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B116BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B117RA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B118LA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B119LA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B120BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B122WL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B123RA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B124BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B125TW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B126WL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B127WL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B128WL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B129WL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B130WL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B131WL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B132WL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B134BD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B135TW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B138LA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B139TW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B140RA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B142BZ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B145JM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B146LA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B148BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B152RA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B153BD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B154RA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B156LA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B157LA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B159LA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B160BD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B162JM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B163WL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B165WL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B166TW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B168BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B169RA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B170BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B171BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B173RA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B174BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B175RA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B179BZ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B181BD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B182BD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B183BZ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B184BZ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B185BZ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B186BZ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B187BZ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B188BZ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B189BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B190BD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B191RA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B192BD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B194RA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B195LA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B196RA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B197LA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B198BD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B200TW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B201RA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B202BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B203TW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B206BD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B208BZ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B209BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B210BZ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B211RA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B213RA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B215BZ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B216TW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B217BD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B219LA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B220RA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B222RA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B223BD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B224TW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B225BD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B226RA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B227BZ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B229JM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B231BC.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B232TW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/B233TW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G001RO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G002GO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G003RO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G004PK.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G005RU.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G007GO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G008GO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G013CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G014RO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G015GO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G016PK.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G017GO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G018RU.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G019NN.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G021CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G022CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G023RU.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G024CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G028CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G029CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G031PK.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G034RO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G035GO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G036NN.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G037RU.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G038RU.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G040RU.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G041CH.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G042CH.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G043PK.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G044CH.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G045CH.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G046CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G047CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G049CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G050PK.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G059PK.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G061CH.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G062RO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G064RO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G068NN.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G069WI.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G071WI.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G072WI.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G073WI.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G075CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G076CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G077CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G078GO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G079GO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G080GO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G081CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G083WI.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G084GO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G085CH.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G086CH.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G087RU.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G088CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G089CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G090RU.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G091GO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G092CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G093RU.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G095CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G097CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G098CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G099RU.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G100CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G101PK.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G102CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G104PK.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G105PK.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G106CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G107CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G108CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G109CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G110PK.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G112PK.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G113CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G114RU.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G115CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G119RO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G121CH.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G122PK.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G123NN.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G124RO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G125WI.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G126CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G128NN.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G129NN.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G130GO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G131CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G134CH.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G135CH.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G136PK.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G137CH.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G138CH.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G139CH.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G140CH.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G142GO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G144PK.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G148RO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G149PK.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G151CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G152CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G153PK.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G154WI.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G155RU.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G157PK.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G161WI.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G164WI.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G165CH.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G168CH.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G170CH.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G171CH.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G174CH.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G175CD.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G177CH.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G179GO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://budzetobywatelski.vercel.app/projekty/G183CH.html</loc>
-    <lastmod>2025-09-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://budzetobywatelski.vercel.app/projekty/G182CH.html</loc>
-    <lastmod>2025-09-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/G181CH.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
+  </url>
+  <url>
+    <loc>https://budzetobywatelski.vercel.app/projekty/G182CH.html</loc>
+    <lastmod>2025-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+  </url>
+  <url>
+    <loc>https://budzetobywatelski.vercel.app/projekty/G183CH.html</loc>
+    <lastmod>2025-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L004.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L005.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L007.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L008.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L009.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L010.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L011.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://budzetobywatelski.vercel.app/projekty/L013.html</loc>
-    <lastmod>2025-09-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L012.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
+  </url>
+  <url>
+    <loc>https://budzetobywatelski.vercel.app/projekty/L013.html</loc>
+    <lastmod>2025-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L014.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L017.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L020.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L022.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L025.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L027.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L028.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L030.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L031.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L032.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L033.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L034.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L035.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L036.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L037.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L041.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L042.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L044.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L045.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L046.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L047.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L048.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L049.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L050.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L051.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L053.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L054.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L055.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L057.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L058.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L059.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L060.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L061.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L062.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L064.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L068.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L069.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L070.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L071.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L076.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L077.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L078.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L080.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L081.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L082.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L083.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L084.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L085.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L086.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L087.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L088.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L089.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L092.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L093.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L094.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L095.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L096.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L097.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L098.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L099.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L100.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L101.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L102.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L103.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L104.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L105.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L106.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L107.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L108.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L109.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L110.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L111.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L112.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L113.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L114.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L115.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L116.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L117.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L118.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L122.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L126.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L129.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L131.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L134.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L138.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L141.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L146.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L149.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L150.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L152.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L156.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L157.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L158.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L161.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L162.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L163.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L164.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L168.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L170.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L172.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L173.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L174.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/L175.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P002KO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P003KO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P004MM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P007SP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P008SP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P009LP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P010LP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P011SP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P012KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P013RS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P014RS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P015KO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P016KO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P017SP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P018MM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P019ZM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P020ZM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P021ZM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P022ZL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P023KO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P025LP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P026LP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P027KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P028RS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P029KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P030LP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P032RS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P033ZM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P035MM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P039SP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P047ZL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P048KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P050KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P051KO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P052KO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P053KO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P054ZL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P056ZL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P057ZL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P058KO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P059KO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P060ZL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P063KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P064KO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P065KO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P074KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P075SP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P077ZL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P078KO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P080RS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P082MM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P083RS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P084RS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P085KO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P086KO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P088ZL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P089ZL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P090ZL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P091ZL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P092SP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P093RS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P094ZL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P095ZL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P096ZL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P097LP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P098SP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P099LP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P100LP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P101LP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P102RS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P105ZM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P106ZL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P107ZL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P108ZL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P110KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P111RS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P115LP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P116LP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P117MM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P118MM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P119MM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P120ZM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P121ZL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P123ZM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P125MM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P126LP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P127KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P128KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P130KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P131KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P133KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P134KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P136KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P137MM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P138KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P139KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P141KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P142ZL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P143KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P144KO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P145KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P146KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P147KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P148RS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P149KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P150KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P153SP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P155LP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P156LP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P157LP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P158LP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P159ZM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P160MM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P163ZM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P164LP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P165RS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P166RS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P167RS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P170KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P171KR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P172LP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P175SP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P177LP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P178RS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P179SP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P180LP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P186LP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P188ZL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P189LP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P190SP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P196LP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P197ZM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P198ZM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P199ZM.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/P200SP.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S001KA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S002WS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S007WS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S009KA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S010KA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S012KA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S013KA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S014WS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S015WS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S017WS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S021KA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S028KA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S029WS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S030WS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S031KA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S032KA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S033WS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S034KA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S038WS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S039WS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S044KA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S045KA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S046KA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S048KA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S049WS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S050WS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S051KA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S052KA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S053WS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S056WS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S057WS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S058WS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S060KA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S061KA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S062KA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S064WS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S065KA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S066KA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S068KA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S071WS.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/S074KA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W002SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W004SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W005WW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W007SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W009WW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W010SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W012WW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W013WW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W014SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W015ZA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W016SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W017SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W018ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W019OJ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W020OJ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W021AN.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W024SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W025SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W026SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W027SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W029ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W030SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W031SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W033NO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W034DL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W035NO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W036SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W037NO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W040ZA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W041ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W042DL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W043DL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W044NR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W047NR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W048WW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W049WW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W050WW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W051DL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W052WW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W053WW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W056WW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W057DL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W059ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W060ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W062ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W063WW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W066ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W067SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W068OJ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W069SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W070SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W075MI.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W078ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W080SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W081ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W082NO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W084DL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W085NO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W087WW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W088OJ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W089SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W090WW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W092OJ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W093OJ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W095ZA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W096DL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W107DL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W111NO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W112AN.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W113WW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W114WW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W118OJ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W120ZA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W123DL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W130ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W131ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W133OJ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W134OJ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W135ZA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W136MI.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W140ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W141ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W143OJ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W144OJ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W145NR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W147AN.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W149ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W150ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W152AN.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W154ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W156ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W157MI.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W162ZA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W163AN.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W165WW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W166NO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W168ZA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W169ZA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W170SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W171SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W172WW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W173ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W175ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W176ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W177SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W178ZA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W181WW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W182OJ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W183SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W184ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W185SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W186OJ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W187OJ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W188MI.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W189ZA.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W190WW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W191WW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W192SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W193MI.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W194ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W197SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W198NR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W199ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W200SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W201OJ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W203NO.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W204WW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W205OJ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W207WW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W208DL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W209OJ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W210DL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W211DL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W212DL.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W213OJ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W215WW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W216WW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W217NR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W218SW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W219ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W221ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W223ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W224ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W225ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W227ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W229WW.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W230OJ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W231ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W232ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W233ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W234ST.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W235OJ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W236OJ.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
   <url>
     <loc>https://budzetobywatelski.vercel.app/projekty/W238NR.html</loc>
     <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <mobile:mobile/>
   </url>
 </urlset>
