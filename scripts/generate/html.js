@@ -424,23 +424,6 @@ ${content}
   </div>
 </footer>
 
-<!-- Banner -->
-<div id="banner-container" class="fixed top-[calc(10vh+0.5rem)] md:top-[12vh] right-4 z-50 transition-all duration-300">
-  <div class="relative">
-    <button id="close-banner" class="absolute -top-2 -right-2 bg-white border border-border-default rounded-full p-1 hover:bg-hover transition-colors shadow-md z-10">
-      <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-      </svg>
-    </button>
-    <iframe 
-      src="/banner/banner.html" 
-      class="w-80 h-24 border-0 rounded-lg shadow-custom-lg bg-white"
-      style="max-width: calc(100vw - 2rem);"
-      loading="lazy">
-    </iframe>
-  </div>
-</div>
-
 <!-- Build Version -->
 <script>
   console.log('🔧 Build timestamp: ${new Date().toISOString()}');
