@@ -327,12 +327,13 @@ ${content}
   </div>
 </div>
 
-<!-- Projects Listing Section -->
-<section class="bg-primary border-t border-border-default">
-  <div class="container mx-auto px-4 py-8">
-    <div class="mb-6">
-      <h2 class="text-2xl font-bold text-text-primary mb-2">Wszystkie projekty (${projectCount})</h2>
-      <p class="text-text-secondary">Kompletna lista projektów Budżetu Obywatelskiego Łódź 2025-2026</p>
+<!-- Projects Listing Section (All Projects) -->
+<section class="bg-secondary border-t-2 border-border-default mt-8">
+  <div class="container mx-auto px-4 py-12">
+    <div class="mb-8 text-center">
+      <h2 class="text-3xl font-bold text-text-primary mb-3">Wszystkie projekty (${projectCount})</h2>
+      <p class="text-lg text-text-secondary">Kompletna lista projektów Budżetu Obywatelskiego Łódź 2025-2026</p>
+      <p class="text-sm text-text-tertiary mt-2">Poniżej znajduje się pełna lista wszystkich projektów - niezależna od JavaScript</p>
     </div>
     
     <!-- Projects Grid -->
