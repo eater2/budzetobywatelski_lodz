@@ -19,7 +19,7 @@ function generateSlug(nazwa, id) {
 }
 
 class HTMLGenerator {
-  static generateBaseHTML(title, description, content, additionalHead = '', bodyClass = '') {
+  static generateBaseHTML(title, description, content, additionalHead = '', bodyClass = '', canonicalUrl = 'https://budzetobywatelski-lodz.vercel.app/') {
     return `<!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -38,13 +38,13 @@ class HTMLGenerator {
   <meta name="geo.placename" content="Łódź">
   <meta name="geo.position" content="51.7592485;19.4559833">
   <meta name="ICBM" content="51.7592485, 19.4559833">
-  <link rel="canonical" href="https://budzetobywatelski-lodz.vercel.app/">
+  <link rel="canonical" href="${canonicalUrl}">
   
   <!-- OpenGraph Enhanced -->
   <meta property="og:title" content="${title}">
   <meta property="og:description" content="${description}">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://budzetobywatelski-lodz.vercel.app/">
+  <meta property="og:url" content="${canonicalUrl}">
   <meta property="og:site_name" content="Łódzki Budżet Obywatelski">
   <meta property="og:locale" content="pl_PL">
   <meta property="og:image" content="https://budzetobywatelski-lodz.vercel.app/og-image.png">
@@ -482,7 +482,8 @@ ${content}
 }
 </script>`;
 
-    const html = this.generateBaseHTML(title, description, content, '', 'bg-secondary');
+    const canonicalUrl = 'https://budzetobywatelski-lodz.vercel.app/';
+    const html = this.generateBaseHTML(title, description, content, '', 'bg-secondary', canonicalUrl);
     await fs.writeFile(path.join(publicDir, 'index.html'), html);
     console.log('✅ Generated index.html (map page)');
   }
@@ -620,9 +621,11 @@ ${content}
 }
 </script>`;
 
-    const html = this.generateBaseHTML(title, description, content);
+    const slug = generateSlug(project.nazwa, project.id);
+    const canonicalUrl = `https://budzetobywatelski-lodz.vercel.app/projekty/${slug}.html`;
+    const html = this.generateBaseHTML(title, description, content, '', '', canonicalUrl);
     
-    const filename = `${generateSlug(project.nazwa, project.id)}.html`;
+    const filename = `${slug}.html`;
     const filepath = path.join(publicDir, 'projekty', filename);
     
     await fs.writeFile(filepath, html);
