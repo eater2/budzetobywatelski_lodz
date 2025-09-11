@@ -62,7 +62,7 @@ async function generateSitemap(data, publicDir) {
 Allow: /
 
 # Sitemap
-Sitemap: ${baseUrl}/sitemap.xml
+Sitemap: https://budzetobywatelski-lodz.vercel.app/sitemap.xml
 
 # Crawl-delay (optional, helps with server load)
 Crawl-delay: 1
