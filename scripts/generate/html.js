@@ -490,6 +490,7 @@ ${content}
 
 
   static async generateProjectPage(project, publicDir) {
+    const slug = generateSlug(project.nazwa, project.id);
     const title = `${project.nazwa} – Budżet Obywatelski Łódź`;
     const description = `${project.opis?.substring(0, 150) || 'Projekt budżetu obywatelskiego'}... Koszt: ${new Intl.NumberFormat('pl-PL').format(project.koszt)} zł. Kategoria: ${project.kategoria}. Osiedle: ${project.osiedle}.`;
     
@@ -617,11 +618,10 @@ ${content}
     }
   },
   ` : ''}
-  "url": "https://budzetobywatelski-lodz.vercel.app/projekty/${generateSlug(project.nazwa, project.id)}.html"
+  "url": "https://budzetobywatelski-lodz.vercel.app/projekty/${slug}.html"
 }
 </script>`;
 
-    const slug = generateSlug(project.nazwa, project.id);
     const canonicalUrl = `https://budzetobywatelski-lodz.vercel.app/projekty/${slug}.html`;
     const html = this.generateBaseHTML(title, description, content, '', '', canonicalUrl);
     
