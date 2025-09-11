@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zakup nowych książek i bezpłatny dostęp do audiobooków i ebooków dla mieszkańców Łodzi we wszystkich Filiach Biblioteki Miejskiej w Łodzi. – Budżet Obywatelski Łódź</title>
+  <meta name="application-name" content="Łódzki Budżet Obywatelski">
+  <meta name="description" content="Zadanie dedykowane jest wszystkim mieszkańcom Miasta, którzy lubią czytać książki zarówno papierowe jak i w elektronicznej wersji. Ceny książek papier... Koszt: 1 400 000 zł. Kategoria: Kultura i dziedzictwo. Osiedle: .">
+  <meta name="keywords" content="budżet obywatelski łódź mapa, budżet obywatelski 2025 łódź, bo łódź 2026, mapa projektów łódź, lbo łódź mapa, głosowanie obywatelskie łódź, projekty mieszkańców łódź, budżet partycypacyjny łódź, inicjatywy lokalne łódź">
+  
+  <!-- SEO Enhancement -->
+  <meta name="author" content="Łódzki Budżet Obywatelski">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="language" content="Polish">
+  <meta name="geo.region" content="PL-LD">
+  <meta name="geo.placename" content="Łódź">
+  <meta name="geo.position" content="51.7592485;19.4559833">
+  <meta name="ICBM" content="51.7592485, 19.4559833">
+  <link rel="canonical" href="https://budzetobywatelski-lodz.vercel.app/">
+  
+  <!-- OpenGraph Enhanced -->
+  <meta property="og:title" content="Zakup nowych książek i bezpłatny dostęp do audiobooków i ebooków dla mieszkańców Łodzi we wszystkich Filiach Biblioteki Miejskiej w Łodzi. – Budżet Obywatelski Łódź">
+  <meta property="og:description" content="Zadanie dedykowane jest wszystkim mieszkańcom Miasta, którzy lubią czytać książki zarówno papierowe jak i w elektronicznej wersji. Ceny książek papier... Koszt: 1 400 000 zł. Kategoria: Kultura i dziedzictwo. Osiedle: .">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://budzetobywatelski-lodz.vercel.app/">
+  <meta property="og:site_name" content="Łódzki Budżet Obywatelski">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:image" content="https://budzetobywatelski-lodz.vercel.app/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="article:author" content="Budżet Obywatelski Łódź">
+  <meta property="article:section" content="Civic Engagement">
+  <meta property="article:tag" content="budżet obywatelski">
+  <meta property="article:tag" content="Łódź">
+  <meta property="article:tag" content="demokracja">
+  <meta property="article:tag" content="projekty lokalne">
+  
+  <!-- Twitter Enhanced -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zakup nowych książek i bezpłatny dostęp do audiobooków i ebooków dla mieszkańców Łodzi we wszystkich Filiach Biblioteki Miejskiej w Łodzi. – Budżet Obywatelski Łódź">
+  <meta name="twitter:description" content="Zadanie dedykowane jest wszystkim mieszkańcom Miasta, którzy lubią czytać książki zarówno papierowe jak i w elektronicznej wersji. Ceny książek papier... Koszt: 1 400 000 zł. Kategoria: Kultura i dziedzictwo. Osiedle: .">
+  <meta name="twitter:site" content="@LodzOfficial">
+  <meta name="twitter:creator" content="@LodzOfficial">
+  
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="/data/projekty.json" as="fetch" crossorigin="anonymous">
+  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style" crossorigin="anonymous">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="anonymous">
+  
+  <!-- Tailwind CSS (CDN for now - will be replaced with custom build) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FFFFFF',
+            secondary: '#FAFAFA', 
+            tertiary: '#F7F7F7',
+            hover: '#F2F2F2',
+            'text-primary': '#111111',
+            'text-secondary': '#333333',
+            'text-tertiary': '#6B6B6B',
+            'border-default': '#E6E6E6',
+            'border-hover': '#DADADA',
+            'border-active': '#CFCFCF'
+          },
+          aspectRatio: {
+            '16/9': '16 / 9'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  
+  <!-- Custom styles -->
+  <style>
+    body { font-family: Inter, system-ui, -apple-system, sans-serif; }
+    .shadow-custom { box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+    .shadow-custom-md { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .shadow-custom-lg { box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+    
+    /* Line clamp utilities for text truncation */
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    
+    .line-clamp-3 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    
+    /* Ensure map container has proper dimensions and interactions */
+    #map {
+      position: relative !important;
+      width: 100% !important;
+      height: 100% !important;
+      z-index: 1 !important;
+    }
+    
+    /* Leaflet map fixes for proper mouse interaction */
+    .leaflet-container {
+      cursor: grab;
+    }
+    
+    .leaflet-container:active {
+      cursor: grabbing;
+    }
+    
+    .leaflet-container a {
+      color: inherit;
+    }
+    
+    .leaflet-control-zoom {
+      z-index: 1000 !important;
+    }
+    
+    /* Fix for potential CSS conflicts */
+    .leaflet-container .leaflet-marker-pane img,
+    .leaflet-container .leaflet-zoom-animated {
+      pointer-events: auto;
+    }
+    
+    /* Tailwind CSS reset conflicts fix */
+    .leaflet-container * {
+      box-sizing: content-box;
+    }
+    
+    .leaflet-container .leaflet-control {
+      box-sizing: border-box;
+    }
+    
+    /* Ensure map interactions work properly */
+    .leaflet-container {
+      touch-action: pan-x pan-y;
+    }
+  </style>
+  
+  
+</head>
+<body class="">
+
+<!-- Header -->
+<header class="bg-primary border-b border-border-default">
+  <div class="container mx-auto px-4 py-4">
+    <div class="flex items-center space-x-4">
+      <a href="/?lat=51.7764813492&lng=19.4539152692&zoom=16&id=L025" class="text-text-tertiary hover:text-text-secondary">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+      </a>
+      <div>
+        <h1 class="text-xl font-bold text-text-primary">Projekt L025</h1>
+        <p class="text-text-tertiary">Budżet Obywatelski Łódź 2025–2026</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Project Details -->
+<main class="container mx-auto px-4 py-8">
+  <article class="max-w-4xl mx-auto">
+    <!-- Project Header -->
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold text-text-primary mb-4">Zakup nowych książek i bezpłatny dostęp do audiobooków i ebooków dla mieszkańców Łodzi we wszystkich Filiach Biblioteki Miejskiej w Łodzi.</h1>
+      
+      <div class="flex flex-wrap gap-4 mb-6">
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          Kultura i dziedzictwo
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          nieznany
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          
+        </div>
+      </div>
+      
+      <div class="text-2xl font-bold text-text-primary mb-4">
+        1 400 000 zł
+      </div>
+    </div>
+    
+    <!-- Project Description -->
+    <div class="prose max-w-none mb-8">
+      <h2 class="text-xl font-semibold text-text-primary mb-4">Opis projektu</h2>
+      <p class="text-text-secondary leading-relaxed whitespace-pre-wrap">Zadanie dedykowane jest wszystkim mieszkańcom Miasta, którzy lubią czytać książki zarówno papierowe jak i w elektronicznej wersji. Ceny książek papierowych i abonamentów udostępniających zbiory elektroniczne wciąż rosną i ograniczają dostęp czytającym do literatury. Dlatego realizacja projektu ułatwi bezpłatny dostęp do nowości wydawniczych wszystkim mieszkańcom Miasta: dzieciom, młodzieży, dorosłym i seniorom, którzy będą mogli czytać książki w dowolnej formie, książkę papierową albo w wersji elektronicznej audiobook albo e-book korzystając z coraz bogatszej i różnorodnej oferty tych zbiorów. Mamy nadzieję, że to zachęci mieszkańców do czytania.
+Część pieniędzy proponujemy przeznaczyć na zakup książek papierowych do wszystkich filii Biblioteki Miejskiej w Łodzi. Chcemy zapewnić wszystkim mieszkańcom taki sam dostęp do zakupionych nowości dlatego proponujemy aby każda filia otrzymała taką samą kwotę na zakup książek. Zakupione zbiory powiększą ofertę łódzkich bibliotek, ułatwią dostęp do nowości, poszukiwanych bestselerów zarówno z literatury pięknej dla dorosłych jak i dla dzieci i młodzieży. W ramach realizacji zadania Filie kupią najpoczytniejsze i poszukiwane tytuły: kryminały, publicystykę, biografie, reportaże, książki historyczne, romanse, fantastykę, książki popularyzujące wiedzę, lektury szkolne, książki poznawcze dla dzieci. 
+Przy zakupach bibliotekarze powinni kierować się propozycjami czytelników – mieszkańców. 
+Realizacja zadania na pewno zwiększy czytelnictwo w naszym mieście. 
+Za pozostałe środki proponujemy zakup usługi zdalnego dostępu do publikacji elektronicznych. Coraz więcej osób korzysta z tej wygodnej formy czytania. Pozwoli to wszystkim mieszkańcom Łodzi na bezpłatne korzystanie z wydawnictw w formie e-booków, audiobooków, podcastów, synchrobooków, e-komiksów. 
+Większość książek jest obecnie wydawana w formie papierowej i elektronicznej. Działające na rynku platformy  oferują ponad 450 000 tytułów udostępniając różne publikacje on-line. Mają coraz bogatszą i bardzo aktualną ofertę – nowości ale i chętnie czytaną klasykę, literaturę faktu, reportaż i publicystykę, kryminał, sensację, thriller, romanse, literaturę obyczajową, z  rozwoju osobistego, komiksy, literaturę piękną obcą i polską, fantastykę i sci-fi, horrory, biografie i wspomnienia, biznes, ekonomię, dla dzieci, młodzieży, e-booki obcojęzyczne, historię, informatykę, naukę języków obcych, kuchnie i diety, lektury, pomoce szkolne, poradniki, podróżnicze, young adult, zdrowie i rodzina, książki poszukiwanych autorów, ale i bardzo ciekawe realizacje podcastów.
+ Sposób korzystania z zasobów platform jest łatwy i wygodny. Wybraną pozycję może czytać/słuchać dowolna liczba osób w tym samym czasie, w dowolnym miejscu, wystarczy ją pobrać na własne urządzenie. Bezpłatny dostęp do usługi będzie można uzyskać wprowadzając kod otrzymany od realizatora zadania. Koszt indywidualnego zakupu dostępu do oferowanych na rynku abonamentów jest wysoki. Natomiast platformy te umożliwiają dostęp do baz publikacji elektronicznych czytelnikom nieodpłatnie poprzez oferty skierowane do bibliotek w formie abonamentu bibliotecznego. 
+Realizacja proponowanego zadania dotyczy zatem zakupu książek tradycyjnych i w wersji elektronicznej i pozwoli dotrzeć do ulubionych tytułów wszystkim zainteresowanym. Aby spełnić oczekiwania mieszkańców, opierając się na doświadczeniu z lat ubiegłych, zadanie to powinna realizować Biblioteka Miejska w Łodzi. To instytucja z największym doświadczeniem w tym zakresie dzięki temu zapewni najbogatszą i różnorodną ofertę dla wszystkich. Dlatego wnioskujemy aby głosami mieszkańców umożliwić zakup książek oraz zdalny dostęp do publikacji elektronicznych Bibliotece Miejskiej w Łodzi, która zawiaduje siecią Filii obejmującą swym zasięgiem całe miasto. Jest to instytucja najbardziej kompetentna do realizacji tego zadania, na co dzień udostępniająca literaturę na różnych nośnikach. Zarówno książki jak i kody dostępu będzie można pobrać w dowolnej, najbliższej miejscu zamieszkania filii BMwŁ. Mieszkańcy Łodzi będą mogli czytać i słuchać bez ograniczeń. Usługa dla mieszkańców będzie bezpłatna. 
+Rosnące ceny książek papierowych i dostępu do zbiorów elektronicznych spowodowały, że koszt realizacji projektu oszacowano na 1 400 000 zł.</p>
+    </div>
+    
+    <!-- Location Info -->
+    
+    
+    <!-- Actions -->
+    <div class="flex flex-wrap gap-4 mb-8">
+      <a 
+        href="/?lat=51.7764813492&lng=19.4539152692&zoom=16&id=L025" 
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Pokaż na mapie
+      </a>
+      
+      
+      <a 
+        href="https://www.google.com/maps?q=51.7764813492,19.4539152692" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Otwórz w Google Maps
+      </a>
+      
+      
+      
+      <a 
+        href="https://budzetobywatelski.uml.lodz.pl/szczegoly-projektu-2026-1401956735-1401959702-ec6024c516790daf3d94741ff27b3535" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Zobacz na stronie urzędu
+      </a>
+      
+    </div>
+  </article>
+</main>
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Zakup nowych książek i bezpłatny dostęp do audiobooków i ebooków dla mieszkańców Łodzi we wszystkich Filiach Biblioteki Miejskiej w Łodzi.",
+  "description": "Zadanie dedykowane jest wszystkim mieszkańcom Miasta, którzy lubią czytać książki zarówno papierowe jak i w elektronicznej wersji. Ceny książek papierowych i abonamentów udostępniających zbiory elektr",
+  "identifier": "L025",
+  "areaServed": {
+    "@type": "City",
+    "name": "Łódź",
+    "addressCountry": "PL"
+  },
+  "about": {
+    "@type": "GovernmentProject",
+    "name": "Budżet Obywatelski Łódź 2025-2026",
+    "description": "Projekty budżetu obywatelskiego miasta Łodzi na lata 2025-2026"
+  },
+  "category": "Kultura i dziedzictwo",
+  
+  "location": {
+    "@type": "Place",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.7764813492,
+      "longitude": 19.4539152692
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Łódź",
+      "addressCountry": "PL"
+    }
+  },
+  
+  "url": "https://budzetobywatelski-lodz.vercel.app/projekty/zakup-nowych-ksiazek-i-bezpatny-dostep-do-audiobookow-i-eboo-L025.html"
+}
+</script>
+
+</body>
+</html>

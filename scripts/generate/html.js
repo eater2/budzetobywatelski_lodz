@@ -1,6 +1,23 @@
 const fs = require('fs-extra');
 const path = require('path');
 
+// Function to generate SEO-friendly slug from project name
+function generateSlug(nazwa, id) {
+  // Remove special characters, convert to lowercase, replace spaces with hyphens
+  const slug = nazwa
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '') // Remove diacritics
+    .replace(/[^a-z0-9\s-]/g, '') // Keep only alphanumeric, spaces, and hyphens
+    .trim()
+    .replace(/\s+/g, '-') // Replace spaces with hyphens
+    .replace(/-+/g, '-') // Replace multiple hyphens with single hyphen
+    .substring(0, 60); // Limit length for URL friendliness
+  
+  // Return slug with ID appended
+  return `${slug}-${id}`;
+}
+
 class HTMLGenerator {
   static generateBaseHTML(title, description, content, additionalHead = '', bodyClass = '') {
     return `<!DOCTYPE html>
@@ -9,11 +26,12 @@ class HTMLGenerator {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${title}</title>
+  <meta name="application-name" content="Łódzki Budżet Obywatelski">
   <meta name="description" content="${description}">
   <meta name="keywords" content="budżet obywatelski łódź mapa, budżet obywatelski 2025 łódź, bo łódź 2026, mapa projektów łódź, lbo łódź mapa, głosowanie obywatelskie łódź, projekty mieszkańców łódź, budżet partycypacyjny łódź, inicjatywy lokalne łódź">
   
   <!-- SEO Enhancement -->
-  <meta name="author" content="Budżet Obywatelski Łódź">
+  <meta name="author" content="Łódzki Budżet Obywatelski">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="language" content="Polish">
   <meta name="geo.region" content="PL-LD">
@@ -27,8 +45,11 @@ class HTMLGenerator {
   <meta property="og:description" content="${description}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://budzetobywatelski-lodz.vercel.app/">
-  <meta property="og:site_name" content="Budżet Obywatelski Łódź">
+  <meta property="og:site_name" content="Łódzki Budżet Obywatelski">
   <meta property="og:locale" content="pl_PL">
+  <meta property="og:image" content="https://budzetobywatelski-lodz.vercel.app/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:locale:alternate" content="en_US">
   <meta property="article:author" content="Budżet Obywatelski Łódź">
   <meta property="article:section" content="Civic Engagement">
@@ -46,6 +67,7 @@ class HTMLGenerator {
   
   <!-- Icons -->
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.webmanifest">
   
   <!-- Preload critical resources -->
@@ -165,7 +187,7 @@ ${content}
   }
 
   static async generateMapPage(data, publicDir) {
-    const title = 'Budżet Obywatelski Łódź – mapa projektów 2025/2026';
+    const title = 'Łódzki Budżet Obywatelski - mapa projektów 2025/2026';
     const description = 'Interaktywna mapa projektów budżetu obywatelskiego Łodzi 2025/2026. Zobacz lokalizacje wszystkich projektów na mapie, filtruj po kategoriach i osiedlach.';
     
     const projectCount = data.projects?.length || 0;
@@ -594,13 +616,13 @@ ${content}
     }
   },
   ` : ''}
-  "url": "https://budzetobywatelski.vercel.app/projekty/${project.id}.html"
+  "url": "https://budzetobywatelski-lodz.vercel.app/projekty/${generateSlug(project.nazwa, project.id)}.html"
 }
 </script>`;
 
     const html = this.generateBaseHTML(title, description, content);
     
-    const filename = `${project.id}.html`;
+    const filename = `${generateSlug(project.nazwa, project.id)}.html`;
     const filepath = path.join(publicDir, 'projekty', filename);
     
     await fs.writeFile(filepath, html);

@@ -1,7 +1,7 @@
 {
-  "name": "Budżet Obywatelski Łódź 2025-2026",
+  "name": "Łódzki Budżet Obywatelski - mapa projektów",
   "short_name": "BO Łódź",
-  "description": "Interaktywna mapa i lista projektów budżetu obywatelskiego Łodzi 2025-2026",
+  "description": "Interaktywna mapa projektów budżetu obywatelskiego Łodzi 2025/2026",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FFFFFF",

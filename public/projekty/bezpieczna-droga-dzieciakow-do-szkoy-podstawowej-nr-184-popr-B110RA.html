@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bezpieczna droga dzieciaków do Szkoły Podstawowej nr 184 - poprawa bezpieczeństwa na przejściu dla pieszych na ul. Nastrojowej – Budżet Obywatelski Łódź</title>
+  <meta name="application-name" content="Łódzki Budżet Obywatelski">
+  <meta name="description" content="Działając w interesie bezpieczeństwa mieszkańców osiedla Radogoszcz Wchód w Łodzi, a zwłaszcza w interesie bezpieczeństwa dzieci i młodzieży korzystaj... Koszt: 160 000 zł. Kategoria: Infrastruktura drogowa i komunikacja. Osiedle: Radogoszcz.">
+  <meta name="keywords" content="budżet obywatelski łódź mapa, budżet obywatelski 2025 łódź, bo łódź 2026, mapa projektów łódź, lbo łódź mapa, głosowanie obywatelskie łódź, projekty mieszkańców łódź, budżet partycypacyjny łódź, inicjatywy lokalne łódź">
+  
+  <!-- SEO Enhancement -->
+  <meta name="author" content="Łódzki Budżet Obywatelski">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="language" content="Polish">
+  <meta name="geo.region" content="PL-LD">
+  <meta name="geo.placename" content="Łódź">
+  <meta name="geo.position" content="51.7592485;19.4559833">
+  <meta name="ICBM" content="51.7592485, 19.4559833">
+  <link rel="canonical" href="https://budzetobywatelski-lodz.vercel.app/">
+  
+  <!-- OpenGraph Enhanced -->
+  <meta property="og:title" content="Bezpieczna droga dzieciaków do Szkoły Podstawowej nr 184 - poprawa bezpieczeństwa na przejściu dla pieszych na ul. Nastrojowej – Budżet Obywatelski Łódź">
+  <meta property="og:description" content="Działając w interesie bezpieczeństwa mieszkańców osiedla Radogoszcz Wchód w Łodzi, a zwłaszcza w interesie bezpieczeństwa dzieci i młodzieży korzystaj... Koszt: 160 000 zł. Kategoria: Infrastruktura drogowa i komunikacja. Osiedle: Radogoszcz.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://budzetobywatelski-lodz.vercel.app/">
+  <meta property="og:site_name" content="Łódzki Budżet Obywatelski">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:image" content="https://budzetobywatelski-lodz.vercel.app/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="article:author" content="Budżet Obywatelski Łódź">
+  <meta property="article:section" content="Civic Engagement">
+  <meta property="article:tag" content="budżet obywatelski">
+  <meta property="article:tag" content="Łódź">
+  <meta property="article:tag" content="demokracja">
+  <meta property="article:tag" content="projekty lokalne">
+  
+  <!-- Twitter Enhanced -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bezpieczna droga dzieciaków do Szkoły Podstawowej nr 184 - poprawa bezpieczeństwa na przejściu dla pieszych na ul. Nastrojowej – Budżet Obywatelski Łódź">
+  <meta name="twitter:description" content="Działając w interesie bezpieczeństwa mieszkańców osiedla Radogoszcz Wchód w Łodzi, a zwłaszcza w interesie bezpieczeństwa dzieci i młodzieży korzystaj... Koszt: 160 000 zł. Kategoria: Infrastruktura drogowa i komunikacja. Osiedle: Radogoszcz.">
+  <meta name="twitter:site" content="@LodzOfficial">
+  <meta name="twitter:creator" content="@LodzOfficial">
+  
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="/data/projekty.json" as="fetch" crossorigin="anonymous">
+  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style" crossorigin="anonymous">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="anonymous">
+  
+  <!-- Tailwind CSS (CDN for now - will be replaced with custom build) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FFFFFF',
+            secondary: '#FAFAFA', 
+            tertiary: '#F7F7F7',
+            hover: '#F2F2F2',
+            'text-primary': '#111111',
+            'text-secondary': '#333333',
+            'text-tertiary': '#6B6B6B',
+            'border-default': '#E6E6E6',
+            'border-hover': '#DADADA',
+            'border-active': '#CFCFCF'
+          },
+          aspectRatio: {
+            '16/9': '16 / 9'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  
+  <!-- Custom styles -->
+  <style>
+    body { font-family: Inter, system-ui, -apple-system, sans-serif; }
+    .shadow-custom { box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+    .shadow-custom-md { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .shadow-custom-lg { box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+    
+    /* Line clamp utilities for text truncation */
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    
+    .line-clamp-3 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    
+    /* Ensure map container has proper dimensions and interactions */
+    #map {
+      position: relative !important;
+      width: 100% !important;
+      height: 100% !important;
+      z-index: 1 !important;
+    }
+    
+    /* Leaflet map fixes for proper mouse interaction */
+    .leaflet-container {
+      cursor: grab;
+    }
+    
+    .leaflet-container:active {
+      cursor: grabbing;
+    }
+    
+    .leaflet-container a {
+      color: inherit;
+    }
+    
+    .leaflet-control-zoom {
+      z-index: 1000 !important;
+    }
+    
+    /* Fix for potential CSS conflicts */
+    .leaflet-container .leaflet-marker-pane img,
+    .leaflet-container .leaflet-zoom-animated {
+      pointer-events: auto;
+    }
+    
+    /* Tailwind CSS reset conflicts fix */
+    .leaflet-container * {
+      box-sizing: content-box;
+    }
+    
+    .leaflet-container .leaflet-control {
+      box-sizing: border-box;
+    }
+    
+    /* Ensure map interactions work properly */
+    .leaflet-container {
+      touch-action: pan-x pan-y;
+    }
+  </style>
+  
+  
+</head>
+<body class="">
+
+<!-- Header -->
+<header class="bg-primary border-b border-border-default">
+  <div class="container mx-auto px-4 py-4">
+    <div class="flex items-center space-x-4">
+      <a href="/?lat=51.8224638783&lng=19.4407264661&zoom=16&id=B110RA" class="text-text-tertiary hover:text-text-secondary">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+      </a>
+      <div>
+        <h1 class="text-xl font-bold text-text-primary">Projekt B110RA</h1>
+        <p class="text-text-tertiary">Budżet Obywatelski Łódź 2025–2026</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Project Details -->
+<main class="container mx-auto px-4 py-8">
+  <article class="max-w-4xl mx-auto">
+    <!-- Project Header -->
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold text-text-primary mb-4">Bezpieczna droga dzieciaków do Szkoły Podstawowej nr 184 - poprawa bezpieczeństwa na przejściu dla pieszych na ul. Nastrojowej</h1>
+      
+      <div class="flex flex-wrap gap-4 mb-6">
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          Infrastruktura drogowa i komunikacja
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          osiedlowe
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          Radogoszcz
+        </div>
+      </div>
+      
+      <div class="text-2xl font-bold text-text-primary mb-4">
+        160 000 zł
+      </div>
+    </div>
+    
+    <!-- Project Description -->
+    <div class="prose max-w-none mb-8">
+      <h2 class="text-xl font-semibold text-text-primary mb-4">Opis projektu</h2>
+      <p class="text-text-secondary leading-relaxed whitespace-pre-wrap">Działając w interesie bezpieczeństwa mieszkańców osiedla Radogoszcz Wchód w Łodzi, a zwłaszcza w interesie bezpieczeństwa dzieci i młodzieży korzystających z przejścia dla pieszych prowadzącego w kierunku Szkoły Podstawowej 184 oraz Przedszkola Miejskiego 231, składamy wniosek do budżetu obywatelskiego o modernizację przejścia dla pieszych przy ul. Nastrojowej (wysokość numeru 26) w Łodzi oraz wprowadzenie rozwiązań poprawiających bezpieczeństwo użytkowników przejścia. 
+
+Przejście dla pieszych na wysokości ul. Nastrojowej 26 jest jednym z kluczowych przejść w tej okolicy osiedla Radogoszcz Wschód. Z uwagi na dogodną trasę mieszkańców części osiedla, prowadzącą do szkoły i przedszkola (krótsza trasa przez park), jest ono bardzo często wykorzystywane przez dzieci i ich opiekunów w drodze do szkoły i przedszkola. 
+
+Niestety od wielu lat obserwujemy z mieszkańcami wiele niebezpiecznych sytuacji, które mają miejsce na przejściu. Ul. Nastrojowa jest długą i prostą ulicą, na której wielu kierowców rozpędza się do prędkości wyższych, niż obowiązujące na osiedlu ograniczenie prędkości do 30 km/h. Dzieje się to zwłaszcza w godzinach porannych i popołudniowych (godziny szczytu), gdy ruch na ulicy jest wzmożony (dojazdy do pracy, szkoły, omijanie przez kierowców korków na równoległej ulicy Zgierskiej i jazda przez osiedle). Wielu kierowców nie ustępuje również pierwszeństwa pieszym na przejściu, z uwagi na zbyt późne zauważanie pieszego z uwagi na jazdę z nadmierną prędkością oraz z uwagi na wady przejścia. Przejście przy ul. Nastrojowej ma następujące wady:
+
+•	Jadąc w stronę północną, kierowca ma ograniczoną widoczność prawej strony przejścia przez parkujące samochody, zwłaszcza, gdy porusza się z prędkością większą, niż dopuszczalne w tym miejscu 30km/h.
+•	Jadąc w stronę południową, podobnie jak w przypadku jazdy w stronę północną, kierowca ma ograniczoną widoczność prawej strony przejścia przez parkujące samochody, ale także przez zieleń tła parku oraz w okresie jesienno-zimowym i po zmierzchu, z uwagi na słabe doświetlenie tej części przejścia dla pieszych (wejście od strony parku)
+•	Przejście jest długie, co ma wpływ na komfort przechodzenia, zwłaszcza dla dzieci i osób starszych i w sytuacji, gdy samochody jadące długim i prostym odcinkiem Nastrojowej nie przestrzegają ograniczenia prędkości. Zbyt długie przejścia, bez odpowiedniego azylu dla przechodzących i spowalniaczy, są niebezpieczne
+•	Obecnie jedynym fizycznym spowalniaczem dla ww. przejścia są zainstalowane wypustki na jezdni (jazda w kierunku północnym), jednak są one zbyt niskie oraz są zainstalowane zbyt daleko od przejścia, aby być skuteczne i wymusić wolniejszą jazdę.
+
+W związku z ww. argumentami, codziennym korzystaniem z przejścia i obserwacją niebezpiecznych sytuacji składamy wniosek do budżetu obywatelskiego o zwiększenie bezpieczeństwa przejścia przy ul. Nastrojowej poprzez wprowadzenie poniższych rozwiązań, które przyczynią się do zwiększenia bezpieczeństwa pieszych na przejściu:
+
+•	Instalacja azylu dla pieszych w połowie przejścia z odpowiednim oznakowaniem, podobnie jak ma to miejsce na innych długich przejściach w mieście
+•	Instalacja po obu stronach przejścia, w obu kierunkach, znaku D-6 (przejście dla pieszych) z pomarańczowymi sygnałami świetlnymi, uruchamianymi w momencie dojścia pieszego do przejścia (fotokomórka), podobnie jak ma to miejsce na niektórych, newralgicznych i długich przejściach w mieście
+•	Poprawa oświetlenia przejścia, zwłaszcza niedoświetlonej części od strony wejścia do parku poprzez instalację dodatkowej lampy lub modernizacja obecnego oświetlenia</p>
+    </div>
+    
+    <!-- Location Info -->
+    
+    
+    <!-- Actions -->
+    <div class="flex flex-wrap gap-4 mb-8">
+      <a 
+        href="/?lat=51.8224638783&lng=19.4407264661&zoom=16&id=B110RA" 
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Pokaż na mapie
+      </a>
+      
+      
+      <a 
+        href="https://www.google.com/maps?q=51.8224638783,19.4407264661" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Otwórz w Google Maps
+      </a>
+      
+      
+      
+      <a 
+        href="https://budzetobywatelski.uml.lodz.pl/szczegoly-projektu-2026-1401956735-1401962168-dc4e1cd3d5d47f3e79b767672e038aed" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Zobacz na stronie urzędu
+      </a>
+      
+    </div>
+  </article>
+</main>
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Bezpieczna droga dzieciaków do Szkoły Podstawowej nr 184 - poprawa bezpieczeństwa na przejściu dla pieszych na ul. Nastrojowej",
+  "description": "Działając w interesie bezpieczeństwa mieszkańców osiedla Radogoszcz Wchód w Łodzi, a zwłaszcza w interesie bezpieczeństwa dzieci i młodzieży korzystających z przejścia dla pieszych prowadzącego w kier",
+  "identifier": "B110RA",
+  "areaServed": {
+    "@type": "City",
+    "name": "Łódź",
+    "addressCountry": "PL"
+  },
+  "about": {
+    "@type": "GovernmentProject",
+    "name": "Budżet Obywatelski Łódź 2025-2026",
+    "description": "Projekty budżetu obywatelskiego miasta Łodzi na lata 2025-2026"
+  },
+  "category": "Infrastruktura drogowa i komunikacja",
+  
+  "location": {
+    "@type": "Place",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.8224638783,
+      "longitude": 19.4407264661
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Łódź",
+      "addressCountry": "PL"
+    }
+  },
+  
+  "url": "https://budzetobywatelski-lodz.vercel.app/projekty/bezpieczna-droga-dzieciakow-do-szkoy-podstawowej-nr-184-popr-B110RA.html"
+}
+</script>
+
+</body>
+</html>

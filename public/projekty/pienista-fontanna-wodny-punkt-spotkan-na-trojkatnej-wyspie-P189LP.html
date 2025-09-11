@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pienista Fontanna – wodny punkt spotkań na trójkątnej wyspie – Budżet Obywatelski Łódź</title>
+  <meta name="application-name" content="Łódzki Budżet Obywatelski">
+  <meta name="description" content="Nowoczesna, podświetlana fontanna mgiełkowa na trójkątnej wyspie u zbiegu ulic Pienistej i Maczka. Projekt nawiązuje do nazwy ulicy i symboliki wody. ... Koszt: 360 000 zł. Kategoria: Infrastruktura komunalna i bezpieczeństwo. Osiedle: Lublinek-Pienista.">
+  <meta name="keywords" content="budżet obywatelski łódź mapa, budżet obywatelski 2025 łódź, bo łódź 2026, mapa projektów łódź, lbo łódź mapa, głosowanie obywatelskie łódź, projekty mieszkańców łódź, budżet partycypacyjny łódź, inicjatywy lokalne łódź">
+  
+  <!-- SEO Enhancement -->
+  <meta name="author" content="Łódzki Budżet Obywatelski">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="language" content="Polish">
+  <meta name="geo.region" content="PL-LD">
+  <meta name="geo.placename" content="Łódź">
+  <meta name="geo.position" content="51.7592485;19.4559833">
+  <meta name="ICBM" content="51.7592485, 19.4559833">
+  <link rel="canonical" href="https://budzetobywatelski-lodz.vercel.app/">
+  
+  <!-- OpenGraph Enhanced -->
+  <meta property="og:title" content="Pienista Fontanna – wodny punkt spotkań na trójkątnej wyspie – Budżet Obywatelski Łódź">
+  <meta property="og:description" content="Nowoczesna, podświetlana fontanna mgiełkowa na trójkątnej wyspie u zbiegu ulic Pienistej i Maczka. Projekt nawiązuje do nazwy ulicy i symboliki wody. ... Koszt: 360 000 zł. Kategoria: Infrastruktura komunalna i bezpieczeństwo. Osiedle: Lublinek-Pienista.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://budzetobywatelski-lodz.vercel.app/">
+  <meta property="og:site_name" content="Łódzki Budżet Obywatelski">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:image" content="https://budzetobywatelski-lodz.vercel.app/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="article:author" content="Budżet Obywatelski Łódź">
+  <meta property="article:section" content="Civic Engagement">
+  <meta property="article:tag" content="budżet obywatelski">
+  <meta property="article:tag" content="Łódź">
+  <meta property="article:tag" content="demokracja">
+  <meta property="article:tag" content="projekty lokalne">
+  
+  <!-- Twitter Enhanced -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pienista Fontanna – wodny punkt spotkań na trójkątnej wyspie – Budżet Obywatelski Łódź">
+  <meta name="twitter:description" content="Nowoczesna, podświetlana fontanna mgiełkowa na trójkątnej wyspie u zbiegu ulic Pienistej i Maczka. Projekt nawiązuje do nazwy ulicy i symboliki wody. ... Koszt: 360 000 zł. Kategoria: Infrastruktura komunalna i bezpieczeństwo. Osiedle: Lublinek-Pienista.">
+  <meta name="twitter:site" content="@LodzOfficial">
+  <meta name="twitter:creator" content="@LodzOfficial">
+  
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="/data/projekty.json" as="fetch" crossorigin="anonymous">
+  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style" crossorigin="anonymous">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="anonymous">
+  
+  <!-- Tailwind CSS (CDN for now - will be replaced with custom build) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FFFFFF',
+            secondary: '#FAFAFA', 
+            tertiary: '#F7F7F7',
+            hover: '#F2F2F2',
+            'text-primary': '#111111',
+            'text-secondary': '#333333',
+            'text-tertiary': '#6B6B6B',
+            'border-default': '#E6E6E6',
+            'border-hover': '#DADADA',
+            'border-active': '#CFCFCF'
+          },
+          aspectRatio: {
+            '16/9': '16 / 9'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  
+  <!-- Custom styles -->
+  <style>
+    body { font-family: Inter, system-ui, -apple-system, sans-serif; }
+    .shadow-custom { box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+    .shadow-custom-md { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .shadow-custom-lg { box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+    
+    /* Line clamp utilities for text truncation */
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    
+    .line-clamp-3 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    
+    /* Ensure map container has proper dimensions and interactions */
+    #map {
+      position: relative !important;
+      width: 100% !important;
+      height: 100% !important;
+      z-index: 1 !important;
+    }
+    
+    /* Leaflet map fixes for proper mouse interaction */
+    .leaflet-container {
+      cursor: grab;
+    }
+    
+    .leaflet-container:active {
+      cursor: grabbing;
+    }
+    
+    .leaflet-container a {
+      color: inherit;
+    }
+    
+    .leaflet-control-zoom {
+      z-index: 1000 !important;
+    }
+    
+    /* Fix for potential CSS conflicts */
+    .leaflet-container .leaflet-marker-pane img,
+    .leaflet-container .leaflet-zoom-animated {
+      pointer-events: auto;
+    }
+    
+    /* Tailwind CSS reset conflicts fix */
+    .leaflet-container * {
+      box-sizing: content-box;
+    }
+    
+    .leaflet-container .leaflet-control {
+      box-sizing: border-box;
+    }
+    
+    /* Ensure map interactions work properly */
+    .leaflet-container {
+      touch-action: pan-x pan-y;
+    }
+  </style>
+  
+  
+</head>
+<body class="">
+
+<!-- Header -->
+<header class="bg-primary border-b border-border-default">
+  <div class="container mx-auto px-4 py-4">
+    <div class="flex items-center space-x-4">
+      <a href="/?lat=51.7342269371&lng=19.4047865482&zoom=16&id=P189LP" class="text-text-tertiary hover:text-text-secondary">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+      </a>
+      <div>
+        <h1 class="text-xl font-bold text-text-primary">Projekt P189LP</h1>
+        <p class="text-text-tertiary">Budżet Obywatelski Łódź 2025–2026</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Project Details -->
+<main class="container mx-auto px-4 py-8">
+  <article class="max-w-4xl mx-auto">
+    <!-- Project Header -->
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold text-text-primary mb-4">Pienista Fontanna – wodny punkt spotkań na trójkątnej wyspie</h1>
+      
+      <div class="flex flex-wrap gap-4 mb-6">
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          Infrastruktura komunalna i bezpieczeństwo
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          osiedlowe
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          Lublinek-Pienista
+        </div>
+      </div>
+      
+      <div class="text-2xl font-bold text-text-primary mb-4">
+        360 000 zł
+      </div>
+    </div>
+    
+    <!-- Project Description -->
+    <div class="prose max-w-none mb-8">
+      <h2 class="text-xl font-semibold text-text-primary mb-4">Opis projektu</h2>
+      <p class="text-text-secondary leading-relaxed whitespace-pre-wrap">Nowoczesna, podświetlana fontanna mgiełkowa na trójkątnej wyspie u zbiegu ulic Pienistej i Maczka. Projekt nawiązuje do nazwy ulicy i symboliki wody. Fontanna ma być niskim, bezpiecznym i estetycznym elementem przestrzeni, tworzącym przyjazne miejsce spotkań mieszkańców. Oświetlenie LED doda uroku szczególnie wieczorami.
+Pełny opis projektu:
+Projekt zakłada stworzenie niewielkiej, nowoczesnej fontanny na trójkątnej wyspie u zbiegu ulic Pienistej i Maczka. Fontanna będzie nawiązywać do nazwy ulicy („Pienista”) – poprzez wykorzystanie dysz tworzących delikatną mgiełkę lub pianę wodną. Projekt zostanie uzupełniony o podświetlenie LED RGB, dzięki czemu fontanna stanie się estetyczną ozdobą również po zmroku.
+Forma fontanny będzie minimalistyczna, dostosowana do kształtu terenu (trójkątna wyspa), bez wysokich elementów i zbiorników – z dyszami zintegrowanymi z nawierzchnią. Dzięki temu fontanna będzie bezpieczna dla dzieci i nie wymaga ogrodzenia.
+Dodatkowo na terenie wyspy zaplanowane są proste elementy małej architektury (ławki, kostka brukowa, ewentualna tablica z nazwą fontanny lub informacją o projekcie).
+Fontanna ma pełnić funkcję zarówno dekoracyjną, jak i społeczną – jako punkt spotkań, rekreacji i rozpoznawalne miejsce dzielnicy.
+
+Uzasadnienie potrzeby realizacji projektu:
+Okolica ulicy Pienistej i Maczka to miejsce uczęszczane przez mieszkańców, ale pozbawione atrakcyjnych punktów do odpoczynku i spotkań. Teren trójkątnej wyspy jest niewykorzystany, a jednocześnie świetnie widoczny i łatwo dostępny. Projekt podniesie estetykę miejsca, przyczyni się do integracji mieszkańców i nawiąże do lokalnej tożsamości – poprzez wodny motyw związany z nazwą ulicy Pienista.
+Dodatkowym atutem jest niskie ryzyko wandalizmu (brak wysokich elementów), niski koszt eksploatacji i łatwość wykonania.
+
+🔹 Zakres prac:
+1) Projekt architektoniczno-wodno-elektryczny
+2) Przygotowanie podłoża i instalacji
+3) Fontanna mgiełkowa z oświetleniem LED RGB
+4) System czasowy (np. 8:00–22:00), sterowany automatycznie
+5) Minimalistyczna oprawa – np. siedziska, ławki, kostka brukowa
+6)  Tabliczka informacyjna z nazwą i opisem projektu
+
+🔹 Motywy kreatywne:
+1) Piana/mgiełka – dysze generujące delikatną pianę lub parującą wodę
+2) Oświetlenie LED – zmieniające kolory, np. biało-niebieski jak woda
+3) Trójkątny kształt – dopasowany do wyspy
+4)  Motyw fali w posadzce lub otoczeniu (np. kostka falowana)
+
+Dodatki możliwe do rozważenia (opcjonalne, jeśli budżet pozwoli):
+1) dekoracyjna kostka brukowa w falisty wzór,
+2) nazwa „Pienista Fontanna” na tabliczce z kodem QR (np. do historii miejsca),
+3) aktywizacja lokalnych dzieci/szkół – konkurs na logo lub nazwę fontanny.</p>
+    </div>
+    
+    <!-- Location Info -->
+    
+    
+    <!-- Actions -->
+    <div class="flex flex-wrap gap-4 mb-8">
+      <a 
+        href="/?lat=51.7342269371&lng=19.4047865482&zoom=16&id=P189LP" 
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Pokaż na mapie
+      </a>
+      
+      
+      <a 
+        href="https://www.google.com/maps?q=51.7342269371,19.4047865482" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Otwórz w Google Maps
+      </a>
+      
+      
+      
+      <a 
+        href="https://budzetobywatelski.uml.lodz.pl/szczegoly-projektu-2026-1401956735-1401966917-08114c71cfd8c3199b2a3815f1cc0452" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Zobacz na stronie urzędu
+      </a>
+      
+    </div>
+  </article>
+</main>
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Pienista Fontanna – wodny punkt spotkań na trójkątnej wyspie",
+  "description": "Nowoczesna, podświetlana fontanna mgiełkowa na trójkątnej wyspie u zbiegu ulic Pienistej i Maczka. Projekt nawiązuje do nazwy ulicy i symboliki wody. Fontanna ma być niskim, bezpiecznym i estetycznym ",
+  "identifier": "P189LP",
+  "areaServed": {
+    "@type": "City",
+    "name": "Łódź",
+    "addressCountry": "PL"
+  },
+  "about": {
+    "@type": "GovernmentProject",
+    "name": "Budżet Obywatelski Łódź 2025-2026",
+    "description": "Projekty budżetu obywatelskiego miasta Łodzi na lata 2025-2026"
+  },
+  "category": "Infrastruktura komunalna i bezpieczeństwo",
+  
+  "location": {
+    "@type": "Place",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.7342269371,
+      "longitude": 19.4047865482
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Łódź",
+      "addressCountry": "PL"
+    }
+  },
+  
+  "url": "https://budzetobywatelski-lodz.vercel.app/projekty/pienista-fontanna-wodny-punkt-spotkan-na-trojkatnej-wyspie-P189LP.html"
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oświetlenie ulicy Stara Baśń okablowaniem ziemnym – Budżet Obywatelski Łódź</title>
+  <meta name="application-name" content="Łódzki Budżet Obywatelski">
+  <meta name="description" content="Zadanie polega na budowie oświetlenia na ul. Stara Baśń od ul. Zgierskiej do ul. Helenówek - 8 latarni ( 7 pojedynczych i 1 słup z podwójnym wysięgnik... Koszt: 170 000 zł. Kategoria: Infrastruktura komunalna i bezpieczeństwo. Osiedle: Radogoszcz.">
+  <meta name="keywords" content="budżet obywatelski łódź mapa, budżet obywatelski 2025 łódź, bo łódź 2026, mapa projektów łódź, lbo łódź mapa, głosowanie obywatelskie łódź, projekty mieszkańców łódź, budżet partycypacyjny łódź, inicjatywy lokalne łódź">
+  
+  <!-- SEO Enhancement -->
+  <meta name="author" content="Łódzki Budżet Obywatelski">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="language" content="Polish">
+  <meta name="geo.region" content="PL-LD">
+  <meta name="geo.placename" content="Łódź">
+  <meta name="geo.position" content="51.7592485;19.4559833">
+  <meta name="ICBM" content="51.7592485, 19.4559833">
+  <link rel="canonical" href="https://budzetobywatelski-lodz.vercel.app/">
+  
+  <!-- OpenGraph Enhanced -->
+  <meta property="og:title" content="Oświetlenie ulicy Stara Baśń okablowaniem ziemnym – Budżet Obywatelski Łódź">
+  <meta property="og:description" content="Zadanie polega na budowie oświetlenia na ul. Stara Baśń od ul. Zgierskiej do ul. Helenówek - 8 latarni ( 7 pojedynczych i 1 słup z podwójnym wysięgnik... Koszt: 170 000 zł. Kategoria: Infrastruktura komunalna i bezpieczeństwo. Osiedle: Radogoszcz.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://budzetobywatelski-lodz.vercel.app/">
+  <meta property="og:site_name" content="Łódzki Budżet Obywatelski">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:image" content="https://budzetobywatelski-lodz.vercel.app/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="article:author" content="Budżet Obywatelski Łódź">
+  <meta property="article:section" content="Civic Engagement">
+  <meta property="article:tag" content="budżet obywatelski">
+  <meta property="article:tag" content="Łódź">
+  <meta property="article:tag" content="demokracja">
+  <meta property="article:tag" content="projekty lokalne">
+  
+  <!-- Twitter Enhanced -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Oświetlenie ulicy Stara Baśń okablowaniem ziemnym – Budżet Obywatelski Łódź">
+  <meta name="twitter:description" content="Zadanie polega na budowie oświetlenia na ul. Stara Baśń od ul. Zgierskiej do ul. Helenówek - 8 latarni ( 7 pojedynczych i 1 słup z podwójnym wysięgnik... Koszt: 170 000 zł. Kategoria: Infrastruktura komunalna i bezpieczeństwo. Osiedle: Radogoszcz.">
+  <meta name="twitter:site" content="@LodzOfficial">
+  <meta name="twitter:creator" content="@LodzOfficial">
+  
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="/data/projekty.json" as="fetch" crossorigin="anonymous">
+  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style" crossorigin="anonymous">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="anonymous">
+  
+  <!-- Tailwind CSS (CDN for now - will be replaced with custom build) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FFFFFF',
+            secondary: '#FAFAFA', 
+            tertiary: '#F7F7F7',
+            hover: '#F2F2F2',
+            'text-primary': '#111111',
+            'text-secondary': '#333333',
+            'text-tertiary': '#6B6B6B',
+            'border-default': '#E6E6E6',
+            'border-hover': '#DADADA',
+            'border-active': '#CFCFCF'
+          },
+          aspectRatio: {
+            '16/9': '16 / 9'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  
+  <!-- Custom styles -->
+  <style>
+    body { font-family: Inter, system-ui, -apple-system, sans-serif; }
+    .shadow-custom { box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+    .shadow-custom-md { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .shadow-custom-lg { box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+    
+    /* Line clamp utilities for text truncation */
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    
+    .line-clamp-3 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    
+    /* Ensure map container has proper dimensions and interactions */
+    #map {
+      position: relative !important;
+      width: 100% !important;
+      height: 100% !important;
+      z-index: 1 !important;
+    }
+    
+    /* Leaflet map fixes for proper mouse interaction */
+    .leaflet-container {
+      cursor: grab;
+    }
+    
+    .leaflet-container:active {
+      cursor: grabbing;
+    }
+    
+    .leaflet-container a {
+      color: inherit;
+    }
+    
+    .leaflet-control-zoom {
+      z-index: 1000 !important;
+    }
+    
+    /* Fix for potential CSS conflicts */
+    .leaflet-container .leaflet-marker-pane img,
+    .leaflet-container .leaflet-zoom-animated {
+      pointer-events: auto;
+    }
+    
+    /* Tailwind CSS reset conflicts fix */
+    .leaflet-container * {
+      box-sizing: content-box;
+    }
+    
+    .leaflet-container .leaflet-control {
+      box-sizing: border-box;
+    }
+    
+    /* Ensure map interactions work properly */
+    .leaflet-container {
+      touch-action: pan-x pan-y;
+    }
+  </style>
+  
+  
+</head>
+<body class="">
+
+<!-- Header -->
+<header class="bg-primary border-b border-border-default">
+  <div class="container mx-auto px-4 py-4">
+    <div class="flex items-center space-x-4">
+      <a href="/?lat=51.8299611612&lng=19.4235347918&zoom=16&id=B042RA" class="text-text-tertiary hover:text-text-secondary">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+      </a>
+      <div>
+        <h1 class="text-xl font-bold text-text-primary">Projekt B042RA</h1>
+        <p class="text-text-tertiary">Budżet Obywatelski Łódź 2025–2026</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Project Details -->
+<main class="container mx-auto px-4 py-8">
+  <article class="max-w-4xl mx-auto">
+    <!-- Project Header -->
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold text-text-primary mb-4">Oświetlenie ulicy Stara Baśń okablowaniem ziemnym</h1>
+      
+      <div class="flex flex-wrap gap-4 mb-6">
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          Infrastruktura komunalna i bezpieczeństwo
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          osiedlowe
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          Radogoszcz
+        </div>
+      </div>
+      
+      <div class="text-2xl font-bold text-text-primary mb-4">
+        170 000 zł
+      </div>
+    </div>
+    
+    <!-- Project Description -->
+    <div class="prose max-w-none mb-8">
+      <h2 class="text-xl font-semibold text-text-primary mb-4">Opis projektu</h2>
+      <p class="text-text-secondary leading-relaxed whitespace-pre-wrap">Zadanie polega na budowie oświetlenia na ul. Stara Baśń od ul. Zgierskiej do ul. Helenówek - 8 latarni ( 7 pojedynczych i 1 słup z podwójnym wysięgnikiem - róg ul. Helenówek i Stara Baśń) oraz wymiana opraw sodowych i wysięgników na oprawy w technologii LED 4kpl na istniejących słupach na ul. Stara Baśń. Na ulicy powstała droga dojazdowa asfaltowa, droga jest bez poboczy i bez chodnika. Brak oświetlenia zagraża bezpieczeństwu mieszkańców. Założenie oświetlenia na wskazanym odcinku zapewni bezpieczne poruszanie się po drodze oraz poprawi widoczność przechodniów. W najbliższej okolicy znajduję się ogród działkowy ROD oraz domy opieki społecznej dla osób niepełnosprawnych . W związku z powyższym założenie oświetlenia jest konieczne.</p>
+    </div>
+    
+    <!-- Location Info -->
+    
+    
+    <!-- Actions -->
+    <div class="flex flex-wrap gap-4 mb-8">
+      <a 
+        href="/?lat=51.8299611612&lng=19.4235347918&zoom=16&id=B042RA" 
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Pokaż na mapie
+      </a>
+      
+      
+      <a 
+        href="https://www.google.com/maps?q=51.8299611612,19.4235347918" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Otwórz w Google Maps
+      </a>
+      
+      
+      
+      <a 
+        href="https://budzetobywatelski.uml.lodz.pl/szczegoly-projektu-2026-1401956735-1401957816-b019b228f8325d66203e423f0afe71cf" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Zobacz na stronie urzędu
+      </a>
+      
+    </div>
+  </article>
+</main>
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Oświetlenie ulicy Stara Baśń okablowaniem ziemnym",
+  "description": "Zadanie polega na budowie oświetlenia na ul. Stara Baśń od ul. Zgierskiej do ul. Helenówek - 8 latarni ( 7 pojedynczych i 1 słup z podwójnym wysięgnikiem - róg ul. Helenówek i Stara Baśń) oraz wymiana",
+  "identifier": "B042RA",
+  "areaServed": {
+    "@type": "City",
+    "name": "Łódź",
+    "addressCountry": "PL"
+  },
+  "about": {
+    "@type": "GovernmentProject",
+    "name": "Budżet Obywatelski Łódź 2025-2026",
+    "description": "Projekty budżetu obywatelskiego miasta Łodzi na lata 2025-2026"
+  },
+  "category": "Infrastruktura komunalna i bezpieczeństwo",
+  
+  "location": {
+    "@type": "Place",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.8299611612,
+      "longitude": 19.4235347918
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Łódź",
+      "addressCountry": "PL"
+    }
+  },
+  
+  "url": "https://budzetobywatelski-lodz.vercel.app/projekty/oswietlenie-ulicy-stara-basn-okablowaniem-ziemnym-B042RA.html"
+}
+</script>
+
+</body>
+</html>

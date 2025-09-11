@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Streetworkout ćwiczenia dla seniorów i dorosłych w Parku Górka Widzewska. Zajęcia gimnastyczne i rehabilitacyjne/fizjoterapeutyczne z wykorzystaniem wagi własnego ciała #Sport #Rekreacja #Rozciąganie #Rehabilitacja #Zdrowy kręgosłup – Budżet Obywatelski Łódź</title>
+  <meta name="application-name" content="Łódzki Budżet Obywatelski">
+  <meta name="description" content="Wynajem trenera lub trenerów – osób mających doświadczenie w kalistenice/gimnastyce/streetworkoucie/rehabilitacji które  poprowadzą zajęcia dla dorosł... Koszt: 18 000 zł. Kategoria: Sport i rekreacja. Osiedle: Widzew-Wschód.">
+  <meta name="keywords" content="budżet obywatelski łódź mapa, budżet obywatelski 2025 łódź, bo łódź 2026, mapa projektów łódź, lbo łódź mapa, głosowanie obywatelskie łódź, projekty mieszkańców łódź, budżet partycypacyjny łódź, inicjatywy lokalne łódź">
+  
+  <!-- SEO Enhancement -->
+  <meta name="author" content="Łódzki Budżet Obywatelski">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="language" content="Polish">
+  <meta name="geo.region" content="PL-LD">
+  <meta name="geo.placename" content="Łódź">
+  <meta name="geo.position" content="51.7592485;19.4559833">
+  <meta name="ICBM" content="51.7592485, 19.4559833">
+  <link rel="canonical" href="https://budzetobywatelski-lodz.vercel.app/">
+  
+  <!-- OpenGraph Enhanced -->
+  <meta property="og:title" content="Streetworkout ćwiczenia dla seniorów i dorosłych w Parku Górka Widzewska. Zajęcia gimnastyczne i rehabilitacyjne/fizjoterapeutyczne z wykorzystaniem wagi własnego ciała #Sport #Rekreacja #Rozciąganie #Rehabilitacja #Zdrowy kręgosłup – Budżet Obywatelski Łódź">
+  <meta property="og:description" content="Wynajem trenera lub trenerów – osób mających doświadczenie w kalistenice/gimnastyce/streetworkoucie/rehabilitacji które  poprowadzą zajęcia dla dorosł... Koszt: 18 000 zł. Kategoria: Sport i rekreacja. Osiedle: Widzew-Wschód.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://budzetobywatelski-lodz.vercel.app/">
+  <meta property="og:site_name" content="Łódzki Budżet Obywatelski">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:image" content="https://budzetobywatelski-lodz.vercel.app/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="article:author" content="Budżet Obywatelski Łódź">
+  <meta property="article:section" content="Civic Engagement">
+  <meta property="article:tag" content="budżet obywatelski">
+  <meta property="article:tag" content="Łódź">
+  <meta property="article:tag" content="demokracja">
+  <meta property="article:tag" content="projekty lokalne">
+  
+  <!-- Twitter Enhanced -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Streetworkout ćwiczenia dla seniorów i dorosłych w Parku Górka Widzewska. Zajęcia gimnastyczne i rehabilitacyjne/fizjoterapeutyczne z wykorzystaniem wagi własnego ciała #Sport #Rekreacja #Rozciąganie #Rehabilitacja #Zdrowy kręgosłup – Budżet Obywatelski Łódź">
+  <meta name="twitter:description" content="Wynajem trenera lub trenerów – osób mających doświadczenie w kalistenice/gimnastyce/streetworkoucie/rehabilitacji które  poprowadzą zajęcia dla dorosł... Koszt: 18 000 zł. Kategoria: Sport i rekreacja. Osiedle: Widzew-Wschód.">
+  <meta name="twitter:site" content="@LodzOfficial">
+  <meta name="twitter:creator" content="@LodzOfficial">
+  
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="/data/projekty.json" as="fetch" crossorigin="anonymous">
+  <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style" crossorigin="anonymous">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="anonymous">
+  
+  <!-- Tailwind CSS (CDN for now - will be replaced with custom build) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FFFFFF',
+            secondary: '#FAFAFA', 
+            tertiary: '#F7F7F7',
+            hover: '#F2F2F2',
+            'text-primary': '#111111',
+            'text-secondary': '#333333',
+            'text-tertiary': '#6B6B6B',
+            'border-default': '#E6E6E6',
+            'border-hover': '#DADADA',
+            'border-active': '#CFCFCF'
+          },
+          aspectRatio: {
+            '16/9': '16 / 9'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  
+  <!-- Custom styles -->
+  <style>
+    body { font-family: Inter, system-ui, -apple-system, sans-serif; }
+    .shadow-custom { box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+    .shadow-custom-md { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .shadow-custom-lg { box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+    
+    /* Line clamp utilities for text truncation */
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    
+    .line-clamp-3 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    
+    /* Ensure map container has proper dimensions and interactions */
+    #map {
+      position: relative !important;
+      width: 100% !important;
+      height: 100% !important;
+      z-index: 1 !important;
+    }
+    
+    /* Leaflet map fixes for proper mouse interaction */
+    .leaflet-container {
+      cursor: grab;
+    }
+    
+    .leaflet-container:active {
+      cursor: grabbing;
+    }
+    
+    .leaflet-container a {
+      color: inherit;
+    }
+    
+    .leaflet-control-zoom {
+      z-index: 1000 !important;
+    }
+    
+    /* Fix for potential CSS conflicts */
+    .leaflet-container .leaflet-marker-pane img,
+    .leaflet-container .leaflet-zoom-animated {
+      pointer-events: auto;
+    }
+    
+    /* Tailwind CSS reset conflicts fix */
+    .leaflet-container * {
+      box-sizing: content-box;
+    }
+    
+    .leaflet-container .leaflet-control {
+      box-sizing: border-box;
+    }
+    
+    /* Ensure map interactions work properly */
+    .leaflet-container {
+      touch-action: pan-x pan-y;
+    }
+  </style>
+  
+  
+</head>
+<body class="">
+
+<!-- Header -->
+<header class="bg-primary border-b border-border-default">
+  <div class="container mx-auto px-4 py-4">
+    <div class="flex items-center space-x-4">
+      <a href="/?lat=51.7574334688&lng=19.5285109548&zoom=16&id=W190WW" class="text-text-tertiary hover:text-text-secondary">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+      </a>
+      <div>
+        <h1 class="text-xl font-bold text-text-primary">Projekt W190WW</h1>
+        <p class="text-text-tertiary">Budżet Obywatelski Łódź 2025–2026</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Project Details -->
+<main class="container mx-auto px-4 py-8">
+  <article class="max-w-4xl mx-auto">
+    <!-- Project Header -->
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold text-text-primary mb-4">Streetworkout ćwiczenia dla seniorów i dorosłych w Parku Górka Widzewska. Zajęcia gimnastyczne i rehabilitacyjne/fizjoterapeutyczne z wykorzystaniem wagi własnego ciała #Sport #Rekreacja #Rozciąganie #Rehabilitacja #Zdrowy kręgosłup</h1>
+      
+      <div class="flex flex-wrap gap-4 mb-6">
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          Sport i rekreacja
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          osiedlowe
+        </div>
+        <div class="px-3 py-1 bg-tertiary rounded-full text-sm text-text-secondary">
+          Widzew-Wschód
+        </div>
+      </div>
+      
+      <div class="text-2xl font-bold text-text-primary mb-4">
+        18 000 zł
+      </div>
+    </div>
+    
+    <!-- Project Description -->
+    <div class="prose max-w-none mb-8">
+      <h2 class="text-xl font-semibold text-text-primary mb-4">Opis projektu</h2>
+      <p class="text-text-secondary leading-relaxed whitespace-pre-wrap">Wynajem trenera lub trenerów – osób mających doświadczenie w kalistenice/gimnastyce/streetworkoucie/rehabilitacji które  poprowadzą zajęcia dla dorosłych i seniorów w zakresie ćwiczeń • sportowych • rekreacyjnych • rozciągających •  rehabilitacyjnych (we własnym zakresie) • dbających o Zdrowy kręgosłup Ćwiczenia z wykorzystaniem wyłącznie wagi własnego ciała. 
+Zajęcia będą odbywały się wyłącznie z wykorzystaniem wagi własnego ciała na terenie siłowni streetworkout a  ich dopełnieniem będą zajęcia kardio dla tych konkretnych grup wiekowych. 
+Zajęcia będą odbywały się 2-3 razy w tygodniu, w  sezonie wiosna/lato/jesień (np.: od czerwca do września) czyli w okresie kiedy chętniej wychodzimy na świeże powietrze. Łącznie min. 32 spotkania. 
+Grupa docelowa jest mocno sprecyzowana (seniorzy i dorośli) i jak wiemy ich sprawność jest bardzo różnorodna. 
+Dla części z nich celem zajęć będzie np.: nauka ćwiczeń jakie mogą wykonać samodzielnie podczas rehabilitacji  np. nauka chodzenia po operacjach nóg, stawów biodrowych z wykorzystaniem poręczy do dipów, itp. 
+Dla innych celem będzie  np. dojście do samodzielnego i jak najdłuższego zwisu swobodnego lub aktywnego aby dobrze rozciągnąć kręgosłup, itp A jeszcze dla innych, bardziej aktywnych, celem będzie aby za jakiś czas osiągnąć taki efekt: 1) https://www.youtube.com/watch?v=84rXHqjltjs 2) https://www.youtube.com/watch?v=DJzhxU6fNxM 
+Dodatkowo na terenie  obecnej siłowni streetworkout zostanie postawiona tablica z przykładowymi ćwiczeniami. Tablica i jej przekaz musi być czytelny dla wszystkich mieszkańców, w tym 60+ aby wiedzieli, że taka siłownia jest nie tylko dla młodych i sprawnych ale również dla osób starszych i seniorów niezależnie od sprawności fizycznej. Ta siłownia może pełnić funkcje sportowe i rehabilitacyjne. Siłownia ma być również przestrzenią międzypokoleniową do spotkań młodych z dorosłymi i seniorami. W zdrowiu i sprawności fizycznej.</p>
+    </div>
+    
+    <!-- Location Info -->
+    
+    
+    <!-- Actions -->
+    <div class="flex flex-wrap gap-4 mb-8">
+      <a 
+        href="/?lat=51.7574334688&lng=19.5285109548&zoom=16&id=W190WW" 
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Pokaż na mapie
+      </a>
+      
+      
+      <a 
+        href="https://www.google.com/maps?q=51.7574334688,19.5285109548" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Otwórz w Google Maps
+      </a>
+      
+      
+      
+      <a 
+        href="https://budzetobywatelski.uml.lodz.pl/szczegoly-projektu-2026-1401956735-1401966539-509b4ad331814839726c0393e6878c61" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-tertiary hover:bg-hover border border-border-default rounded-lg text-text-secondary hover:text-text-primary transition-colors"
+      >
+        Zobacz na stronie urzędu
+      </a>
+      
+    </div>
+  </article>
+</main>
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Streetworkout ćwiczenia dla seniorów i dorosłych w Parku Górka Widzewska. Zajęcia gimnastyczne i rehabilitacyjne/fizjoterapeutyczne z wykorzystaniem wagi własnego ciała #Sport #Rekreacja #Rozciąganie #Rehabilitacja #Zdrowy kręgosłup",
+  "description": "Wynajem trenera lub trenerów – osób mających doświadczenie w kalistenice/gimnastyce/streetworkoucie/rehabilitacji które  poprowadzą zajęcia dla dorosłych i seniorów w zakresie ćwiczeń • sportowych • r",
+  "identifier": "W190WW",
+  "areaServed": {
+    "@type": "City",
+    "name": "Łódź",
+    "addressCountry": "PL"
+  },
+  "about": {
+    "@type": "GovernmentProject",
+    "name": "Budżet Obywatelski Łódź 2025-2026",
+    "description": "Projekty budżetu obywatelskiego miasta Łodzi na lata 2025-2026"
+  },
+  "category": "Sport i rekreacja",
+  
+  "location": {
+    "@type": "Place",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.7574334688,
+      "longitude": 19.5285109548
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Łódź",
+      "addressCountry": "PL"
+    }
+  },
+  
+  "url": "https://budzetobywatelski-lodz.vercel.app/projekty/streetworkout-cwiczenia-dla-seniorow-i-dorosych-w-parku-gork-W190WW.html"
+}
+</script>
+
+</body>
+</html>
