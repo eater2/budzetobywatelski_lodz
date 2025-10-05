@@ -8,5 +8,3577 @@
     }
   ],
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/projekty/B001BD",
+      "destination": "/projekty/cywilizacja-parkowania-na-starych-bautach-B001BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B002TW",
+      "destination": "/projekty/zielona-ul-rojna-drzewa-i-krzewy-wzduz-drogi-B002TW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B003TW",
+      "destination": "/projekty/zielona-ul-traktorowa-drzewa-i-krzewy-wzduz-drogi-B003TW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B005BZ",
+      "destination": "/projekty/zielona-ul-pojezierska-drzewa-i-krzewy-wzduz-drogi-bauty-zac-B005BZ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B006BD",
+      "destination": "/projekty/zielona-ul-strykowska-drzewa-i-krzewy-w-pasie-rozdziau-B006BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B007BC",
+      "destination": "/projekty/zielona-ul-pojezierska-drzewa-i-krzewy-wzduz-drogi-bauty-cen-B007BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B008BC",
+      "destination": "/projekty/zielona-ul-julianowska-drzewa-i-krzewy-wzduz-drogi-B008BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B009BD",
+      "destination": "/projekty/zielona-ul-smugowa-drzewa-i-krzewy-wzduz-drogi-B009BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B012BZ",
+      "destination": "/projekty/zielona-ul-aleksandrowska-drzewa-i-krzewy-wzduz-drogi-B012BZ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B013BC",
+      "destination": "/projekty/zielona-al-wokniarzy-drzewa-i-krzewy-wzduz-drogi-bauty-centr-B013BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B014TW",
+      "destination": "/projekty/zielona-al-wokniarzy-drzewa-i-krzewy-wzduz-drogi-teofilow-wi-B014TW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B015RA",
+      "destination": "/projekty/zielona-al-wokniarzy-drzewa-i-krzewy-wzduz-drogi-radogoszcz-B015RA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B016BC",
+      "destination": "/projekty/uzupenienia-szpalerow-drzew-i-nowe-nasadzenia-bauty-centrum-B016BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B017BD",
+      "destination": "/projekty/uzupenienia-szpalerow-drzew-i-nowe-nasadzenia-bauty-doy-B017BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B018RA",
+      "destination": "/projekty/zielona-ul-zgierska-drzewa-i-krzewy-wzduz-drogi-radogoszcz-B018RA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B020JM",
+      "destination": "/projekty/zielona-ul-skrzydlata-drzewa-i-krzewy-wzduz-drogi-B020JM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B022BD",
+      "destination": "/projekty/tu-staa-synagoga-zielona-przestrzen-pamieci-przy-skrzyzowani-B022BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B023BD",
+      "destination": "/projekty/pacjent-w-zieleni-teren-przed-przychodnia-przy-ul-majzela-B023BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B027BD",
+      "destination": "/projekty/z-serca-baut-rowna-droga-na-rynek-B027BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B028BD",
+      "destination": "/projekty/z-serca-baut-roze-zamiast-klepiska-na-limance-B028BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B029BD",
+      "destination": "/projekty/z-serca-baut-zielony-naroznik-zachodnialutomierska-B029BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B031BD",
+      "destination": "/projekty/z-serca-baut-na-koach-z-koscielnej-na-stary-rynek-pochylnia--B031BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B032BD",
+      "destination": "/projekty/z-serca-baut-montaz-siedzisk-separatorow-na-przystankach-na--B032BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B033LA",
+      "destination": "/projekty/z-serca-baut-chociaz-200-metrow-nowego-asfaltu-na-okolnej-pr-B033LA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B035LA",
+      "destination": "/projekty/postawmy-na-bezpieczenstwo-na-osiedlu-agiewniki-B035LA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B036BC",
+      "destination": "/projekty/z-serca-baut-bezpieczny-pies-na-zachodniej-mniej-betonu-i-wi-B036BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B037BC",
+      "destination": "/projekty/z-serca-baut-uzupenienie-szpalerow-drzew-na-lutomierskiej-pr-B037BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B039BC",
+      "destination": "/projekty/z-serca-baut-doposazenie-parku-struga-nowe-awki-i-kosze-na-s-B039BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B040BC",
+      "destination": "/projekty/z-serca-baut-doposazenie-siowni-zewnetrznej-na-bazarowej-B040BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B042RA",
+      "destination": "/projekty/oswietlenie-ulicy-stara-basn-okablowaniem-ziemnym-B042RA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B044BC",
+      "destination": "/projekty/z-serca-baut-wygodniej-tramwajem-z-dolnego-rynku-dodatkowe-w-B044BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B046RA",
+      "destination": "/projekty/tyrolka-zjazd-linowy-dla-dzieci-koo-boiska-na-jesionowej-B046RA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B047JM",
+      "destination": "/projekty/usuniecie-jemioy-z-alei-klonow-ul-centralnej-odcinek-poudnio-B047JM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B048WL",
+      "destination": "/projekty/postawmy-na-bezpieczenstwo-na-osiedlu-wzniesien-odzkich-B048WL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B049BZ",
+      "destination": "/projekty/postawmy-na-bezpieczenstwo-na-osiedlu-bauty-zachodnie-B049BZ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B051JM",
+      "destination": "/projekty/postawmy-na-bezpieczenstwo-na-osiedlu-julianow-marysin-rogi-B051JM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B054BD",
+      "destination": "/projekty/sluzy-rowerowe-lutomierska-zgierska-i-wojska-polskiego-zgier-B054BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B055TW",
+      "destination": "/projekty/sadzenie-cebulic-syberyjskich-wielkopolska-68-B055TW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B057RA",
+      "destination": "/projekty/pachnace-lipy-przy-zgierskiej-na-odcinku-miedzy-ul-trawiasta-B057RA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B060JM",
+      "destination": "/projekty/sygnalizacja-swietlna-wzbudzana-na-przejsciu-dla-pieszych-st-B060JM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B061TW",
+      "destination": "/projekty/stoy-do-ping-ponga-na-skwerze-praw-dziecka-ul-inowrocawska-B061TW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B062TW",
+      "destination": "/projekty/remont-nawierzchni-chodnika-ul-lnianej-po-stronie-nieparzyst-B062TW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B063TW",
+      "destination": "/projekty/montaz-tablicy-informacji-pasazerskiej-na-przystanku-mpk-ale-B063TW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B065LA",
+      "destination": "/projekty/bezpieczne-skrzyzowanie-czapli-agiewnicka-B065LA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B069RA",
+      "destination": "/projekty/park-linowy-poprawa-bezpieczenstwa-kontynuacja-park-nad-soko-B069RA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B071BD",
+      "destination": "/projekty/dosadzenie-drzew-i-krzewow-przy-agiewnickiej-miedzy-ul-tokar-B071BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B073JM",
+      "destination": "/projekty/sciezka-sensoryczna-rogi-B073JM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B074JM",
+      "destination": "/projekty/mapi-gaj-rogi-B074JM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B075TW",
+      "destination": "/projekty/przyciecie-40-letnich-drzew-i-krzewow-wielkopolska-68-B075TW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B077BC",
+      "destination": "/projekty/budowa-przejscia-dla-pieszych-do-przystanku-pojezierska-wokn-B077BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B082BC",
+      "destination": "/projekty/monitoring-drzew-przy-zachodniej-na-odcinku-limanowskiego-zg-B082BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B083BC",
+      "destination": "/projekty/rozwijajmy-osiedle-pojezierska-remont-nawierzchni-ulicy-olsz-B083BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B084BC",
+      "destination": "/projekty/rozwijajmy-osiedle-pojezierska-remont-nawierzchni-ulicy-mack-B084BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B085BC",
+      "destination": "/projekty/rozwijajmy-osiedle-pojezierska-domki-dla-jezy-w-parku-na-uli-B085BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B086BC",
+      "destination": "/projekty/rozwijajmy-osiedle-pojezierska-domki-dla-jezy-w-parku-struga-B086BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B088BC",
+      "destination": "/projekty/rozwijajmy-osiedle-pojezierska-kwiaty-na-pasie-miedzy-jezdni-B088BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B089BC",
+      "destination": "/projekty/rozwijajmy-osiedle-pojezierska-street-workout-w-parku-przy-h-B089BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B090BC",
+      "destination": "/projekty/rozwijajmy-osiedle-pojezierska-park-kieszonkowy-pojezierska-B090BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B093BC",
+      "destination": "/projekty/rozwijajmy-osiedle-pojezierska-odbudowa-mostku-w-parku-przy--B093BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B104BC",
+      "destination": "/projekty/bezpieczne-przejscia-dla-pieszych-na-skrzyzowaniu-ulic-kaspr-B104BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B110RA",
+      "destination": "/projekty/bezpieczna-droga-dzieciakow-do-szkoy-podstawowej-nr-184-popr-B110RA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B112BD",
+      "destination": "/projekty/wyremontujmy-sobie-park-przy-wojska-polskiego-dokonczenie-re-B112BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B113JM",
+      "destination": "/projekty/latarnie-w-parku-julianowskim-ii-etap-B113JM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B115RA",
+      "destination": "/projekty/parking-przedszkolaka-i-ucznia-podbiaowajesionowa-B115RA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B116BC",
+      "destination": "/projekty/niepenosprawne-dzieci-na-wozkach-prosza-o-rowny-chodnik-na-u-B116BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B117RA",
+      "destination": "/projekty/tablica-informacji-pasazerskiej-przystanek-tramwajowy-zgiers-B117RA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B118LA",
+      "destination": "/projekty/ciag-dalszy-budowy-chodnika-na-ul-przyklasztorze-od-ul-godle-B118LA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B119LA",
+      "destination": "/projekty/ciag-dalszy-budowy-oswietlenia-na-niebezpiecznym-odcinku-ul--B119LA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B120BC",
+      "destination": "/projekty/parking-przyjazny-naturze-potrzebny-mieszkancom-rog-ul-lutom-B120BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B122WL",
+      "destination": "/projekty/ciag-dalszy-budowy-pasa-drogowego-na-dziace-54-do-dziaki-nr--B122WL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B123RA",
+      "destination": "/projekty/nordic-walking-dla-mieszkancow-osiedla-radogoszcz-B123RA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B124BC",
+      "destination": "/projekty/zielono-na-ul-karskiego-B124BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B125TW",
+      "destination": "/projekty/zajecia-biegowe-z-elementami-treningu-oddechowego-na-osiedlu-B125TW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B126WL",
+      "destination": "/projekty/zielony-cien-dla-dzieci-nasadzenia-drzew-na-placu-zabaw-przy-B126WL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B127WL",
+      "destination": "/projekty/zadaszona-wiata-rowerowa-przy-przystanku-strykowska-okolna-w-B127WL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B128WL",
+      "destination": "/projekty/doposazenie-swietlicy-osiedlowej-przy-ul-moskule-27a-stoy-aw-B128WL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B129WL",
+      "destination": "/projekty/piknik-sasiedzki-od-maego-do-duzego-integracja-mieszkancow-o-B129WL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B130WL",
+      "destination": "/projekty/ciepo-i-bezpiecznie-montaz-rolet-w-altance-na-placu-zabaw-pr-B130WL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B131WL",
+      "destination": "/projekty/zielony-przystanek-nowe-wiaty-z-kwietnikami-na-ul-strykowski-B131WL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B132WL",
+      "destination": "/projekty/bezpieczniej-na-okolnej-prog-zwalniajacy-przy-ul-okolnej-87-B132WL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B134BD",
+      "destination": "/projekty/budowa-monitoringu-miejskiego-na-ul-kolinskiego-i-ul-niemoje-B134BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B135TW",
+      "destination": "/projekty/pieskowy-raj-na-teofilowie-psi-park-B135TW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B138LA",
+      "destination": "/projekty/latarnie-przy-nieoswietlonej-ulicy-skowronczej-od-numeru-10--B138LA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B139TW",
+      "destination": "/projekty/wydanie-ksiazkowego-przewodnika-po-teofilowie-B139TW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B140RA",
+      "destination": "/projekty/switezianki-bez-barier-chodnik-dostepny-dla-wszystkich-B140RA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B142BZ",
+      "destination": "/projekty/doposazenie-ochotniczej-strazy-pozarnej-odz-mikoajew-B142BZ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B145JM",
+      "destination": "/projekty/zielony-skwer-inflanckanarcyzowaadmiralska-przestrzen-wypocz-B145JM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B146LA",
+      "destination": "/projekty/wyrownanie-fragmentu-drogi-publicznej-gruntowej-ul-serwituty-B146LA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B148BC",
+      "destination": "/projekty/budowa-miejsc-postojowych-na-ul-srebrnej-B148BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B152RA",
+      "destination": "/projekty/park-lesny-im-w-puchalskiego-iii-edycja-B152RA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B153BD",
+      "destination": "/projekty/ruch-i-oddychanie-to-sprawnosci-poprawianie-rehabilitacja-tr-B153BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B154RA",
+      "destination": "/projekty/rado-dogs-zielony-zakatek-ix-edycja-B154RA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B156LA",
+      "destination": "/projekty/najlepszy-plac-zabaw-przy-ul-kuropatwiej-B156LA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B157LA",
+      "destination": "/projekty/bezpieczna-ul-agiewnicka-dla-mieszkancow-B157LA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B159LA",
+      "destination": "/projekty/bezpieczne-przejscie-dla-pieszych-ul-czapli-ul-agiewnicka-B159LA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B160BD",
+      "destination": "/projekty/bezpieczna-droga-do-szkoy-jasniejsze-przejscie-dla-pieszych--B160BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B162JM",
+      "destination": "/projekty/strefa-siy-i-wspinaczki-przy-ul-wycieczkowej-urzadzenie-do-w-B162JM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B163WL",
+      "destination": "/projekty/bezpieczny-dojazd-do-rod-wilanow-i-etap-B163WL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B165WL",
+      "destination": "/projekty/parking-przed-rod-wilanow-B165WL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B166TW",
+      "destination": "/projekty/utwardzenie-ulicy-wolinskiej-B166TW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B168BC",
+      "destination": "/projekty/bezpieczne-przejscie-przy-sp-65-B168BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B169RA",
+      "destination": "/projekty/rewitalizacja-podjazdu-nad-sokoowka-B169RA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B170BC",
+      "destination": "/projekty/sasiedzka-integracja-piknik-dla-mieszkancow-osiedla-bauty-ce-B170BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B171BC",
+      "destination": "/projekty/bookcrossing-dla-osiedla-bauty-centrum-skrzynka-przy-ul-mokr-B171BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B173RA",
+      "destination": "/projekty/zabawa-bez-barier-nad-sokoowka-B173RA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B174BC",
+      "destination": "/projekty/mamy-przestrzen-w-parku-struga-B174BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B175RA",
+      "destination": "/projekty/mamy-przestrzen-nad-sokoowka-B175RA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B179BZ",
+      "destination": "/projekty/na-ratunek-szybko-i-sprawnie-doposazenie-osp-orw-odz-B179BZ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B181BD",
+      "destination": "/projekty/radosny-patriotyzm-piknik-z-okazji-swieta-flagi-na-rynku-sta-B181BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B182BD",
+      "destination": "/projekty/monitoring-na-starym-miescie-skrzyzowanie-ul-wojska-polskieg-B182BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B183BZ",
+      "destination": "/projekty/zielony-zabieniec-zakumaj-i-dbaj-awki-B183BZ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B184BZ",
+      "destination": "/projekty/zielony-zabieniec-zakumaj-i-dbaj-drzewka-B184BZ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B185BZ",
+      "destination": "/projekty/uroczysko-zabieniec-stop-pojazdom-w-lesie-B185BZ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B186BZ",
+      "destination": "/projekty/las-harcerski-wrzosowisko-to-widowisko-B186BZ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B187BZ",
+      "destination": "/projekty/las-harcerski-sciezki-spacerowe-B187BZ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B188BZ",
+      "destination": "/projekty/las-harcerski-rewitalizacja-miejsca-wypoczynku-B188BZ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B189BC",
+      "destination": "/projekty/tak-dla-miejsc-parkingowych-przy-ul-powstancow-wielkopolskic-B189BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B190BD",
+      "destination": "/projekty/awki-na-osiedlu-ul-czarnieckiego-B190BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B191RA",
+      "destination": "/projekty/zielen-izolacyjna-przy-wokniarzy-B191RA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B192BD",
+      "destination": "/projekty/zielona-przystan-przy-bibliotece-nowa-przestrzen-publiczna-m-B192BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B194RA",
+      "destination": "/projekty/budowa-wiaty-przystankowej-przy-ul-11-go-listopada-przy-stac-B194RA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B195LA",
+      "destination": "/projekty/doposazenie-ochotczej-strazy-pozarnej-odz-agiewniki-w-sprzet-B195LA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B196RA",
+      "destination": "/projekty/swiato-na-skwerze-radodogs-lampy-solarne-dla-bezpieczenstwa--B196RA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B197LA",
+      "destination": "/projekty/remont-pomieszczen-higieniczno-sanitarnych-w-budynku-strazni-B197LA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B198BD",
+      "destination": "/projekty/streetworkout-cwiczenia-dla-seniorow-i-dorosych-w-parku-im-s-B198BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B200TW",
+      "destination": "/projekty/streetworkout-cwiczenia-dla-seniorow-i-dorosych-w-parku-pias-B200TW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B201RA",
+      "destination": "/projekty/streetworkout-cwiczenia-dla-seniorow-i-dorosych-w-parku-jesi-B201RA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B202BC",
+      "destination": "/projekty/remont-chodnika-na-prusa-B202BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B203TW",
+      "destination": "/projekty/straznik-blizej-nas-czysty-i-bezpieczny-teofilow-B203TW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B206BD",
+      "destination": "/projekty/park-helenow-siownia-i-street-workout-park-budowa-siowni-zew-B206BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B208BZ",
+      "destination": "/projekty/bieg-na-orientacje-na-osiedlu-bauty-zachodnie-B208BZ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B209BC",
+      "destination": "/projekty/zielona-aleja-wokniarzy-bluszcz-na-ekranach-akustycznych-B209BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B210BZ",
+      "destination": "/projekty/remont-przystanku-autobusowego-traktorowa-sierpowa-B210BZ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B211RA",
+      "destination": "/projekty/wierze-w-jeze-budujemy-domki-na-radogoszczu-B211RA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B213RA",
+      "destination": "/projekty/ogrody-switezianki-szpaler-kwitnacych-drzew-radogoszcz-wscho-B213RA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B215BZ",
+      "destination": "/projekty/to-dla-teofilowa-wazne-bezpieczne-przejscie-dla-pieszych-na--B215BZ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B216TW",
+      "destination": "/projekty/psi-park-na-teofilowie-B216TW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B217BD",
+      "destination": "/projekty/doswietlenie-przejscia-dla-pieszych-ul-nowomiejskapark-staro-B217BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B219LA",
+      "destination": "/projekty/bieg-na-orientacje-na-osiedlu-agiewniki-B219LA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B220RA",
+      "destination": "/projekty/budowa-chodnika-na-ul-stawowej-B220RA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B222RA",
+      "destination": "/projekty/budowa-chodnika-na-ul-jeziornej-B222RA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B223BD",
+      "destination": "/projekty/mamy-przestrzen-w-parku-szarych-szeregow-B223BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B224TW",
+      "destination": "/projekty/purpurowy-skwer-przy-ul-wiernej-rzeki-B224TW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B225BD",
+      "destination": "/projekty/kwiaty-na-drogi-zasadzenie-roslin-cebulowych-tulipany-zonkil-B225BD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B226RA",
+      "destination": "/projekty/kwiaty-na-drogi-zasadzenie-roslin-cebulowych-tulipany-zonkil-B226RA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B227BZ",
+      "destination": "/projekty/kwiaty-na-drogi-zasadzenie-roslin-cebulowych-tulipany-zonkil-B227BZ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B229JM",
+      "destination": "/projekty/bezpieczny-julianowski-oswietlenie-w-parku-B229JM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B231BC",
+      "destination": "/projekty/monitoring-na-osiedlu-bauty-centrum-B231BC.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B232TW",
+      "destination": "/projekty/dokonczenie-remontu-ulicy-lnianej-B232TW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/B233TW",
+      "destination": "/projekty/oswietlenie-ulicy-zadraz-B233TW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G001RO",
+      "destination": "/projekty/zielone-strefy-wypoczynku-nasadzenia-ul-pradzynskiego-ul-sw--G001RO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G002GO",
+      "destination": "/projekty/uzupenienia-szpalerow-drzew-i-nowe-nasadzenia-gorniak-G002GO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G003RO",
+      "destination": "/projekty/zielona-ul-pabianicka-drzewa-i-krzewy-wzduz-drogi-rokicie-G003RO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G004PK",
+      "destination": "/projekty/zielona-ul-pabianicka-drzewa-i-krzewy-wzduz-drogi-piastow-ku-G004PK.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G005RU",
+      "destination": "/projekty/zielona-ul-pabianicka-drzewa-i-krzewy-wzduz-drogi-ruda-G005RU.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G007GO",
+      "destination": "/projekty/zielony-pl-niepodlegosci-drzewa-i-krzewy-wzduz-drogi-G007GO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G008GO",
+      "destination": "/projekty/remont-zielencow-na-ul-sieradzkiej-G008GO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G013CD",
+      "destination": "/projekty/zielona-ul-dabrowskiego-drzewa-i-krzewy-wzduz-drogi-G013CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G014RO",
+      "destination": "/projekty/bezpieczny-chodnik-na-wieniawskiego-G014RO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G015GO",
+      "destination": "/projekty/nowy-chodnik-na-podgornej-od-dabrowskiego-w-kierunku-zbarask-G015GO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G016PK",
+      "destination": "/projekty/postawmy-na-bezpieczenstwo-na-osiedlu-piastow-kurak-G016PK.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G017GO",
+      "destination": "/projekty/postawmy-na-bezpieczenstwo-na-osiedlu-gorniak-G017GO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G018RU",
+      "destination": "/projekty/postawmy-na-bezpieczenstwo-na-osiedlu-ruda-G018RU.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G019NN",
+      "destination": "/projekty/postawmy-na-bezpieczenstwo-na-osiedlu-nad-nerem-G019NN.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G021CD",
+      "destination": "/projekty/droga-rowerowa-wzduz-al-ofiar-terroryzmu-bez-slepego-zakoncz-G021CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G022CD",
+      "destination": "/projekty/remont-chodnika-i-wykonanie-parkingu-ul-dabrowskiego-po-stro-G022CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G023RU",
+      "destination": "/projekty/acznik-rowerowy-wzduz-pabianickiej-od-wedkarskiej-do-ciechoc-G023RU.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G024CD",
+      "destination": "/projekty/awka-dla-seniora-przy-mazurskiej-G024CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G028CD",
+      "destination": "/projekty/mural-dla-malczewskiego-na-ulicy-malczewskiego-G028CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G029CD",
+      "destination": "/projekty/plac-zabaw-w-parku-im-j-dabrowskiego-G029CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G031PK",
+      "destination": "/projekty/adaptacja-terenow-zielonych-przy-ciokowskiego-9-w-odzi-G031PK.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G034RO",
+      "destination": "/projekty/bezpieczni-na-drodze-przejscie-dla-pieszych-na-ul-cieszkowsk-G034RO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G035GO",
+      "destination": "/projekty/dokonczmy-gorniak-parking-przy-ul-wolczanskiej-G035GO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G036NN",
+      "destination": "/projekty/piknik-sasiedzki-park-osiedlowy-nad-nerem-G036NN.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G037RU",
+      "destination": "/projekty/park-kieszonkowy-na-ul-ruchliwej-G037RU.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G038RU",
+      "destination": "/projekty/wymiana-nawierzchni-na-asfaltowa-na-brakujacym-odcinku-ul-uk-G038RU.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G040RU",
+      "destination": "/projekty/sciezki-pieszorowerowe-aczace-ul-dumna-i-barwna-z-ul-dzwonow-G040RU.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G041CH",
+      "destination": "/projekty/latarnie-przy-niedoswietlonej-ulicy-leszczynskiej-G041CH.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G042CH",
+      "destination": "/projekty/bezpieczne-skrzyzowania-ul-leszczynskiej-i-ul-sczanieckiej-G042CH.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G043PK",
+      "destination": "/projekty/bezpieczne-przedszkolaki-barierki-zabezpieczajace-przed-wejs-G043PK.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G044CH",
+      "destination": "/projekty/park-zatorze-strefy-prawdziwego-relaksu-2-hamaki-2-awki-hust-G044CH.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G045CH",
+      "destination": "/projekty/park-zatorze-12-metrowy-zielony-tunel-pod-pergola-z-pnaczami-G045CH.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G046CD",
+      "destination": "/projekty/chodnik-osiedlowy-pomiedzy-przystankiem-autobusowym-dabrowsk-G046CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G047CD",
+      "destination": "/projekty/nasze-podworko-rewitalizacja-istniejacego-ogrodu-jordanowski-G047CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G049CD",
+      "destination": "/projekty/400-krzewow-i-kwiatow-w-40-lokalizacjach-od-gojawiczynskiej--G049CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G050PK",
+      "destination": "/projekty/bezpiecznie-rowerem-na-hale-i-boisko-na-obiekcie-sportowym-p-G050PK.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G059PK",
+      "destination": "/projekty/utworzenie-miejsc-parkingowych-przy-ul-kosmonautow-12-G059PK.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G061CH",
+      "destination": "/projekty/bezpiecznie-na-chojnach-dodatkowe-patrole-strazy-miejskiej-n-G061CH.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G062RO",
+      "destination": "/projekty/doposazenie-placu-zabaw-w-parku-rejtana-bezpieczna-i-atrakcy-G062RO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G064RO",
+      "destination": "/projekty/przyszkole-z-nowym-chodnikiem-G064RO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G068NN",
+      "destination": "/projekty/generalny-remont-pokrycia-dachowego-na-straznicy-ochotnicza--G068NN.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G069WI",
+      "destination": "/projekty/bezpieczny-i-estetyczny-plac-osp-odz-wiskitno-etap-1-G069WI.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G071WI",
+      "destination": "/projekty/poprawa-bezpieczenstwa-mieszkancow-poprzez-montaz-radarowych-G071WI.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G072WI",
+      "destination": "/projekty/lustro-bezpieczenstwa-na-skrzyzowaniu-ulic-gosciniec-i-mozai-G072WI.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G073WI",
+      "destination": "/projekty/zakup-sprzetu-do-organizacji-zaopatrzenia-wodnego-dla-osp-od-G073WI.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G075CD",
+      "destination": "/projekty/kino-letnie-na-skwerze-kolbego-G075CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G076CD",
+      "destination": "/projekty/awki-kwiatki-karmnik-krzewy-dla-poudniowej-strony-os-dabrowa-G076CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G077CD",
+      "destination": "/projekty/plac-zabaw-przy-gorce-obok-przedszkola-nr-117-na-wysokosci-u-G077CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G078GO",
+      "destination": "/projekty/eko-enklawa-skrzywana-lokalizacja-skrzywana-16-G078GO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G079GO",
+      "destination": "/projekty/parking-xxi-wieku-lokalizacja-skrzywana-16-G079GO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G080GO",
+      "destination": "/projekty/rowna-droga-do-domu-lokalizacja-skrzywana-16-i-18-G080GO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G081CD",
+      "destination": "/projekty/lenartowicza-bezpieczny-parking-dla-mieszkancow-odzi-G081CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G083WI",
+      "destination": "/projekty/zakup-pojazdu-operacyjnego-dla-osp-grs-odz-jedrzejow-G083WI.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G084GO",
+      "destination": "/projekty/odzkie-toalety-publiczne-reaktywacja-park-reymonta-remont-to-G084GO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G085CH",
+      "destination": "/projekty/doswietlenie-niebezpiecznego-przejscia-dla-pieszych-ul-prync-G085CH.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G086CH",
+      "destination": "/projekty/park-zatorze-letnie-kino-na-gorce-G086CH.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G087RU",
+      "destination": "/projekty/dzwonowa-w-xxi-w-zielen-chodnik-i-parking-G087RU.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G088CD",
+      "destination": "/projekty/ezka-felinskiego-nie-dla-bota-tak-dla-normalnosci-parking-G088CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G089CD",
+      "destination": "/projekty/wygodny-przystanek-zmiana-geometrii-przystanku-felinskiego-k-G089CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G090RU",
+      "destination": "/projekty/tajemniczy-ogrod-przy-karowej-rozdzia-ii-G090RU.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G091GO",
+      "destination": "/projekty/gorniak-bedzie-adnie-G091GO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G092CD",
+      "destination": "/projekty/zielona-rewolucja-na-dabrowie-labirynt-z-zywopotu-ezka-felin-G092CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G093RU",
+      "destination": "/projekty/bezpieczna-droga-do-szkoy-karowa-G093RU.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G095CD",
+      "destination": "/projekty/kino-letnie-na-gorce-przy-gojawiczynskiej-G095CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G097CD",
+      "destination": "/projekty/aka-kwietna-przy-gojawiczynskiej-G097CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G098CD",
+      "destination": "/projekty/nowy-chodnik-przy-ul-felinskiego-6-G098CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G099RU",
+      "destination": "/projekty/chodz-biegaj-i-oddychaj-zajecia-sportowe-na-rudzie-G099RU.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G100CD",
+      "destination": "/projekty/remont-chodnika-pomiedzy-przejsciami-dla-pieszych-przy-ul-go-G100CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G101PK",
+      "destination": "/projekty/bezpieczny-chodnik-dla-pieszych-ul-kosmonautow-rog-bedzinski-G101PK.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G102CD",
+      "destination": "/projekty/odbetonowanie-terenu-przy-przejsciu-dla-pieszych-przy-ul-goj-G102CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G104PK",
+      "destination": "/projekty/bezpieczne-chodniki-remont-nawierzchni-chodnikow-wzduz-budyn-G104PK.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G105PK",
+      "destination": "/projekty/parking-dla-mieszkancow-utwardzenie-terenu-pyta-azurowa-pod--G105PK.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G106CD",
+      "destination": "/projekty/nowy-chodnik-przy-mazurskiej-G106CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G107CD",
+      "destination": "/projekty/parkingi-na-mazurskiej-i-malczewskiego-G107CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G108CD",
+      "destination": "/projekty/nowy-chodnik-na-kraszewskiego-G108CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G109CD",
+      "destination": "/projekty/spotkania-z-gwiazda-na-dabrowie-G109CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G110PK",
+      "destination": "/projekty/bezpieczne-wejscie-na-skwer-dubaniewicza-G110PK.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G112PK",
+      "destination": "/projekty/zielona-i-bezpieczna-ul-dygasinskiego-nowe-drzewa-krzewy-i-r-G112PK.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G113CD",
+      "destination": "/projekty/warsztaty-szachowe-dla-dzieci-i-dorosych-chojny-dabrowa-G113CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G114RU",
+      "destination": "/projekty/nordic-walking-na-rudzie-G114RU.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G115CD",
+      "destination": "/projekty/dodatkowe-patrole-strazy-miejskiej-na-terenie-osiedla-chojny-G115CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G119RO",
+      "destination": "/projekty/dodatkowe-patrole-strazy-miejskiej-na-terenie-osiedla-rokici-G119RO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G121CH",
+      "destination": "/projekty/dodatkowe-kosze-na-psie-odchody-na-terenie-osiedla-chojny-G121CH.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G122PK",
+      "destination": "/projekty/dodatkowe-kosze-na-psie-odchody-na-terenie-osiedla-piastow-k-G122PK.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G123NN",
+      "destination": "/projekty/dodatkowe-kosze-na-psie-odchody-na-terenie-osiedla-nad-nerem-G123NN.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G124RO",
+      "destination": "/projekty/dodatkowe-kosze-na-psie-odchody-na-terenie-osiedla-rokicie-G124RO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G125WI",
+      "destination": "/projekty/dodatkowe-kosze-na-psie-odchody-na-terenie-osiedla-wiskitno-G125WI.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G126CD",
+      "destination": "/projekty/dodatkowe-kosze-na-psie-odchody-na-terenie-osiedla-chojny-da-G126CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G128NN",
+      "destination": "/projekty/chocianowicka-bez-dziur-frezowanie-uzupenianie-walcowanie-kr-G128NN.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G129NN",
+      "destination": "/projekty/nowe-krawezniki-po-obu-stronach-chocianowicka-etap-2026-G129NN.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G130GO",
+      "destination": "/projekty/koks-koo-osiedlowej-kalisteniki-sportowej-urzadzenia-do-kali-G130GO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G131CD",
+      "destination": "/projekty/tablica-komunikacji-obywatelskiej-chojny-dabrowa-G131CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G134CH",
+      "destination": "/projekty/remont-chodnika-przy-ul-leszczynskiej-1416-G134CH.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G135CH",
+      "destination": "/projekty/apark-chojenski-psia-strefa-radosci-G135CH.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G136PK",
+      "destination": "/projekty/spacer-z-mapa-osiedle-piastow-kurak-G136PK.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G137CH",
+      "destination": "/projekty/przebudowa-ul-cegielnianej-od-ul-ustronnej-do-ul-leszczynski-G137CH.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G138CH",
+      "destination": "/projekty/budowa-chodnika-na-ul-cegielnianej-G138CH.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G139CH",
+      "destination": "/projekty/street-ball-park-ustronna-gorna-G139CH.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G140CH",
+      "destination": "/projekty/dokonczenie-alei-parkowej-w-parku-im-zofii-garlickiej-G140CH.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G142GO",
+      "destination": "/projekty/rodzinny-reymont-odnowa-placu-zabaw-w-parku-reymonta-G142GO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G144PK",
+      "destination": "/projekty/wybieg-dla-psow-na-kuraku-G144PK.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G148RO",
+      "destination": "/projekty/bezpieczne-rokicie-monitoring-osiedlowy-G148RO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G149PK",
+      "destination": "/projekty/awki-przy-biedronce-na-smoczej-G149PK.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G151CD",
+      "destination": "/projekty/nowy-plac-zabaw-dla-dzieci-przy-ul-podgornej-G151CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G152CD",
+      "destination": "/projekty/lecznicza-park-edukacyjny-plac-zabaw-G152CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G153PK",
+      "destination": "/projekty/siownia-zewnetrzna-park-legionow-G153PK.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G154WI",
+      "destination": "/projekty/wiskitnianie-stawiaja-na-czytanie-lokalizacja-na-osiedlu-wis-G154WI.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G155RU",
+      "destination": "/projekty/chodnik-na-ulicy-ksawerowskiej-aczacy-dwa-parki-1-maja-i-par-G155RU.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G157PK",
+      "destination": "/projekty/otwarte-treningi-rugby-league-piastow-kurak-G157PK.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G161WI",
+      "destination": "/projekty/wymiana-wiaty-przystankowej-na-przystanku-przy-skrzyzowaniu--G161WI.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G164WI",
+      "destination": "/projekty/uzupenienie-oznakowania-skrzyzowania-ul-gosciniec-z-ulica-mo-G164WI.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G165CH",
+      "destination": "/projekty/naukowy-plac-zabaw-przy-zbiegu-ulic-tuszynskiej-i-rentownej-G165CH.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G168CH",
+      "destination": "/projekty/rowerowa-petla-czmp-stojaki-rowerowe-G168CH.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G170CH",
+      "destination": "/projekty/podporki-rowerowe-dachowarzgowska-G170CH.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G171CH",
+      "destination": "/projekty/podporki-rowerowe-rzgowskaparadna-G171CH.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G174CH",
+      "destination": "/projekty/awki-i-kosze-na-ulicy-kurczaki-uzupeniamy-braki-maego-centru-G174CH.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G175CD",
+      "destination": "/projekty/plac-zabaw-dla-psow-na-skwerze-kolbego-G175CD.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G177CH",
+      "destination": "/projekty/awki-przystankowe-na-stare-chojny-uzupenienie-wyposazenia-na-G177CH.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G179GO",
+      "destination": "/projekty/montaz-bezpiecznej-nawierzchni-na-placu-zabaw-na-osiedlu-j-c-G179GO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G181CH",
+      "destination": "/projekty/aktywny-i-zdrowy-senior-w-parku-zatorze-chojny-G181CH.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G182CH",
+      "destination": "/projekty/parking-na-ulicy-ogniskowej-G182CH.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/G183CH",
+      "destination": "/projekty/park-chojny-zatorze-parking-z-chodnikiem-wzduz-ulicy-jana-bo-G183CH.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L004",
+      "destination": "/projekty/tramwaj-zdrowia-psychicznego-w-odzi-L004.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L005",
+      "destination": "/projekty/sekundy-ktore-maja-znaczenie-licznik-pokazujacy-czas-do-zmia-L005.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L007",
+      "destination": "/projekty/oznaczamy-jasien-w-odzi-L007.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L008",
+      "destination": "/projekty/kto-mieszka-w-odzkich-rzekach-poznajmy-mieszkancow-odzkich-r-L008.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L009",
+      "destination": "/projekty/bezpieczny-odzianin-L009.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L010",
+      "destination": "/projekty/budowa-boiska-do-siatkowki-i-koszykowki-w-szkole-podstawowej-L010.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L011",
+      "destination": "/projekty/boisko-wielofunkcyjne-przy-szkole-podstawowej-specjalnej-nr--L011.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L012",
+      "destination": "/projekty/postawmy-na-bezpieczenstwo-w-naszym-miescie-radiowoz-dla-str-L012.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L013",
+      "destination": "/projekty/wielka-bitwa-o-jemioe-usuwanie-jemioy-z-drzew-na-terenie-odz-L013.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L014",
+      "destination": "/projekty/przystanek-zawieszony-nowa-forma-informacji-publicznej-na-pr-L014.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L017",
+      "destination": "/projekty/skwer-na-rudzie-zagospodarowanie-placu-trojkatnego-L017.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L020",
+      "destination": "/projekty/z-serca-baut-oczom-ich-ukaza-sie-las-agiewnicki-L020.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L022",
+      "destination": "/projekty/konserwacja-podoza-boiska-wielofunkcyjnego-w-zespole-szkolno-L022.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L025",
+      "destination": "/projekty/zakup-nowych-ksiazek-i-bezpatny-dostep-do-audiobookow-i-eboo-L025.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L027",
+      "destination": "/projekty/curling-dla-wszystkich-zajecia-dla-mieszkancow-odzi-L027.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L028",
+      "destination": "/projekty/doposazenie-pomieszczenia-siowni-w-ix-lo-dla-uczniow-i-miesz-L028.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L030",
+      "destination": "/projekty/bezpieczna-maa-sala-gimnastyczna-w-ix-lo-dla-uczniow-i-miesz-L030.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L031",
+      "destination": "/projekty/muminki-na-szlaku-odzi-bajkowej-lokalizacja-teren-nieogrodzo-L031.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L032",
+      "destination": "/projekty/gadka-czechosowacka-proba-nr-2-L032.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L033",
+      "destination": "/projekty/odz-bez-wrakow-L033.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L034",
+      "destination": "/projekty/rower-pump-rogi-L034.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L035",
+      "destination": "/projekty/szkoa-sto-dwa-dwa-bieznie-ma-radogoszcz-zachod-szkoa-podstaw-L035.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L036",
+      "destination": "/projekty/bezpieczna-szkoa-nowoczesne-szatnie-damskie-w-kompleksie-spo-L036.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L037",
+      "destination": "/projekty/bezpieczna-szkoa-nowoczesne-szatnie-meskie-w-kompleksie-spor-L037.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L041",
+      "destination": "/projekty/maszt-flagowy-na-dziedzincu-w-centrum-ksztacenia-zawodowego--L041.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L042",
+      "destination": "/projekty/kregielnia-dla-odzian-w-centrum-ksztacenia-zawodowego-i-usta-L042.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L044",
+      "destination": "/projekty/boisko-wielofunkcyjne-w-zespole-szko-ponadpodstawowych-nr-5--L044.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L045",
+      "destination": "/projekty/ogrod-zdrowia-w-szpitalu-im-dr-karola-jonschera-w-odzi-L045.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L046",
+      "destination": "/projekty/ogrod-zdrowia-przy-centrum-zdrowego-i-aktywnego-seniora-ul-p-L046.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L047",
+      "destination": "/projekty/lustro-drogowe-przy-ul-mickiewicza-10-bezpieczny-przejazd-L047.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L048",
+      "destination": "/projekty/modernizacja-szatni-remont-szafki-wielofunkcyjne-monitoring--L048.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L049",
+      "destination": "/projekty/poprawa-dostepnosci-do-budynku-miejskiego-osrodka-pomocy-spo-L049.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L050",
+      "destination": "/projekty/modernizacja-boiska-i-szatni-orlik-przy-szkole-podstawowej-n-L050.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L051",
+      "destination": "/projekty/acznik-od-bramy-manufaktury-do-drogi-rowerowej-wzduz-zachodn-L051.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L053",
+      "destination": "/projekty/zielona-polanka-w-jedenastce-L053.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L054",
+      "destination": "/projekty/czyste-miasto-wspolna-odpowiedzialnosc-L054.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L055",
+      "destination": "/projekty/jawne-obrady-transmisja-online-posiedzen-komisji-rm-L055.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L057",
+      "destination": "/projekty/na-pomoc-odzkim-kotom-wolno-zyjacym-edycja-8-L057.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L058",
+      "destination": "/projekty/remont-boiska-pikarskiego-ze-sztuczna-nawierzchnia-orlik-201-L058.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L059",
+      "destination": "/projekty/nowa-przestrzen-zabawy-i-integracji-modernizacja-placu-zabaw-L059.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L060",
+      "destination": "/projekty/nordic-walking-w-parku-nad-jasieniem-L060.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L061",
+      "destination": "/projekty/zagrajmy-razem-na-boisku-renowacja-i-modernizacja-obiektow-s-L061.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L062",
+      "destination": "/projekty/poprawa-retencji-wody-w-lesie-agiewnickim-oczyszczenie-i-pog-L062.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L064",
+      "destination": "/projekty/tysiace-godzin-miosci-opieka-pozamedyczna-dla-dzieci-z-hospi-L064.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L068",
+      "destination": "/projekty/mynek-pikarski-zakatek-L068.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L069",
+      "destination": "/projekty/12-miesiecy-z-kijami-cykl-rajdow-nordic-walking-L069.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L070",
+      "destination": "/projekty/aula-xxvi-lo-wymiana-parkietu-L070.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L071",
+      "destination": "/projekty/aula-xxvi-lo-zainstalowanie-nagosnienia-i-oswietlenia-scenic-L071.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L076",
+      "destination": "/projekty/pomoz-mi-zyc-wsparcie-terapeutyczne-dla-dzieci-walczacych-z--L076.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L077",
+      "destination": "/projekty/renowacja-rzezby-panna-wodna-syrenka-odz-pasaz-rubinsteina-n-L077.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L078",
+      "destination": "/projekty/wyposazenie-jednostki-ochotniczej-strazy-pozarnej-retkinia-w-L078.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L080",
+      "destination": "/projekty/sztuczna-inteligencja-60-bez-stresu-bez-pospiechu-z-usmieche-L080.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L081",
+      "destination": "/projekty/las-kieszonkowy-nasadzenia-metoda-miyawakiego-na-slimaku-prz-L081.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L082",
+      "destination": "/projekty/poprawa-bezpieczenstwa-rowerzystow-na-przejezdzie-ul-wysokie-L082.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L083",
+      "destination": "/projekty/latarnie-na-ulicy-lisciastej-L083.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L084",
+      "destination": "/projekty/zwiekszenie-bezpieczenstwa-mieszkancow-odzi-poprzez-zakup-le-L084.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L085",
+      "destination": "/projekty/remont-muszli-koncertowej-w-parku-na-zdrowiu-koo-ogrodu-zool-L085.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L086",
+      "destination": "/projekty/zdrowy-maluch-konsultacje-z-logopeda-i-fizjoterapeuta-L086.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L087",
+      "destination": "/projekty/ekologiczny-i-zawsze-aktualny-rozkad-jazdy-wyswietlacze-e-in-L087.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L088",
+      "destination": "/projekty/herb-odzi-w-kazdej-szkole-L088.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L089",
+      "destination": "/projekty/budki-legowe-w-parku-na-zdrowiu-przyjaciele-ptakow-na-wyciag-L089.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L092",
+      "destination": "/projekty/przasniczka-w-kazdej-szkole-L092.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L093",
+      "destination": "/projekty/mamy-przestrzen-na-mynku-L093.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L094",
+      "destination": "/projekty/mamy-przestrzen-na-stawach-stefanskiego-L094.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L095",
+      "destination": "/projekty/mamy-przestrzen-w-agiewnikach-L095.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L096",
+      "destination": "/projekty/mamy-przestrzen-w-arturowku-L096.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L097",
+      "destination": "/projekty/mamy-przestrzen-na-stawach-jana-L097.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L098",
+      "destination": "/projekty/patronki-dla-odzkich-tramwajow-L098.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L099",
+      "destination": "/projekty/remont-sali-gimnastycznej-w-zespole-szko-ekonomiczno-turysty-L099.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L100",
+      "destination": "/projekty/bezpieczna-odz-spotkania-edukacyjne-dla-mieszkancow-L100.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L101",
+      "destination": "/projekty/od-zmysu-do-umysu-sciezka-sensoryczna-i-park-linowy-dla-dzie-L101.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L102",
+      "destination": "/projekty/zakup-ciezkiego-samochodu-gasniczego-dla-osp-odz-andrzejow-u-L102.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L103",
+      "destination": "/projekty/nowa-brama-wjazdowa-z-napedem-elektrycznym-w-sp114-L103.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L104",
+      "destination": "/projekty/nowe-ogrodzenie-wzduz-terenu-sp114-L104.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L105",
+      "destination": "/projekty/modernizacja-placu-zabaw-przy-sp114-L105.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L106",
+      "destination": "/projekty/rowny-start-sport-sztuka-i-mobilnosc-dla-dzieci-domu-dziecka-L106.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L107",
+      "destination": "/projekty/osp-odz-nowosolna-ratownictwo-na-najwyzszym-poziomie-dzieki--L107.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L108",
+      "destination": "/projekty/utworzenie-centrum-zdrowego-i-aktywnego-seniora-czas-przy-mi-L108.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L109",
+      "destination": "/projekty/nowy-monitoring-na-boisku-orlik-w-sp114-L109.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L110",
+      "destination": "/projekty/plac-zabaw-i-siownia-przy-szkole-podstawowej-nr-19-w-odzi-al-L110.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L111",
+      "destination": "/projekty/nowa-nawierzchnia-boiska-orlik-z-bramkami-w-sp114-L111.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L112",
+      "destination": "/projekty/nowe-ogrodzenie-boiska-wielofunkcyjnego-w-sp114-L112.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L113",
+      "destination": "/projekty/rowny-start-sport-sztuka-zdrowie-i-odswiezenie-pomieszczen-w-L113.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L114",
+      "destination": "/projekty/wychowujmy-sportem-czyli-boisko-wielofunkcyjne-przy-szkole-p-L114.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L115",
+      "destination": "/projekty/aktywny-senior-to-zdrowy-senior-dziaania-aktywizujace-w-cent-L115.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L116",
+      "destination": "/projekty/plac-zabaw-i-pasje-z-sercem-sport-sztuka-i-terapia-dla-dziec-L116.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L117",
+      "destination": "/projekty/senior-w-czasie-dziaania-aktywizujace-dla-seniorow-realizowa-L117.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L118",
+      "destination": "/projekty/w-czas-ie-i-poza-czas-em-zajecia-aktywizujace-dla-seniorow-w-L118.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L122",
+      "destination": "/projekty/zwierzeta-w-odzi-sa-wazne-L122.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L126",
+      "destination": "/projekty/mieszkanie-interwencyjno-rotacyjne-miasto-odz-L126.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L129",
+      "destination": "/projekty/remont-straznicy-ochotniczej-strazy-pozarnej-odz-agiewniki-L129.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L131",
+      "destination": "/projekty/korzenie-i-skrzyda-wspieramy-rozwoj-dzieci-z-domow-dziecka-i-L131.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L134",
+      "destination": "/projekty/asfaltowa-trasa-rekreacyjna-na-odzkich-boniach-dla-rowerow-r-L134.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L138",
+      "destination": "/projekty/bezpieczna-i-estetyczna-przestrzen-szkolna-modernizacja-ogro-L138.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L141",
+      "destination": "/projekty/streetworkout-park-do-cwiczen-z-waga-wasnego-ciaa-w-parku-ba-L141.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L146",
+      "destination": "/projekty/stacja-rowerowa-arturowek-do-obsugi-min-rowerow-wozkow-inwal-L146.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L149",
+      "destination": "/projekty/szlak-odzi-bajkowej-parauszek-lokalizacja-teren-parku-na-zdr-L149.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L150",
+      "destination": "/projekty/siownia-wojownika-odz-widzew-dla-osob-cwiczacych-sztuki-walk-L150.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L152",
+      "destination": "/projekty/modernizacja-sali-gimnastycznej-w-zespole-szko-elektroniczno-L152.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L156",
+      "destination": "/projekty/chodnik-zmiana-nawierzchni-ul-gorska-strona-parzysta-w-odzi-L156.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L157",
+      "destination": "/projekty/hamakowisko-arturowek-L157.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L158",
+      "destination": "/projekty/swiat-muzyki-i-ruchu-dotknij-usysz-zobacz-sensoryczny-plac-z-L158.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L161",
+      "destination": "/projekty/boisko-do-koszykowki-wraz-z-siownia-zewnetrzna-na-terenie-ze-L161.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L162",
+      "destination": "/projekty/defibrylator-przy-sp137-olimpijska-9-L162.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L163",
+      "destination": "/projekty/bezpieczna-okietkowny-montaz-progow-zwalniajacych-oraz-kocic-L163.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L164",
+      "destination": "/projekty/naukowy-plac-zabaw-wraz-z-rewitalizacja-patio-sp4-przy-czwor-L164.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L168",
+      "destination": "/projekty/modziezowa-scena-rozmaitosci-w-paacu-modziezy-im-juliana-tuw-L168.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L170",
+      "destination": "/projekty/biegnijmy-po-zdrowe-ciao-i-umys-doposazenie-sali-gimnastyczn-L170.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L172",
+      "destination": "/projekty/streetworkout-cwiczenia-dla-seniorow-i-dorosych-w-parku-na-z-L172.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L173",
+      "destination": "/projekty/streetworkout-cwiczenia-dla-seniorow-i-dorosych-w-parku-staw-L173.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L174",
+      "destination": "/projekty/streetworkout-cwiczenia-dla-seniorow-i-dorosych-w-parku-na-m-L174.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/L175",
+      "destination": "/projekty/toaleta-nad-stawami-stefanskiego-osiedle-ruda-L175.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P002KO",
+      "destination": "/projekty/cywilizacja-parkowania-na-kozinach-P002KO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P003KO",
+      "destination": "/projekty/remont-zielencow-na-warynskiego-P003KO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P004MM",
+      "destination": "/projekty/zielona-ul-srebrzynska-P004MM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P007SP",
+      "destination": "/projekty/rekultywacja-zielencow-przy-ul-ogrodowej-P007SP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P008SP",
+      "destination": "/projekty/uzupenienia-szpalerow-drzew-i-nowe-nasadzenia-stare-polesie-P008SP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P009LP",
+      "destination": "/projekty/rusz-gowa-i-ciaem-tor-linowy-dla-starszych-dzieci-na-placu-z-P009LP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P010LP",
+      "destination": "/projekty/kolorowo-na-wiosne-lato-i-jesien-nasadzenie-klonow-przy-ul-p-P010LP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P011SP",
+      "destination": "/projekty/remont-zielencow-na-ul-jerzego-P011SP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P012KR",
+      "destination": "/projekty/zielona-al-bandurskiego-drzewa-i-krzewy-wzduz-drogi-P012KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P013RS",
+      "destination": "/projekty/zielona-al-wyszynskiego-drzewa-i-krzewy-wzduz-drogi-P013RS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P014RS",
+      "destination": "/projekty/zielona-ul-popieuszki-drzewa-i-krzewy-wzduz-drogi-P014RS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P015KO",
+      "destination": "/projekty/remont-zielencow-na-dugosza-P015KO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P016KO",
+      "destination": "/projekty/remont-zielencow-na-kasprzaka-P016KO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P017SP",
+      "destination": "/projekty/wymiana-uschnietego-drzewa-na-1-maja-P017SP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P018MM",
+      "destination": "/projekty/remont-zielencow-na-al-unii-lubelskiej-montwia-mireckiego-P018MM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P019ZM",
+      "destination": "/projekty/remont-zielencow-na-ul-solecbiegunowej-P019ZM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P020ZM",
+      "destination": "/projekty/remont-zielencow-na-ul-konstantynowskiej-P020ZM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P021ZM",
+      "destination": "/projekty/remont-zielencow-na-al-unii-lubelskiej-zdrowie-mania-P021ZM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P022ZL",
+      "destination": "/projekty/zielona-ul-zotno-drzewa-i-krzewy-wzduz-drogi-P022ZL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P023KO",
+      "destination": "/projekty/remont-zielencow-na-ul-drewnowskiej-P023KO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P025LP",
+      "destination": "/projekty/zielona-ul-obywatelska-drzewa-i-krzewy-wzduz-drogi-lublinek-P025LP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P026LP",
+      "destination": "/projekty/zielona-al-waltera-janke-drzewa-i-krzewy-wzduz-drogi-P026LP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P027KR",
+      "destination": "/projekty/zielona-ul-kusocinskiego-drzewa-i-krzewy-wzduz-drogi-karolew-P027KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P028RS",
+      "destination": "/projekty/zielona-ul-kusocinskiego-drzewa-i-krzewy-wzduz-drogi-retkini-P028RS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P029KR",
+      "destination": "/projekty/zielona-ul-retkinska-drzewa-i-krzewy-wzduz-drogi-P029KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P030LP",
+      "destination": "/projekty/zielona-ul-sanitariuszek-drzewa-i-krzewy-wzduz-drogi-P030LP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P032RS",
+      "destination": "/projekty/postawmy-na-bezpieczenstwo-na-osiedlu-retkinia-zachod-smulsk-P032RS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P033ZM",
+      "destination": "/projekty/postawmy-na-bezpieczenstwo-na-osiedlu-zdrowie-mania-P033ZM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P035MM",
+      "destination": "/projekty/zjazd-z-ul-praussa-na-ul-daniowskiego-P035MM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P039SP",
+      "destination": "/projekty/awki-na-skwerze-im-tadeusza-mazowieckiego-P039SP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P047ZL",
+      "destination": "/projekty/park-rotmistrza-w-pileckiego-oswietlenie-parku-P047ZL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P048KR",
+      "destination": "/projekty/monitoring-miejski-na-terenie-osiedla-zlokalizowanego-miedzy-P048KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P050KR",
+      "destination": "/projekty/zielony-labirynt-iluzji-park-linowy-na-ul-wilenskiej-zubrowe-P050KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P051KO",
+      "destination": "/projekty/naukowy-plac-zabaw-na-ul-ossowskiego-edukacja-przez-zabawe-P051KO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P052KO",
+      "destination": "/projekty/gry-podworkowe-przy-ul-ossowskiego-P052KO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P053KO",
+      "destination": "/projekty/zielony-labirynt-z-krzewow-na-ul-dugosza-P053KO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P054ZL",
+      "destination": "/projekty/jez-sie-nie-zjezy-budki-dla-jezy-przy-gorce-retkinskiej-i-w--P054ZL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P056ZL",
+      "destination": "/projekty/wiecej-zieleni-mniejszy-upa-latem-zazielenmy-obszar-przy-ret-P056ZL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P057ZL",
+      "destination": "/projekty/dzikie-zwierzeta-tez-sa-dla-nas-wazne-pasniki-z-karma-na-zim-P057ZL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P058KO",
+      "destination": "/projekty/koziny-w-ruchu-mini-strefa-workout-przy-ul-ossowskiego-P058KO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P059KO",
+      "destination": "/projekty/plenerowa-biblioteka-ul-dugosza-P059KO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P060ZL",
+      "destination": "/projekty/oswietlenie-ulicy-wojskowej-P060ZL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P063KR",
+      "destination": "/projekty/monitoring-miejski-na-terenie-osiedla-miedzy-ulicami-kusocin-P063KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P064KO",
+      "destination": "/projekty/oaza-koziny-drzewa-i-pnacza-miedzy-blokami-P064KO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P065KO",
+      "destination": "/projekty/zagajnik-z-wisteria-romantyczne-serce-kozin-P065KO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P074KR",
+      "destination": "/projekty/bezpieczny-karolew-retkinia-wschod-P074KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P075SP",
+      "destination": "/projekty/bezpieczne-stare-polesie-P075SP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P077ZL",
+      "destination": "/projekty/bezpieczne-zotno-P077ZL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P078KO",
+      "destination": "/projekty/bezpieczne-koziny-P078KO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P080RS",
+      "destination": "/projekty/acznik-chodnika-przy-boisku-skwer-sportowe-smulsko-P080RS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P082MM",
+      "destination": "/projekty/aweczka-przed-blokiem-na-barona-P082MM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P083RS",
+      "destination": "/projekty/sucha-noga-do-koscioa-na-dziaki-na-lodowisko-utwardzamy-tere-P083RS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P084RS",
+      "destination": "/projekty/bezpieczna-i-zielona-skarpa-aczymy-paac-modziezy-im-juliana--P084RS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P085KO",
+      "destination": "/projekty/parking-na-12-samochodow-koziny-za-blokiem-okrzei-40-w-stron-P085KO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P086KO",
+      "destination": "/projekty/mini-parking-na-10-samochodow-koziny-ul-okrzei-miedzy-13a-a--P086KO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P088ZL",
+      "destination": "/projekty/sucha-stopa-z-autobusu-budowa-peronu-przystankowego-zotno-le-P088ZL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P089ZL",
+      "destination": "/projekty/chodnik-do-przystanku-rabienska-rabienska-76-nz-1837-linii-6-P089ZL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P090ZL",
+      "destination": "/projekty/mini-skatepark-na-zotnie-P090ZL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P091ZL",
+      "destination": "/projekty/bezpieczne-przejscie-dla-pieszych-na-ul-podchorazych-P091ZL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P092SP",
+      "destination": "/projekty/zmieniamy-okolice-politechniki-odzkiej-zeromskiego-i-stefano-P092SP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P093RS",
+      "destination": "/projekty/kino-letnie-na-gorce-retkinia-ponoc-P093RS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P094ZL",
+      "destination": "/projekty/oswietlmy-przystanki-zotnosiewna-i-rabienskakwiatowa-P094ZL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P095ZL",
+      "destination": "/projekty/rekreacja-na-starym-zotnie-ii-P095ZL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P096ZL",
+      "destination": "/projekty/dokonczmy-boisko-cyganka-P096ZL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P097LP",
+      "destination": "/projekty/boisko-do-piki-noznej-przy-ul-maczka-P097LP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P098SP",
+      "destination": "/projekty/80-godzin-nauki-pywania-dla-dzieci-i-dorosych-na-osiedlu-sta-P098SP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P099LP",
+      "destination": "/projekty/przejscie-dla-pieszych-pienista-41-P099LP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P100LP",
+      "destination": "/projekty/chodnik-do-przystanku-maczka-pienista-dla-osiedla-nmp-3a-i-3-P100LP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P101LP",
+      "destination": "/projekty/zagospodarowanie-pasa-zieleni-pienista-42-P101LP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P102RS",
+      "destination": "/projekty/azyl-uliczny-separator-pasow-na-ul-maratonskiej-przy-plocka-P102RS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P105ZM",
+      "destination": "/projekty/poprawa-estetyki-mini-skwerku-ul-owsianazniwna-P105ZM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P106ZL",
+      "destination": "/projekty/rozbudowa-placu-zabaw-oraz-monitoring-w-parku-im-pileckiego--P106ZL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P107ZL",
+      "destination": "/projekty/defibrylator-aed-na-wyciagniecie-reki-nowe-zotno-P107ZL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P108ZL",
+      "destination": "/projekty/festyn-rodzinny-w-parku-na-nowym-zotnie-P108ZL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P110KR",
+      "destination": "/projekty/wyposazenie-jednostki-ochotniczej-strazy-pozarnej-retkinia-w-P110KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P111RS",
+      "destination": "/projekty/nauka-jazdy-na-yzwach-na-lodowsku-retkinia-dla-dzieci-z-odzk-P111RS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P115LP",
+      "destination": "/projekty/zielono-mi-przejscie-chodnik-i-parking-dla-spacerowiczow-prz-P115LP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P116LP",
+      "destination": "/projekty/wymiana-wiaty-przystankowej-pienista-komandorska-nr-1670-P116LP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P117MM",
+      "destination": "/projekty/pielegnacja-drzew-i-uzupenienie-nasadzen-na-osiedlu-montwia--P117MM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P118MM",
+      "destination": "/projekty/naprawa-nawierzchni-ulicy-praussa-kolejny-etap-P118MM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P119MM",
+      "destination": "/projekty/bezpieczne-przejscie-dla-pieszych-na-unii-lubelskiej-doswiet-P119MM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P120ZM",
+      "destination": "/projekty/pielegnacja-i-przycinka-drzew-zdrowie-mania-etap-drugi-P120ZM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P121ZL",
+      "destination": "/projekty/pielegnacja-i-nasadzenia-drzew-zotno-P121ZL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P123ZM",
+      "destination": "/projekty/parkowanie-na-jeczmiennej-P123ZM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P125MM",
+      "destination": "/projekty/pera-osiedla-czas-na-remont-chodnika-przy-ul-perla-etap-1-P125MM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P126LP",
+      "destination": "/projekty/rewitalizacja-uroczyska-lublinek-P126LP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P127KR",
+      "destination": "/projekty/przeduzenie-ciagu-pieszo-rowerowego-od-ul-bratysawskiej-do-k-P127KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P128KR",
+      "destination": "/projekty/zielona-maratonska-obsadzenie-zielonego-pasa-rozdziau-miedzy-P128KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P130KR",
+      "destination": "/projekty/kwiatowy-krajobraz-wzduz-ul-krzemienieckiej-ii-etap-P130KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P131KR",
+      "destination": "/projekty/kwiatowy-krajobraz-wzduz-ul-wilenskiej-i-etap-P131KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P133KR",
+      "destination": "/projekty/ogrody-na-zielencu-zagospodarowanie-terenu-zielonego-w-rejon-P133KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P134KR",
+      "destination": "/projekty/koncerty-przy-tezniach-ul-hufcowa-24-muzyka-wsrod-zdrowego-p-P134KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P136KR",
+      "destination": "/projekty/aka-kwietna-i-domek-dla-owadow-przed-wejsciem-do-ogrodu-bota-P136KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P137MM",
+      "destination": "/projekty/wykarczowanie-samosiejek-z-terenow-zielonych-osiedla-imjm-mi-P137MM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P138KR",
+      "destination": "/projekty/skrzynki-bookcrossingowe-na-osiedlu-karolew-retkinia-wschod-P138KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P139KR",
+      "destination": "/projekty/sadzimy-drzewa-przy-ul-kusocinskiego-pomiedzy-ul-rajdowa-a-a-P139KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P141KR",
+      "destination": "/projekty/alejka-parkowa-w-rejonie-ulicy-w-krola-P141KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P142ZL",
+      "destination": "/projekty/zakup-pojazdu-atv-quad-z-przyczepa-transportowa-dla-osp-nowe-P142ZL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P143KR",
+      "destination": "/projekty/przejscie-dla-pieszych-na-ul-kusocinskiego-pomiedzy-ul-rajdo-P143KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P144KO",
+      "destination": "/projekty/progi-zwalniajace-na-ul-okrzei-na-wysokosci-nr14-i-38-chodzi-P144KO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P145KR",
+      "destination": "/projekty/kolorowa-retkinska-przy-netto-P145KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P146KR",
+      "destination": "/projekty/kwiatowa-retkinska-przy-ogrodzie-botanicznym-P146KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P147KR",
+      "destination": "/projekty/zielona-kusocinskiego-przy-kosciele-P147KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P148RS",
+      "destination": "/projekty/psyjazna-armii-krajowej-dla-pieskow-P148RS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P149KR",
+      "destination": "/projekty/1908-minut-z-boksem-bezpatne-zajecia-bokserskie-dla-mieszkan-P149KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P150KR",
+      "destination": "/projekty/kolorowo-przy-atlas-arenie-P150KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P153SP",
+      "destination": "/projekty/nauka-jazdy-na-yzwach-na-lodowisku-bombonierka-dla-dzieci-z--P153SP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P155LP",
+      "destination": "/projekty/bezpieczny-lublinek-patrolowanie-osiedla-lublinek-pienista-P155LP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P156LP",
+      "destination": "/projekty/zrelaksuj-sie-na-lublinku-odpocznij-na-awce-wsrod-zieleni-P156LP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P157LP",
+      "destination": "/projekty/uroczysko-przy-dennej-posadzmy-wiecej-P157LP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P158LP",
+      "destination": "/projekty/zielone-lublinkowe-love-otuliny-zielencow-dla-mieszkancow-P158LP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P159ZM",
+      "destination": "/projekty/wyciecie-suchych-lip-wzduz-ul-solec-P159ZM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P160MM",
+      "destination": "/projekty/wyciecie-suchych-lip-wzduz-alei-unii-lubelskiej-P160MM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P163ZM",
+      "destination": "/projekty/bezpieczne-swiato-oswietlenie-terenu-utwardzonego-przy-ul-bi-P163ZM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P164LP",
+      "destination": "/projekty/wygodny-i-bezpieczny-spacer-ul-plocka-budowa-brakujacego-cho-P164LP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P165RS",
+      "destination": "/projekty/plac-zabaw-w-cieniu-montaz-zagli-przeciwsonecznych-na-pl-zab-P165RS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P166RS",
+      "destination": "/projekty/tyrolka-zjazd-linowy-w-parku-na-smulsku-P166RS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P167RS",
+      "destination": "/projekty/nowa-atrakcja-mapi-gaj-na-placu-zabaw-w-parku-na-smulsku-P167RS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P170KR",
+      "destination": "/projekty/budowa-ciagow-pieszo-rowerowych-na-przeduzeniu-ulicy-balonow-P170KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P171KR",
+      "destination": "/projekty/zielona-retkinia-nowy-zieleniec-przy-retkinskiej-102104-P171KR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P172LP",
+      "destination": "/projekty/ustawienie-lustra-przy-ul-lublinek-dziaka-p37-1237-P172LP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P175SP",
+      "destination": "/projekty/streetworkout-cwiczenia-dla-seniorow-i-dorosych-w-parku-poni-P175SP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P177LP",
+      "destination": "/projekty/monitoring-placu-zabaw-i-siowni-ul-denna-etap-i-P177LP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P178RS",
+      "destination": "/projekty/kolorowe-zielone-smulsko-P178RS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P179SP",
+      "destination": "/projekty/streetworkout-cwiczenia-dla-seniorow-i-dorosych-na-skwerze-i-P179SP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P180LP",
+      "destination": "/projekty/streetworkout-cwiczenia-dla-seniorow-i-dorosych-w-parku-pien-P180LP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P186LP",
+      "destination": "/projekty/las-dla-zdrowia-tablice-lesnego-dobrostanu-na-uroczysku-lubl-P186LP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P188ZL",
+      "destination": "/projekty/tak-dla-bezpieczenstwa-na-drodze-lustra-drogowe-na-zotnie-wy-P188ZL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P189LP",
+      "destination": "/projekty/pienista-fontanna-wodny-punkt-spotkan-na-trojkatnej-wyspie-P189LP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P190SP",
+      "destination": "/projekty/poprawa-bezpieczenstwa-na-ulicach-starego-polesia-stworzenie-P190SP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P196LP",
+      "destination": "/projekty/z-gowa-po-zdrowie-bieganie-na-uroczysku-P196LP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P197ZM",
+      "destination": "/projekty/kwietny-trojkat-piekniejsze-wejscie-na-skwer-od-ul-jarzynowe-P197ZM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P198ZM",
+      "destination": "/projekty/bezpieczniej-na-skwerze-przy-jeczmiennej-takze-wieczorem-dwi-P198ZM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P199ZM",
+      "destination": "/projekty/spacerujmy-bezpiecznie-remont-chodnika-na-ulicy-grochowej-P199ZM.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/P200SP",
+      "destination": "/projekty/pikniki-o-charakterze-ekologiczno-edukacyjno-integrujacym-w--P200SP.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S001KA",
+      "destination": "/projekty/dokonczenie-skweru-k-balda-za-przystankiem-autobusowym-na-pl-S001KA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S002WS",
+      "destination": "/projekty/monitoring-wierzbowej-odsona-nr-1-lokalizacja-srodmiescie-ws-S002WS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S007WS",
+      "destination": "/projekty/remont-stawu-w-parku-staszica-S007WS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S009KA",
+      "destination": "/projekty/remont-zielencow-na-ul-tuwima-S009KA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S010KA",
+      "destination": "/projekty/remont-zielencow-na-ul-dowborczykow-S010KA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S012KA",
+      "destination": "/projekty/zielone-przejscie-na-ul-prochnika-S012KA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S013KA",
+      "destination": "/projekty/zielona-ul-zachodnia-drzewa-i-krzewy-wzduz-drogi-S013KA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S014WS",
+      "destination": "/projekty/remont-zielencow-na-ul-kaminskiego-S014WS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S015WS",
+      "destination": "/projekty/remont-zielencow-na-ul-wierzbowej-S015WS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S017WS",
+      "destination": "/projekty/przejazdy-rowerowe-narutowicza-scheiblerow-z-kazdej-ze-stron-S017WS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S021KA",
+      "destination": "/projekty/doposazenie-placu-zabaw-w-parku-abramowskiego-S021KA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S028KA",
+      "destination": "/projekty/naprawa-chodnika-wzduz-budynkow-z-dojsciem-do-bram-wraz-z-za-S028KA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S029WS",
+      "destination": "/projekty/zadbany-zakatek-przy-zabce-hm-aleksandra-kaminskiego-14-S029WS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S030WS",
+      "destination": "/projekty/zrodowa-przy-rondzie-solidarnosci-prawoskret-bez-stawania-S030WS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S031KA",
+      "destination": "/projekty/wielkie-oko-dla-przedszkola-czyli-monitoring-przed-przedszko-S031KA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S032KA",
+      "destination": "/projekty/park-sienkiewicza-bezpieczenstwo-ponad-wszystko-S032KA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S033WS",
+      "destination": "/projekty/akcja-radiostacja-patrole-strazy-miejskiej-S033WS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S034KA",
+      "destination": "/projekty/kwiatowa-aleja-kosciuszki-od-zamenhofa-do-struga-S034KA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S038WS",
+      "destination": "/projekty/rewolucja-dla-rowerow-stojaki-na-rewolucji-1905-r-S038WS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S039WS",
+      "destination": "/projekty/lumumbowo-wie-kiedy-tramwaj-jedzie-montaz-tablicy-informacji-S039WS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S044KA",
+      "destination": "/projekty/powrot-drzewa-na-sienkiewicza-S044KA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S045KA",
+      "destination": "/projekty/witaj-wiosno-w-parku-abramowskiego-S045KA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S046KA",
+      "destination": "/projekty/pielegnacja-odzkiej-syrenki-z-pasazu-rubinsteina-S046KA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S048KA",
+      "destination": "/projekty/park-kieszonkowy-przy-skrzyzowaniu-ulic-andrzeja-struga-i-wo-S048KA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S049WS",
+      "destination": "/projekty/mini-park-wierzbowa-oswietlenie-placu-zabaw-i-parku-zielone--S049WS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S050WS",
+      "destination": "/projekty/mini-park-wierzbowa-oswietlenie-placu-zabaw-i-parku-kontynua-S050WS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S051KA",
+      "destination": "/projekty/naprawa-kostek-w-pomniku-odzian-na-ulicy-piotrkowskiej-S051KA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S052KA",
+      "destination": "/projekty/mini-aka-aka-kwietna-przy-alkosciuszki-S052KA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S053WS",
+      "destination": "/projekty/streetworkout-park-do-cwiczen-z-waga-wasnego-ciaa-w-zielonyc-S053WS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S056WS",
+      "destination": "/projekty/parking-przedprzedszkolny-miejsca-postojowe-dla-rodzicow-odw-S056WS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S057WS",
+      "destination": "/projekty/mini-park-wierzbowa-streetworkout-cwiczenia-dla-seniorow-i-d-S057WS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S058WS",
+      "destination": "/projekty/streetworkout-cwiczenia-dla-seniorow-i-dorosych-na-lumumby-p-S058WS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S060KA",
+      "destination": "/projekty/rozkwit-parku-abramowskiego-S060KA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S061KA",
+      "destination": "/projekty/streetworkout-cwiczenia-dla-seniorow-i-dorosych-w-parku-abra-S061KA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S062KA",
+      "destination": "/projekty/rekultywacja-skweru-daszynskiego-rog-piotrkowskiej-i-tymieni-S062KA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S064WS",
+      "destination": "/projekty/przeduzenie-sciezki-wzduz-linii-tramwajowej-radiostacja-lumu-S064WS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S065KA",
+      "destination": "/projekty/remont-chodnika-aleja-pck-S065KA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S066KA",
+      "destination": "/projekty/muzykoterapia-dla-kazdego-od-malucha-do-seniora-na-osiedlu-k-S066KA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S068KA",
+      "destination": "/projekty/lawendowe-awki-w-katedralnej-lokalizacja-to-al-mickiewicza-1-S068KA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S071WS",
+      "destination": "/projekty/kwiaty-na-tory-zasadzenie-roslin-cebulowych-tulipany-zonkile-S071WS.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/S074KA",
+      "destination": "/projekty/stop-suszy-deszcz-w-glebie-pilotaz-hydrohumatu-na-katedralne-S074KA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W002SW",
+      "destination": "/projekty/remont-ulicy-tymienieckiego-trasa-turystyczna-na-ksiezy-myn-W002SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W004SW",
+      "destination": "/projekty/zielona-trasa-wz-odcinek-dowborczykow-przedzalniana-W004SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W005WW",
+      "destination": "/projekty/budowa-chodnika-przy-uladamieckiego-miedzy-rokicinska-a-suzb-W005WW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W007SW",
+      "destination": "/projekty/obywatele-naprawiaja-droge-remont-chodnika-na-ksiezym-mynie--W007SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W009WW",
+      "destination": "/projekty/remont-mostku-w-parku-widzewska-gorka-W009WW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W010SW",
+      "destination": "/projekty/remont-zielencow-na-ul-miedzianej-W010SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W012WW",
+      "destination": "/projekty/zielona-ul-rokicinska-drzewa-i-krzewy-wzduz-drogi-W012WW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W013WW",
+      "destination": "/projekty/zielona-ul-puszkina-drzewa-i-krzewy-wzduz-drogi-W013WW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W014SW",
+      "destination": "/projekty/remont-zielencow-na-ul-zotej-W014SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W015ZA",
+      "destination": "/projekty/zielona-ul-przybyszewskiego-drzewa-i-krzewy-wzduz-drogi-W015ZA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W016SW",
+      "destination": "/projekty/remont-zielencow-na-ul-przedzalnianej-W016SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W017SW",
+      "destination": "/projekty/zielona-ul-niciarniana-drzewa-i-krzewy-wzduz-drogi-W017SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W018ST",
+      "destination": "/projekty/remont-zielencow-na-ul-maachowskiego-W018ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W019OJ",
+      "destination": "/projekty/zielona-ul-rokicinska-drzewa-i-krzewy-wzduz-drogi-olechow-ja-W019OJ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W020OJ",
+      "destination": "/projekty/zielona-ul-przybyszewskiego-drzewa-i-krzewy-wzduz-drogi-olec-W020OJ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W021AN",
+      "destination": "/projekty/zielona-ul-rokicinska-drzewa-i-krzewy-wzduz-drogi-andrzejow-W021AN.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W024SW",
+      "destination": "/projekty/utwardzone-alejki-w-parku-nad-jasieniem-W024SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W025SW",
+      "destination": "/projekty/zielona-kwitnaca-ul-sucha-W025SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W026SW",
+      "destination": "/projekty/kino-plenerowe-w-parku-nad-jasieniem-W026SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W027SW",
+      "destination": "/projekty/miejsce-rekreacji-i-zabawy-przy-zbiorczej-gry-plenerowe-caor-W027SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W029ST",
+      "destination": "/projekty/postawmy-na-bezpieczenstwo-na-osiedlu-stoki-sikawa-podgorze-W029ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W030SW",
+      "destination": "/projekty/zielona-przedzalniana-nasadzenia-W030SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W031SW",
+      "destination": "/projekty/uzupeniamy-zielen-na-starym-widzewie-W031SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W033NO",
+      "destination": "/projekty/postawmy-na-bezpieczenstwo-na-osiedlu-nowosolna-W033NO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W034DL",
+      "destination": "/projekty/sucha-stopa-na-przystanek-utwardzona-sciezka-pomiedzy-ulicam-W034DL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W035NO",
+      "destination": "/projekty/remont-ulicy-grabinskiej-W035NO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W036SW",
+      "destination": "/projekty/skwer-na-sarniej-etap-i-W036SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W037NO",
+      "destination": "/projekty/remont-chodnika-na-ulicy-pomorskiej-W037NO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W040ZA",
+      "destination": "/projekty/latarnia-bezpieczenstwo-przy-ul-piwnika-ponurego-W040ZA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W041ST",
+      "destination": "/projekty/nowa-wiata-na-zboczu-giewontu-W041ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W042DL",
+      "destination": "/projekty/samoobsugowa-stacja-naprawy-rowerow-wsparcie-infrastruktury--W042DL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W043DL",
+      "destination": "/projekty/witacz-w-parku-lesnym-giewont-W043DL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W044NR",
+      "destination": "/projekty/zielona-okietkowny-nasadzenia-z-drzew-W044NR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W047NR",
+      "destination": "/projekty/stop-nielegalnym-wyscigom-na-dellu-montaz-progow-zwalniajacy-W047NR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W048WW",
+      "destination": "/projekty/parking-przy-haska-pomiedzy-wegierska-a-milionowa-W048WW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W049WW",
+      "destination": "/projekty/letnie-koncerty-na-scenie-w-parku-widzewska-gorka-ii-W049WW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W050WW",
+      "destination": "/projekty/teatr-familijny-w-parku-widzewska-gorka-W050WW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W051DL",
+      "destination": "/projekty/renowacja-zabytkowej-studni-z-zurawiem-przy-ul-beskidzkiej-W051DL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W052WW",
+      "destination": "/projekty/toalety-w-parku-widzewska-gorka-W052WW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W053WW",
+      "destination": "/projekty/festyn-z-okazji-50-lecia-osiedla-widzew-wschod-W053WW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W056WW",
+      "destination": "/projekty/oswietlone-przejscie-dla-pieszych-na-widzewskiej-przy-cichej-W056WW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W057DL",
+      "destination": "/projekty/bezpieczenstwo-dzieci-w-drodze-do-szkoy-i-przedszkola-chodni-W057DL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W059ST",
+      "destination": "/projekty/komfort-dzieci-w-drodze-do-szkoy-i-przedszkola-chodnik-od-ul-W059ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W060ST",
+      "destination": "/projekty/serce-stokow-bije-bezpieczniej-defibrylator-aed-W060ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W062ST",
+      "destination": "/projekty/monitoring-dla-naszej-spoecznosci-etap-drugi-na-osiedlu-stok-W062ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W063WW",
+      "destination": "/projekty/rowerem-na-dworzec-odz-widzew-wygodny-zjazd-na-koncu-drogi-r-W063WW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W066ST",
+      "destination": "/projekty/przyjazne-dla-pieszych-skrzyzowanie-zboczegiewontpieniny-W066ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W067SW",
+      "destination": "/projekty/miejsca-parkingowe-na-ul-wilcza-W067SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W068OJ",
+      "destination": "/projekty/wiecej-awek-na-ul-mazowieckiego-W068OJ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W069SW",
+      "destination": "/projekty/utwardzenie-terenu-na-ul-wilcza-W069SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W070SW",
+      "destination": "/projekty/miejsce-odpoczynku-na-ul-wilcza-W070SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W075MI",
+      "destination": "/projekty/bezpieczne-mileszki-W075MI.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W078ST",
+      "destination": "/projekty/park-dla-psow-na-taterniczej-W078ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W080SW",
+      "destination": "/projekty/rowerem-wzduz-kopcinskiego-cywilizacyjny-standard-W080SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W081ST",
+      "destination": "/projekty/plac-zabaw-i-miejsce-do-grillowania-przy-ulicy-hyrnej-stoki-W081ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W082NO",
+      "destination": "/projekty/parkujemy-bezpiecznie-budowa-nowych-miejsc-parkingowych-W082NO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W084DL",
+      "destination": "/projekty/utwardzenie-ulicy-okolnej-od-ulicy-turkusowej-do-ulicy-baryt-W084DL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W085NO",
+      "destination": "/projekty/piesza-nowosolna-budowa-przejsc-dla-pieszych-na-terenie-osie-W085NO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W087WW",
+      "destination": "/projekty/psia-przystan-na-gorce-widzewskiej-bezpieczny-wybieg-dla-czw-W087WW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W088OJ",
+      "destination": "/projekty/przejezdna-opolczyka-budowa-miejsc-postojowych-i-wykonanie-n-W088OJ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W089SW",
+      "destination": "/projekty/progi-zwalniajace-wyspowe-na-ulicy-nawrot-przy-ul-wodnej-W089SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W090WW",
+      "destination": "/projekty/teraz-sa-chaszcze-niedugo-drzewo-cie-pogaszcze-nasadzenie-dr-W090WW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W092OJ",
+      "destination": "/projekty/bezpieczny-chodnik-w-osiedlu-bacewicz-W092OJ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W093OJ",
+      "destination": "/projekty/bezpieczny-dojazd-z-augustow-do-bacewicz-W093OJ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W095ZA",
+      "destination": "/projekty/oswietlenie-stoow-do-gry-w-tenis-stoowy-w-parku-podolskiego-W095ZA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W096DL",
+      "destination": "/projekty/utwardzenie-pytami-jumbo-ulicy-krajobrazowej-od-ulicy-herbow-W096DL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W107DL",
+      "destination": "/projekty/koniec-z-dziurami-na-opolskiej-kontynuacja-utwardzania-ulicy-W107DL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W111NO",
+      "destination": "/projekty/toaleta-kontenerowa-na-rynku-nowosolnej-dla-dzieci-rodzicow--W111NO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W112AN",
+      "destination": "/projekty/utwardzenie-fragmentu-ulicy-ziarnistej-W112AN.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W113WW",
+      "destination": "/projekty/monitoring-miejski-na-terenie-osiedla-im-stefana-batorego-et-W113WW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W114WW",
+      "destination": "/projekty/nasz-wasny-kawaek-przestrzeni-zagospodarowanie-terenu-przy-u-W114WW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W118OJ",
+      "destination": "/projekty/eko-latarnia-na-bolesawa-smiaego-W118OJ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W120ZA",
+      "destination": "/projekty/sekundniki-na-skrzyzowaniu-smigego-rydza-i-przybyszewskiego-W120ZA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W123DL",
+      "destination": "/projekty/utwardzenie-ulicy-ukaszewskiej-pytami-yomb-W123DL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W130ST",
+      "destination": "/projekty/ulica-wodospadowa-w-nowym-swietle-projekt-budowy-oswietlenia-W130ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W131ST",
+      "destination": "/projekty/koniec-z-botem-i-dziurami-nowa-nawierzchnia-na-ulicy-wodospa-W131ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W133OJ",
+      "destination": "/projekty/kwitnaca-olechowka-park-zroda-olechowki-W133OJ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W134OJ",
+      "destination": "/projekty/nowe-aweczki-przytulnosc-na-wyciagniecie-reki-przy-ulicy-woj-W134OJ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W135ZA",
+      "destination": "/projekty/bezpieczny-zarzew-W135ZA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W136MI",
+      "destination": "/projekty/przestrzen-rekreacyjna-dla-dzieci-i-dorosych-na-mileszkach-W136MI.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W140ST",
+      "destination": "/projekty/jedziemy-po-rownym-giewoncie-na-odzkie-stoki-W140ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W141ST",
+      "destination": "/projekty/parking-przy-ulszczytowej-stoki-W141ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W143OJ",
+      "destination": "/projekty/bezpieczna-droga-do-szkoy-sp-205-przy-uldabrowki-1-ul-przyby-W143OJ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W144OJ",
+      "destination": "/projekty/bezpieczna-droga-do-szkoy-sp-205-przy-uldabrowki-1-ul-piasta-W144OJ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W145NR",
+      "destination": "/projekty/stoy-do-gry-na-osiedlu-33-W145NR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W147AN",
+      "destination": "/projekty/budowa-pikochwytow-na-boisku-lks-polonia-odz-andrzejow-W147AN.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W149ST",
+      "destination": "/projekty/zamiast-zbojeckich-sciezek-porzadny-chodnik-na-janosika-W149ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W150ST",
+      "destination": "/projekty/tor-ninja-potocznie-nazywany-torem-przeszkod-w-parku-zaruski-W150ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W152AN",
+      "destination": "/projekty/budowa-siowni-zewnetrzej-wraz-ze-stoem-do-ping-ponga-w-parku-W152AN.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W154ST",
+      "destination": "/projekty/godne-warunki-strazakow-poprawa-bezpieczenstwa-wsrod-mieszka-W154ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W156ST",
+      "destination": "/projekty/nie-stoj-w-ciemno-zobacz-kiedy-przyjedzie-tramwaj-montaz-tab-W156ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W157MI",
+      "destination": "/projekty/zakup-wyposazenia-osobistego-dla-strazakow-osp-wiaczyn-odz-u-W157MI.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W162ZA",
+      "destination": "/projekty/mamy-przestrzen-w-parku-podolskim-W162ZA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W163AN",
+      "destination": "/projekty/doposazenie-jednostki-osp-odz-andrzejow-w-sprzet-ratowniczo--W163AN.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W165WW",
+      "destination": "/projekty/bulodrom-na-terenie-rekreacyjnym-w-poblizu-lasku-widzewskieg-W165WW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W166NO",
+      "destination": "/projekty/radiotelefony-dla-osp-odz-nowosolna-nowoczesna-acznosc-szybk-W166NO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W168ZA",
+      "destination": "/projekty/spotkajmy-sie-przy-przedzalnianej-94a-plac-zabaw-dla-dzieci--W168ZA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W169ZA",
+      "destination": "/projekty/smiao-ciao-zajecia-jogi-w-parku-podolskim-w-okresie-letnim-w-W169ZA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W170SW",
+      "destination": "/projekty/wanderland-skwer-miejski-u-zbiegu-ulic-targowej-i-nawrot-W170SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W171SW",
+      "destination": "/projekty/odz-wedkarska-renowacja-molo-na-stawie-przedzalniana-i-etap--W171SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W172WW",
+      "destination": "/projekty/street-workout-na-widzewie-wschodzie-W172WW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W173ST",
+      "destination": "/projekty/chaubinskiego-wizytowka-sikawy-W173ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W175ST",
+      "destination": "/projekty/gadki-wjazd-na-stoki-2-W175ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W176ST",
+      "destination": "/projekty/szczawnicka-z-bezpieczna-droga-do-szkoy-W176ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W177SW",
+      "destination": "/projekty/miejsca-parkingowe-przy-ul-milionowej-W177SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W178ZA",
+      "destination": "/projekty/zielona-strefa-relaksu-przy-ul-milionowej-W178ZA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W181WW",
+      "destination": "/projekty/sportowy-festyn-rodzinny-dla-mieszkancow-widzewa-wschodu-W181WW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W182OJ",
+      "destination": "/projekty/doswietlenie-ulicy-maksa-bauma-montaz-lamp-hybrydowych-solar-W182OJ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W183SW",
+      "destination": "/projekty/koci-domek-na-ksiezym-mynie-W183SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W184ST",
+      "destination": "/projekty/streetworkout-park-do-cwiczen-z-waga-wasnego-ciaa-w-zielencu-W184ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W185SW",
+      "destination": "/projekty/ul-zbiorcza-bezpiecznie-i-czysto-W185SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W186OJ",
+      "destination": "/projekty/stand-up-na-janowie-rozweseli-mysli-w-kazdej-gowie-W186OJ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W187OJ",
+      "destination": "/projekty/wakacyjne-kino-letnie-na-olechowie-W187OJ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W188MI",
+      "destination": "/projekty/tutaj-chodze-bo-tu-mieszkam-nordic-walking-na-mileszkach-W188MI.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W189ZA",
+      "destination": "/projekty/streetworkout-cwiczenia-dla-seniorow-i-dorosych-w-parku-podo-W189ZA.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W190WW",
+      "destination": "/projekty/streetworkout-cwiczenia-dla-seniorow-i-dorosych-w-parku-gork-W190WW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W191WW",
+      "destination": "/projekty/otwarte-treningi-touch-rugby-widzew-wschod-W191WW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W192SW",
+      "destination": "/projekty/budowa-strefy-zabaw-dla-dzieci-w-parku-jordanka-W192SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W193MI",
+      "destination": "/projekty/remont-i-modernizacja-straznicy-osp-odz-mileszki-W193MI.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W194ST",
+      "destination": "/projekty/mamy-przestrzen-w-parku-baden-powella-W194ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W197SW",
+      "destination": "/projekty/mamy-przestrzen-w-parku-widzewskim-W197SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W198NR",
+      "destination": "/projekty/uzupenienie-sciezki-edukacyjno-przyrodniczej-w-parku-lesnym--W198NR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W199ST",
+      "destination": "/projekty/bezpiecznie-przy-zabce-ustawienie-znakow-zakazu-zatrzymywani-W199ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W200SW",
+      "destination": "/projekty/semafor-na-scheiblerowce-W200SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W201OJ",
+      "destination": "/projekty/widniej-na-olechowie-montaz-latarni-przy-ulicy-kazimierza-od-W201OJ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W203NO",
+      "destination": "/projekty/sowie-wzgorze-rozwoj-istniejacej-sciezki-ekologiczno-edukacy-W203NO.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W204WW",
+      "destination": "/projekty/kino-plenerowe-na-widzewskiej-gorce-W204WW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W205OJ",
+      "destination": "/projekty/prosto-chodnikiem-nowy-chodnik-przy-ulicy-kazimierza-odnowic-W205OJ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W207WW",
+      "destination": "/projekty/gimnastyka-na-widzewskiej-gorce-W207WW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W208DL",
+      "destination": "/projekty/nowa-wiata-przystankowa-brzezinskamarmurowa-W208DL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W209OJ",
+      "destination": "/projekty/odz-kwitnie-kwiatowa-metamorfoza-rokicinskiej-W209OJ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W210DL",
+      "destination": "/projekty/budowa-sygnalizacji-swietlnej-na-skrzyzowaniu-marmurowejlist-W210DL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W211DL",
+      "destination": "/projekty/utwardzenie-ulicy-okolnej-dolina-odki-W211DL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W212DL",
+      "destination": "/projekty/progi-zwalniajace-na-ulicy-listopadowej-W212DL.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W213OJ",
+      "destination": "/projekty/kwiaty-na-tory-zasadzenie-roslin-cebulowych-tulipany-zonkile-W213OJ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W215WW",
+      "destination": "/projekty/kwiatowy-tramwaj-rosliny-cebulowe-przy-petli-augustow-W215WW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W216WW",
+      "destination": "/projekty/badz-bezpieczna-zajecia-z-samoobrony-dla-kobiet-na-widzewie-W216WW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W217NR",
+      "destination": "/projekty/tablica-informacji-pasazerskiej-na-przystanku-przy-dellu-W217NR.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W218SW",
+      "destination": "/projekty/kwiaty-na-tory-zasadzenie-roslin-cebulowych-tulipany-zonkile-W218SW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W219ST",
+      "destination": "/projekty/pumptrack-dla-widzewa-budowa-toru-dla-rowerow-hulajnog-rolek-W219ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W221ST",
+      "destination": "/projekty/ekologiczne-osiedle-etap-2-rosliny-cebulowetulipany-i-zonkil-W221ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W223ST",
+      "destination": "/projekty/bieg-na-orientacje-na-stokach-sikawie-podgorzu-W223ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W224ST",
+      "destination": "/projekty/badz-bezpieczna-zajecia-z-samoobrony-dla-kobiet-na-stokach-W224ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W225ST",
+      "destination": "/projekty/kwiaty-na-tory-zasadzenie-roslin-cebulowych-tulipany-zonkile-W225ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W227ST",
+      "destination": "/projekty/kwiaty-na-drogi-zasadzenie-roslin-cebulowych-tulipany-zonkil-W227ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W229WW",
+      "destination": "/projekty/zielony-zakatek-augustow-rewitalizacja-skweru-przy-augustowi-W229WW.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W230OJ",
+      "destination": "/projekty/4-awki-w-lasku-przy-ul-mazowieckiego-W230OJ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W231ST",
+      "destination": "/projekty/kino-plenerowe-w-parku-im-gen-m-zaruskiego-W231ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W232ST",
+      "destination": "/projekty/mamy-przestrzen-w-parku-zaruskiego-W232ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W233ST",
+      "destination": "/projekty/cwiczenia-z-wasnym-ciezarem-ciaa-na-zielencu-przy-junackiej-W233ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W234ST",
+      "destination": "/projekty/siownia-streetworkout-i-plenerowa-dla-sprawnych-i-niepenospr-W234ST.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W235OJ",
+      "destination": "/projekty/chodnik-od-ul-bolka-swidnickiego-do-przystanku-odnowiciela-h-W235OJ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W236OJ",
+      "destination": "/projekty/alejki-w-parku-zroda-olechowki-dodatkowa-alejka-W236OJ.html",
+      "permanent": true
+    },
+    {
+      "source": "/projekty/W238NR",
+      "destination": "/projekty/alejka-do-parku-od-przystanku-dell-W238NR.html",
+      "permanent": true
+    }
+  ]
 }

@@ -5,6 +5,7 @@ const path = require('path');
 const { generateHTML } = require('./generate/html');
 const { generateSEO } = require('./generate/seo');
 const generateSitemap = require('./generate/sitemap');
+const generateRedirects = require('./generate/redirects');
 
 class BuildSystem {
   constructor() {
@@ -135,17 +136,20 @@ class BuildSystem {
 
   async generateSEOFiles() {
     console.log('🔍 Generating SEO files...');
-    
+
     if (!this.projektyData) {
       throw new Error('No project data available for SEO generation');
     }
-    
+
     // Generate sitemap
     await generateSitemap(this.projektyData, this.publicDir);
-    
+
+    // Generate redirects for old URLs
+    await generateRedirects(this.projektyData, this.publicDir);
+
     // Generate additional SEO metadata
     await generateSEO.generateMetaTags(this.projektyData, this.publicDir);
-    
+
     console.log('✅ SEO files generated');
   }
 
