@@ -360,40 +360,42 @@ ${content}
     
     <!-- Projects Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-      ${data.projects.map(project => `
+      ${data.projects.map(project => {
+        const slug = generateSlug(project.nazwa, project.id);
+        return `
         <article class="border border-border-default rounded-lg p-4 hover:border-border-hover hover:bg-secondary transition-colors">
           <header class="mb-3">
             <h3 class="font-medium text-text-primary mb-2 line-clamp-2">
-              <a href="/projekty/${project.id}.html" class="hover:underline">${project.nazwa}</a>
+              <a href="/projekty/${slug}.html" class="hover:underline">${project.nazwa}</a>
             </h3>
             <div class="flex items-center justify-between text-sm mb-2">
               <span class="text-text-secondary">ID: ${project.id}</span>
               <span class="font-medium text-text-primary">${new Intl.NumberFormat('pl-PL').format(project.koszt)} zł</span>
             </div>
           </header>
-          
+
           <div class="mb-3">
             <p class="text-sm text-text-secondary line-clamp-3 mb-2">
               ${project.opis ? project.opis.substring(0, 120) + (project.opis.length > 120 ? '...' : '') : 'Brak opisu projektu.'}
             </p>
           </div>
-          
+
           <footer class="flex flex-wrap gap-1 mb-3">
             <span class="px-2 py-1 bg-tertiary text-xs rounded-full text-text-secondary">${project.kategoria}</span>
             <span class="px-2 py-1 bg-tertiary text-xs rounded-full text-text-secondary">${project.osiedle}</span>
             <span class="px-2 py-1 bg-tertiary text-xs rounded-full text-text-secondary">${project.typ}</span>
           </footer>
-          
+
           <div class="flex gap-2">
-            <a 
-              href="/projekty/${project.id}.html" 
+            <a
+              href="/projekty/${slug}.html"
               class="flex-1 px-3 py-2 text-xs bg-secondary hover:bg-hover border border-border-default rounded text-center text-text-secondary hover:text-text-primary transition-colors"
             >
               Szczegóły
             </a>
             ${project.lat && project.lng ? `
-            <a 
-              href="/?lat=${project.lat}&lng=${project.lng}&zoom=16&id=${project.id}" 
+            <a
+              href="/?lat=${project.lat}&lng=${project.lng}&zoom=16&id=${project.id}"
               class="px-3 py-2 text-xs bg-secondary hover:bg-hover border border-border-default rounded text-text-secondary hover:text-text-primary transition-colors"
               title="Pokaż na mapie"
             >
@@ -402,7 +404,7 @@ ${content}
             ` : ''}
           </div>
         </article>
-      `).join('')}
+      `;}).join('')}
     </div>
   </div>
 </section>
