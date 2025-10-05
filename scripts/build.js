@@ -92,11 +92,19 @@ class BuildSystem {
 
   async generatePages() {
     console.log('📄 Generating HTML pages...');
-    
+
     if (!this.projektyData) {
       throw new Error('No project data available for page generation');
     }
-    
+
+    // Clean up old project HTML files before generating new ones
+    const projektyDir = path.join(this.publicDir, 'projekty');
+    if (await fs.pathExists(projektyDir)) {
+      console.log('🧹 Cleaning up old project HTML files...');
+      await fs.emptyDir(projektyDir);
+      console.log('✅ Old project files removed');
+    }
+
     // Generate main pages
     await generateHTML.generateMapPage(this.projektyData, this.publicDir);
     
